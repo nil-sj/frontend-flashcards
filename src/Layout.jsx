@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* Header */}
-      <header className="container bg-light">
+      <header className="container bg-light sticky-top">
         <Navbar/>
       </header>
 
