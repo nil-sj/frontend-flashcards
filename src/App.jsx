@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './Layout';
 import Home from './pages/Home';
 import Flashcards from './pages/Flashcards';
+import TopicFlashcards from './pages/TopicFlashcards';
 import Resources from './pages/Resources';
 import About from './pages/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -14,7 +15,9 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/flashcards" element={<Flashcards />} />
+          <Route path="/flashcardlist" element={<Flashcards />} />
+          {/* <Route path="/flashcards/:topic" element={<TopicFlashcards />} /> */}
+          <Route path="/flashcards" element={<TopicFlashcards />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/about" element={<About />} />
         </Routes>

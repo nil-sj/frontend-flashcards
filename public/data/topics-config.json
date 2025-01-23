@@ -1,0 +1,62 @@
+[
+    { 
+        "topic": "HTML", 
+        "file": "html.json", 
+        "slug": "html", 
+        "description": "HTML (HyperText Markup Language) is the standard language for creating and structuring web pages."
+    },
+    { 
+        "topic": "CSS", 
+        "file": "css.json", 
+        "slug": "css", 
+        "description": "CSS (Cascading Style Sheets) is used for styling and designing the layout of web pages."
+    },
+    { 
+        "topic": "JavaScript", 
+        "file": "javascript.json", 
+        "slug": "javascript", 
+        "description": "JavaScript is a programming language that adds interactivity, dynamic content, and logic to web pages."
+    },
+    { 
+        "topic": "Accessibility", 
+        "file": "accessibility.json", 
+        "slug": "accessibility", 
+        "description": "Accessibility ensures web content is usable by people with diverse abilities, including those with disabilities."
+    },
+    { 
+        "topic": "Responsive Web Design", 
+        "file": "responsive-web-design.json", 
+        "slug": "responsive-web-design", 
+        "description": "Responsive Web Design makes websites look good on all devices by adapting layouts to different screen sizes."
+    },
+    { 
+        "topic": "UI/UX", 
+        "file": "ui-ux.json", 
+        "slug": "uiux", 
+        "description": "UI/UX focuses on creating visually appealing designs (UI) and enhancing user satisfaction through usability (UX)."
+    },
+    { 
+        "topic": "React", 
+        "file": "react.json", 
+        "slug": "react", 
+        "description": "React is a JavaScript library for building user interfaces, especially for single-page applications."
+    },
+    { 
+        "topic": "React Native", 
+        "file": "react-native.json", 
+        "slug": "react-native", 
+        "description": "React Native is a framework for building native mobile apps using React and JavaScript."
+    },
+    { 
+        "topic": "Bootstrap", 
+        "file": "bootstrap.json", 
+        "slug": "bootstrap", 
+        "description": "Bootstrap is a popular front-end framework for building responsive and mobile-first websites quickly."
+    },
+    { 
+        "topic": "Other", 
+        "file": "other.json", 
+        "slug": "other", 
+        "description": "Other miscellaneous topics related to frontend development and tools."
+    }
+]

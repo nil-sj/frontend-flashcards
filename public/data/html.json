@@ -1,0 +1,120 @@
+[
+    {
+        "id": 1,
+        "topic": "HTML",
+        "question": "What does HTML stand for?",
+        "answer": "HTML stands for <strong>HyperText Markup Language</strong>, which is the standard language for creating web pages.",
+        "keyPoints": [
+            "HyperText allows linking to other pages.",
+            "Markup Language uses tags to define elements."
+        ],
+        "codeExample": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Sample HTML</title>\n  </head>\n  <body>\n    <h1>Welcome to HTML!</h1>\n    <p>This is an example of an HTML document.</p>\n  </body>\n</html>",
+        "resources": [
+            {
+                "name": "MDN Web Docs on HTML",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            },
+            {
+                "name": "W3Schools HTML Tutorial",
+                "url": "https://www.w3schools.com/html/"
+            }
+        ],
+        "tags": ["structure", "head"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 2,
+        "topic": "HTML",
+        "question": "What is the purpose of the <head> tag in HTML?",
+        "answer": "The <head> tag contains meta information, links to stylesheets, and scripts.",
+        "keyPoints": [
+            "Meta tags inside <head> help with SEO.",
+            "Links to CSS or JS files are placed here."
+        ],
+        "codeExample": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Document Title</title>\n  </head>\n  <body>\n    <h1>Example</h1>\n  </body>\n</html>",
+        "resources": [
+            {
+                "name": "HTML Head Element Guide - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
+            }
+        ],
+        "tags": ["structure", "meta"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "HTML",
+        "question": "What is the difference between <div> and <span>?",
+        "answer": "<div> is a block-level element, while <span> is an inline-level element.",
+        "keyPoints": [
+            "<div> is used for larger sections of content.",
+            "<span> is used for smaller inline elements within text."
+        ],
+        "codeExample": "<div>\n  <p>This is a block element.</p>\n</div>\n<span>This is an inline element.</span>",
+        "resources": [
+            {
+                "name": "HTML Elements Reference - W3Schools",
+                "url": "https://www.w3schools.com/html/html_elements.asp"
+            }
+        ],
+        "tags": ["structure", "elements"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "HTML",
+        "question": "What is semantic HTML?",
+        "answer": "Semantic HTML uses elements with clear meaning for their content, such as <article>, <section>, and <header>.",
+        "keyPoints": [
+            "Improves accessibility and SEO.",
+            "Helps developers understand the structure of the page."
+        ],
+        "codeExample": "<article>\n  <header>\n    <h1>Semantic HTML</h1>\n  </header>\n  <p>This is an example of semantic HTML.</p>\n</article>",
+        "resources": [
+            {
+                "name": "Semantic HTML - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+            }
+        ],
+        "tags": ["semantic", "accessibility"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "HTML",
+        "question": "What is the <doctype> declaration?",
+        "answer": "The <doctype> declaration defines the HTML version and type of document.",
+        "keyPoints": [
+            "Placed at the very top of the HTML document.",
+            "Helps the browser render the page correctly."
+        ],
+        "codeExample": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Sample Doctype</title>\n  </head>\n  <body>\n    <p>Using doctype declaration.</p>\n  </body>\n</html>",
+        "resources": [
+            {
+                "name": "Doctype Declaration - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+            }
+        ],
+        "tags": ["document", "doctype"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "topic": "HTML",
+        "question": "What is the purpose of the <alt> attribute in images?",
+        "answer": "The <alt> attribute provides alternative text for an image if it cannot be displayed.",
+        "keyPoints": [
+            "Improves accessibility for visually impaired users.",
+            "Provides context for search engines."
+        ],
+        "codeExample": "<img src=\"image.jpg\" alt=\"A beautiful sunset\" />",
+        "resources": [
+            {
+                "name": "HTML Image Element - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+            }
+        ],
+        "tags": ["images", "accessibility"],
+        "difficulty": "easy"
+    }
+]

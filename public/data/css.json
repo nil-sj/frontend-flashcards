@@ -1,0 +1,124 @@
+[
+    {
+        "id": 1,
+        "topic": "CSS",
+        "question": "What does CSS stand for?",
+        "answer": "CSS stands for <strong>Cascading Style Sheets</strong>, which is used for styling web pages.",
+        "keyPoints": [
+            "CSS allows you to style HTML elements.",
+            "It separates content (HTML) from presentation (CSS)."
+        ],
+        "codeExample": "p {\n  color: blue;\n  font-size: 16px;\n}",
+        "resources": [
+            {
+                "name": "MDN Web Docs on CSS",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            },
+            {
+                "name": "W3Schools CSS Tutorial",
+                "url": "https://www.w3schools.com/css/"
+            }
+        ],
+        "tags": ["basics", "introduction"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "CSS",
+        "question": "What is the difference between inline, internal, and external CSS?",
+        "answer": "Inline CSS applies styles directly to an element, internal CSS is defined within a <style> tag in the <head>, and external CSS is linked via an external stylesheet.",
+        "keyPoints": [
+            "Inline CSS is applied with the `style` attribute.",
+            "Internal CSS is added in the `<style>` tag.",
+            "External CSS is linked using the `<link>` tag."
+        ],
+        "codeExample": "<!DOCTYPE html>\n<html>\n  <head>\n    <style>\n      body { font-family: Arial; }\n    </style>\n    <link rel=\"stylesheet\" href=\"styles.css\">\n  </head>\n  <body>\n    <p style=\"color: red;\">This is styled with inline CSS.</p>\n  </body>\n</html>",
+        "resources": [
+            {
+                "name": "CSS Types - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade"
+            }
+        ],
+        "tags": ["stylesheets", "types"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "topic": "CSS",
+        "question": "What is the Box Model in CSS?",
+        "answer": "The CSS Box Model is a concept that describes the rectangular boxes generated for elements, which include margins, borders, padding, and content.",
+        "keyPoints": [
+            "Content is the innermost part of the box.",
+            "Padding is the space between content and border.",
+            "Border surrounds the padding.",
+            "Margin is the outermost spacing."
+        ],
+        "codeExample": "div {\n  width: 200px;\n  padding: 10px;\n  border: 2px solid black;\n  margin: 20px;\n}",
+        "resources": [
+            {
+                "name": "CSS Box Model - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model"
+            }
+        ],
+        "tags": ["box model", "layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "CSS",
+        "question": "What is the difference between relative, absolute, and fixed positioning in CSS?",
+        "answer": "Relative positioning offsets an element relative to its normal position, absolute positioning places it relative to its nearest positioned ancestor, and fixed positioning anchors it to the viewport.",
+        "keyPoints": [
+            "Relative positioning preserves the space of the element.",
+            "Absolute positioning removes the element from normal flow.",
+            "Fixed positioning anchors the element to the viewport."
+        ],
+        "codeExample": ".relative {\n  position: relative;\n  top: 10px;\n}\n.absolute {\n  position: absolute;\n  top: 50px;\n  left: 50px;\n}\n.fixed {\n  position: fixed;\n  top: 0;\n}",
+        "resources": [
+            {
+                "name": "CSS Positioning - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+            }
+        ],
+        "tags": ["positioning", "layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "CSS",
+        "question": "What is a pseudo-class in CSS?",
+        "answer": "A pseudo-class is used to define the special state of an element, such as when it is hovered or focused.",
+        "keyPoints": [
+            "Starts with a colon (e.g., `:hover`).",
+            "Common pseudo-classes include `:hover`, `:focus`, and `:nth-child`."
+        ],
+        "codeExample": "a:hover {\n  color: red;\n}\ninput:focus {\n  border: 2px solid blue;\n}",
+        "resources": [
+            {
+                "name": "CSS Pseudo-classes - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+            }
+        ],
+        "tags": ["selectors", "pseudo-classes"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "topic": "CSS",
+        "question": "What is the difference between `em` and `rem` units in CSS?",
+        "answer": "`em` is relative to the font size of its parent, while `rem` is relative to the root element's font size.",
+        "keyPoints": [
+            "`em` allows relative scaling based on parent elements.",
+            "`rem` ensures consistent scaling relative to the root."
+        ],
+        "codeExample": "html {\n  font-size: 16px;\n}\ndiv {\n  font-size: 1.5em; /* 1.5 times the parent font size */\n}\np {\n  font-size: 1rem; /* 16px, relative to root */\n}",
+        "resources": [
+            {
+                "name": "CSS Units - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/length"
+            }
+        ],
+        "tags": ["units", "responsive design"],
+        "difficulty": "medium"
+    }
+]
