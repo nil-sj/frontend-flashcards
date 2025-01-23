@@ -1,0 +1,12 @@
+[
+    { "topic": "HTML", "file": "html.json" },
+    { "topic": "CSS", "file": "css.json" },
+    { "topic": "JavaScript", "file": "javascript.json" },
+    { "topic": "Accessibility", "file": "accessibility.json" },
+    { "topic": "Responsive Web Design", "file": "responsive-web-design.json" },
+    { "topic": "UI/UX", "file": "ui-ux.json" },
+    { "topic": "React", "file": "react.json" },
+    { "topic": "React Native", "file": "react-native.json" },
+    { "topic": "Bootstrap", "file": "bootstrap.json" },
+    { "topic": "Other", "file": "Other.json" }
+]  
