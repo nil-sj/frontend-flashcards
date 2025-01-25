@@ -6,15 +6,15 @@ const Layout = ({ children }) => {
   return (
     <>
       {/* Header */}
-      <header className="container bg-light sticky-top">
+      <header className="bg-light sticky-top">
         <Navbar/>
       </header>
 
       {/* Main Content */}
-      <main className="container my-4">{children}</main>
+      <main>{children}</main>
 
       {/* Footer */}
-      <footer className="bg-dark text-white py-3">
+      <footer className="bg-dark text-white py-5">
         <SiteFooter/>
       </footer>
     </>
