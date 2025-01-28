@@ -15,9 +15,9 @@ const App = () => {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/flashcardlist" element={<Flashcards />} />
-          {/* <Route path="/flashcards/:topic" element={<TopicFlashcards />} /> */}
-          <Route path="/flashcards" element={<TopicFlashcards />} />
+          <Route path="/flashcards" element={<Flashcards />} />
+          {/* <Route path="/flashcard/:topic" element={<TopicFlashcards />} /> */}
+          <Route path="/flashcard" element={<TopicFlashcards />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/about" element={<About />} />
         </Routes>

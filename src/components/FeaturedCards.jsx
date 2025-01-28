@@ -13,19 +13,19 @@ const cards = [
         title: 'HTML',
         description: 'Master HTML, the essential language for structuring and organizing content on the web.',
         buttonText: 'Explore HTML Flashcards',
-        link: '/flashcards?topic=html',
+        link: '/flashcard?topic=html',
     },
     {
         title: 'CSS',
         description: 'Learn to style web pages with layouts, colors, typography, and animations effortlessly.',
         buttonText: 'Explore CSS Flashcards',
-        link: '/flashcards?topic=css',
+        link: '/flashcard?topic=css',
     },
     {
         title: 'JavaScript',
         description: 'Bring your web pages to life with interactivity, dynamic features, and creative functionality.',
         buttonText: 'Explore JavaScript Flashcards',
-        link: '/flashcards?topic=javascript',
+        link: '/flashcard?topic=javascript',
     },
 ];
 
@@ -46,7 +46,12 @@ const cards = [
         <div className="row">
           {cards.map((card, index) => (
             <div className="col-md-4 mb-4" key={index}>
-              <div className="card h-100 shadow-sm border-0">
+              <div className="card h-100 featured-card border-0" onMouseOver={(e) =>
+                (e.currentTarget.style.transform = 'scale(1.05)')
+            }
+            onMouseOut={(e) =>
+                (e.currentTarget.style.transform = 'scale(1)')
+            }>
                 {/* Image Section */}
                 <div className="card-img-top overflow-hidden" style={{ backgroundColor: "#ffffff"}}>
                   <img
