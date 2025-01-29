@@ -1,0 +1,37 @@
+[
+    {
+      "title": "MDN Web Docs",
+      "type": "Documentation",
+      "description": "Comprehensive web development documentation.",
+      "source": "Mozilla",
+      "url": "https://developer.mozilla.org/en-US/"
+    },
+    {
+      "title": "JavaScript.info",
+      "type": "Tutorial",
+      "description": "In-depth JavaScript tutorials from beginner to advanced.",
+      "source": "Ilya Kantor",
+      "url": "https://javascript.info/"
+    },
+    {
+      "title": "CSS-Tricks",
+      "type": "Blog",
+      "description": "Advanced CSS tips, tricks, and best practices.",
+      "source": "Chris Coyier",
+      "url": "https://css-tricks.com/"
+    },
+    {
+      "title": "Traversy Media",
+      "type": "YouTube",
+      "description": "Web development tutorials for all levels.",
+      "source": "Brad Traversy",
+      "url": "https://www.youtube.com/c/TraversyMedia"
+    },
+    {
+      "title": "Frontend Masters",
+      "type": "Course",
+      "description": "High-quality frontend development courses.",
+      "source": "Frontend Masters",
+      "url": "https://frontendmasters.com/"
+    }
+  ]  

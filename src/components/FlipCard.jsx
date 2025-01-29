@@ -48,7 +48,7 @@ const FlipCard = ({ question, answer, keyPoints, resources, codeExample, resetFl
             fontWeight: 'bold',
           }}
         >
-          <h5>{question}</h5>
+          <h3 className="question">{question}</h3>
         </div>
 
         {/* Back Side - Answer and Other Details */}
