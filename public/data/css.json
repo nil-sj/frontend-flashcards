@@ -2,6 +2,688 @@
     {
         "id": 1,
         "topic": "CSS",
+        "question": "What is CSS, and what are its main purposes?",
+        "answer": "CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation and layout of HTML documents. It allows developers to separate content from design, making websites visually appealing and responsive.",
+        "keyPoints": [
+            "CSS stands for Cascading Style Sheets.",
+            "Used to style HTML elements, control layout, and enhance user experience.",
+            "Supports responsive design and cross-browser compatibility."
+        ],
+        "codeExample": "p { color: blue; font-size: 16px; }",
+        "resources": [
+            {
+                "name": "CSS Introduction - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+            }
+        ],
+        "tags": ["CSS Basics", "Styling"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "CSS",
+        "question": "What are the different ways to apply CSS to a web page?",
+        "answer": "CSS can be applied using inline styles, internal stylesheets, and external stylesheets.",
+        "keyPoints": [
+            "Inline CSS: Applied directly to an HTML element using the `style` attribute.",
+            "Internal CSS: Defined within a `<style>` tag in the `<head>` section.",
+            "External CSS: Stored in a separate `.css` file and linked using `<link>`."
+        ],
+        "codeExample": "<head>\n  <link rel='stylesheet' href='styles.css'>\n</head>",
+        "resources": [
+            {
+                "name": "Ways to Apply CSS - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured"
+            }
+        ],
+        "tags": ["CSS Basics", "Selectors"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "CSS",
+        "question": "What is the difference between relative, absolute, fixed, and sticky positioning in CSS?",
+        "answer": "CSS positioning defines how elements are placed in relation to other elements or the viewport.",
+        "keyPoints": [
+            "`relative`: Positions an element relative to its normal position.",
+            "`absolute`: Positions an element relative to the nearest positioned ancestor.",
+            "`fixed`: Positions an element relative to the viewport, unaffected by scrolling.",
+            "`sticky`: Switches between relative and fixed based on scroll position."
+        ],
+        "codeExample": "div { position: absolute; top: 50px; left: 100px; }",
+        "resources": [
+            {
+                "name": "CSS Positioning - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+            }
+        ],
+        "tags": ["Positioning", "CSS Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "CSS",
+        "question": "What is Flexbox, and how does it work?",
+        "answer": "Flexbox is a CSS layout model that provides an efficient way to align and distribute items in a container, even when their size is unknown.",
+        "keyPoints": [
+            "Use `display: flex;` to activate Flexbox on a container.",
+            "Main axis and cross axis determine alignment direction.",
+            "Properties like `justify-content`, `align-items`, and `flex-wrap` control layout behavior."
+        ],
+        "codeExample": "div { display: flex; justify-content: center; align-items: center; }",
+        "resources": [
+            {
+                "name": "CSS Flexbox - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout"
+            }
+        ],
+        "tags": ["Flexbox", "Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "CSS",
+        "question": "What are media queries in CSS?",
+        "answer": "Media queries are used to apply different styles based on device characteristics, such as screen width, height, or resolution.",
+        "keyPoints": [
+            "Allows responsive design for different screen sizes.",
+            "Uses `@media` rule followed by conditions like `(max-width: 768px)`.",
+            "Can target print, screen, or speech-based devices."
+        ],
+        "codeExample": "@media (max-width: 768px) { body { background-color: lightgray; } }",
+        "resources": [
+            {
+                "name": "CSS Media Queries - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries"
+            }
+        ],
+        "tags": ["Responsive Design", "Media Queries"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "topic": "CSS",
+        "question": "What is the difference between 'em', 'rem', 'px', and '%' in CSS?",
+        "answer": "These are different units used for sizing elements in CSS.",
+        "keyPoints": [
+            "`px` is an absolute unit that represents fixed pixels.",
+            "`em` is relative to the font size of its parent element.",
+            "`rem` is relative to the root element’s font size.",
+            "`%` is relative to the parent element's size."
+        ],
+        "codeExample": "p { font-size: 2em; } /* Twice the size of parent font */",
+        "resources": [
+            {
+                "name": "CSS Units - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
+            }
+        ],
+        "tags": ["CSS Units", "Typography"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "CSS",
+        "question": "What is the difference between 'visibility: hidden;' and 'display: none;'?",
+        "answer": "`visibility: hidden;` hides the element but keeps its space reserved, whereas `display: none;` removes it from the document flow.",
+        "keyPoints": [
+            "`visibility: hidden;` makes the element invisible but still takes up space.",
+            "`display: none;` removes the element completely from layout calculations.",
+            "Use `opacity: 0;` to hide elements without affecting layout."
+        ],
+        "codeExample": "div { visibility: hidden; } /* Hidden but still occupies space */",
+        "resources": [
+            {
+                "name": "Visibility vs Display - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/visibility"
+            }
+        ],
+        "tags": ["CSS Visibility", "CSS Display"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 8,
+        "topic": "CSS",
+        "question": "What are pseudo-classes in CSS?",
+        "answer": "Pseudo-classes define special states of elements, such as hover, focus, or first-child.",
+        "keyPoints": [
+            "Examples: `:hover`, `:focus`, `:nth-child(n)`.",
+            "Used to style elements based on state without modifying HTML.",
+            "Different from pseudo-elements, which style part of an element."
+        ],
+        "codeExample": "button:hover { background-color: blue; }",
+        "resources": [
+            {
+                "name": "CSS Pseudo-Classes - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+            }
+        ],
+        "tags": ["Pseudo-classes", "Selectors"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "CSS",
+        "question": "What are pseudo-elements in CSS?",
+        "answer": "Pseudo-elements allow you to style specific parts of an element, such as the first letter, first line, or inserting content before or after an element.",
+        "keyPoints": [
+            "Common pseudo-elements: `::before`, `::after`, `::first-letter`, `::first-line`.",
+            "`::before` and `::after` require `content` property.",
+            "Different from pseudo-classes, which apply to element states."
+        ],
+        "codeExample": "p::first-letter { font-size: 2em; color: red; }",
+        "resources": [
+            {
+                "name": "CSS Pseudo-Elements - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements"
+            }
+        ],
+        "tags": ["Pseudo-elements", "Selectors"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "CSS",
+        "question": "What is the difference between inline, block, and inline-block elements?",
+        "answer": "These are different display types that define how elements behave in a layout.",
+        "keyPoints": [
+            "`inline`: Elements flow with text, cannot have width/height set.",
+            "`block`: Takes full width, starts on a new line.",
+            "`inline-block`: Like inline but allows width and height."
+        ],
+        "codeExample": "span { display: inline-block; width: 100px; height: 50px; }",
+        "resources": [
+            {
+                "name": "CSS Display Property - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+            }
+        ],
+        "tags": ["CSS Display", "Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "CSS",
+        "question": "How does the z-index property work in CSS?",
+        "answer": "The `z-index` property controls the stacking order of elements on a webpage.",
+        "keyPoints": [
+            "Higher values appear above lower values.",
+            "Only works on positioned elements (`relative`, `absolute`, `fixed`).",
+            "Default stacking order follows DOM hierarchy."
+        ],
+        "codeExample": "div { position: absolute; z-index: 10; }",
+        "resources": [
+            {
+                "name": "CSS Z-Index - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/z-index"
+            }
+        ],
+        "tags": ["Z-Index", "Positioning"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "CSS",
+        "question": "What is the difference between min-width, max-width, and width?",
+        "answer": "`width` sets a fixed width, `min-width` ensures a minimum width, and `max-width` sets a maximum width for an element.",
+        "keyPoints": [
+            "`width`: Sets a fixed width for an element.",
+            "`min-width`: Ensures element never shrinks below this width.",
+            "`max-width`: Prevents element from exceeding this width."
+        ],
+        "codeExample": "div { width: 100%; max-width: 800px; }",
+        "resources": [
+            {
+                "name": "CSS Width Properties - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/width"
+            }
+        ],
+        "tags": ["CSS Layout", "Responsive Design"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "CSS",
+        "question": "What are the different types of selectors in CSS?",
+        "answer": "CSS selectors determine which elements a style rule applies to.",
+        "keyPoints": [
+            "Basic selectors: `element`, `id (#)`, `class (.)`.",
+            "Combinators: `descendant`, `child (>)`, `adjacent (+)`, `sibling (~)`.",
+            "Attribute, pseudo-class, and pseudo-element selectors."
+        ],
+        "codeExample": "div > p { color: red; } /* Targets direct child paragraphs */",
+        "resources": [
+            {
+                "name": "CSS Selectors - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+            }
+        ],
+        "tags": ["Selectors", "CSS Basics"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "CSS",
+        "question": "How do you create a CSS grid layout?",
+        "answer": "Use `display: grid;` to create a grid container and define rows and columns using `grid-template-rows` and `grid-template-columns`.",
+        "keyPoints": [
+            "Grid allows precise 2D layout control.",
+            "Use `grid-template-columns` to define column structure.",
+            "`gap` property sets spacing between grid items."
+        ],
+        "codeExample": "div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }",
+        "resources": [
+            {
+                "name": "CSS Grid Layout - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/grid"
+            }
+        ],
+        "tags": ["Grid", "CSS Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "CSS",
+        "question": "What is the difference between CSS Grid and Flexbox?",
+        "answer": "CSS Grid is used for two-dimensional layouts (rows and columns), whereas Flexbox is designed for one-dimensional layouts.",
+        "keyPoints": [
+            "Flexbox is better for aligning items in a row or column.",
+            "Grid is better for complex layouts involving both rows and columns.",
+            "Grid items align based on explicit tracks, while Flexbox distributes space dynamically."
+        ],
+        "codeExample": "div { display: grid; grid-template-columns: 1fr 1fr; }",
+        "resources": [
+            {
+                "name": "CSS Grid vs Flexbox",
+                "url": "https://css-tricks.com/difference-between-flexbox-and-css-grid-layouts/"
+            }
+        ],
+        "tags": ["Grid vs Flexbox", "Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "CSS",
+        "question": "How do you create a CSS animation?",
+        "answer": "Use `@keyframes` to define an animation and apply it using the `animation` property.",
+        "keyPoints": [
+            "Use `@keyframes` to specify animation states.",
+            "`animation` property defines duration, timing function, and iterations.",
+            "Animations improve user experience and engagement."
+        ],
+        "codeExample": "@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }\ndiv { animation: fadeIn 2s ease-in; }",
+        "resources": [
+            {
+                "name": "CSS Animations - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations"
+            }
+        ],
+        "tags": ["Animations", "CSS Effects"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "topic": "CSS",
+        "question": "What is the difference between 'absolute', 'relative', and 'fixed' positioning in CSS?",
+        "answer": "These positioning styles define how elements are positioned in relation to other elements or the viewport.",
+        "keyPoints": [
+            "`relative`: Position relative to its normal position.",
+            "`absolute`: Position relative to the nearest positioned ancestor.",
+            "`fixed`: Stays fixed relative to the viewport, unaffected by scrolling."
+        ],
+        "codeExample": "div { position: absolute; top: 50px; left: 100px; }",
+        "resources": [
+            {
+                "name": "CSS Positioning - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+            }
+        ],
+        "tags": ["Positioning", "CSS Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "CSS",
+        "question": "How does the float property work in CSS?",
+        "answer": "The `float` property allows elements to be positioned to the left or right of their container, enabling text wrapping around them.",
+        "keyPoints": [
+            "`float: left;` moves the element to the left.",
+            "`float: right;` moves the element to the right.",
+            "Commonly used with `clear` to prevent layout issues."
+        ],
+        "codeExample": "img { float: left; margin-right: 10px; }",
+        "resources": [
+            {
+                "name": "CSS Float Property - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/float"
+            }
+        ],
+        "tags": ["Float", "CSS Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "CSS",
+        "question": "How do you clear floats in CSS?",
+        "answer": "To prevent floated elements from affecting surrounding elements, use the `clear` property or clearfix technique.",
+        "keyPoints": [
+            "`clear: both;` prevents elements from being affected by floated elements.",
+            "The clearfix method ensures parent containers wrap around floated elements.",
+            "Common technique: `::after` pseudo-element."
+        ],
+        "codeExample": ".clearfix::after { content: ''; display: block; clear: both; }",
+        "resources": [
+            {
+                "name": "CSS Clearfix - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_floats"
+            }
+        ],
+        "tags": ["Float", "Clearfix"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "CSS",
+        "question": "What is the difference between 'nth-child' and 'nth-of-type' selectors?",
+        "answer": "Both selectors target specific child elements, but `nth-of-type` applies to a specific element type.",
+        "keyPoints": [
+            "`nth-child(n)`: Selects the nth child element regardless of type.",
+            "`nth-of-type(n)`: Selects the nth occurrence of a specific type.",
+            "Useful for styling lists and tables."
+        ],
+        "codeExample": "p:nth-child(2) { color: red; }\np:nth-of-type(2) { color: blue; }",
+        "resources": [
+            {
+                "name": "CSS nth-child vs nth-of-type - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child"
+            }
+        ],
+        "tags": ["Selectors", "CSS Basics"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "CSS",
+        "question": "How does the 'object-fit' property work in CSS?",
+        "answer": "The `object-fit` property defines how an image or video fits inside its container.",
+        "keyPoints": [
+            "`contain`: Ensures the whole image fits inside the container.",
+            "`cover`: Crops the image to fill the container.",
+            "`fill`: Stretches the image to fit the container."
+        ],
+        "codeExample": "img { object-fit: cover; width: 100%; height: 100%; }",
+        "resources": [
+            {
+                "name": "CSS Object-Fit - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"
+            }
+        ],
+        "tags": ["Images", "CSS Effects"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "CSS",
+        "question": "What is the difference between opacity and rgba() in CSS?",
+        "answer": "Both control transparency, but `opacity` affects the entire element, whereas `rgba()` applies transparency to only the background color.",
+        "keyPoints": [
+            "`opacity`: Affects the whole element including text and children.",
+            "`rgba()`: Allows setting transparency only for the background.",
+            "Use `opacity: 0.5;` for semi-transparent elements."
+        ],
+        "codeExample": "div { background: rgba(255, 0, 0, 0.5); }",
+        "resources": [
+            {
+                "name": "CSS Opacity vs RGBA - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/opacity"
+            }
+        ],
+        "tags": ["CSS Effects", "Transparency"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "CSS",
+        "question": "What are CSS variables and how do you use them?",
+        "answer": "CSS variables store values that can be reused throughout a stylesheet, improving maintainability.",
+        "keyPoints": [
+            "Defined using `--variable-name` inside `:root`.",
+            "Accessed with `var(--variable-name)`.",
+            "Allows easy theme switching."
+        ],
+        "codeExample": ":root { --primary-color: blue; }\ndiv { background-color: var(--primary-color); }",
+        "resources": [
+            {
+                "name": "CSS Variables - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
+            }
+        ],
+        "tags": ["CSS Variables", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "topic": "CSS",
+        "question": "What are CSS transitions?",
+        "answer": "CSS transitions enable smooth changes between property values over a specified duration.",
+        "keyPoints": [
+            "Uses `transition` property.",
+            "Common properties: `duration`, `timing function`, `delay`.",
+            "Improves user experience with animations."
+        ],
+        "codeExample": "div { transition: background-color 0.5s ease-in-out; }",
+        "resources": [
+            {
+                "name": "CSS Transitions - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/transition"
+            }
+        ],
+        "tags": ["CSS Animations", "User Experience"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 25,
+        "topic": "CSS",
+        "question": "How do you create a responsive navigation menu using CSS?",
+        "answer": "A responsive navigation menu adapts to different screen sizes using media queries and Flexbox/Grid.",
+        "keyPoints": [
+            "Use `display: flex;` for horizontal layout.",
+            "Use `@media (max-width: 768px)` to adjust for smaller screens.",
+            "Common approach: hide/show menu with `display: none;`."
+        ],
+        "codeExample": "@media (max-width: 768px) { nav { display: none; } }",
+        "resources": [
+            {
+                "name": "CSS Responsive Navigation - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"
+            }
+        ],
+        "tags": ["Responsive Design", "CSS Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 26,
+        "topic": "CSS",
+        "question": "What is the difference between 'rem' and 'em' in CSS?",
+        "answer": "`rem` is relative to the root (`html`) element’s font size, while `em` is relative to the font size of its parent element.",
+        "keyPoints": [
+            "`rem`: Consistent across the document, based on `html` font-size.",
+            "`em`: Relative to the nearest parent element’s font-size.",
+            "Use `rem` for global sizing, `em` for contextual scaling."
+        ],
+        "codeExample": "p { font-size: 2rem; } /* Twice the root font size */",
+        "resources": [
+            {
+                "name": "CSS Units - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units"
+            }
+        ],
+        "tags": ["CSS Units", "Typography"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 27,
+        "topic": "CSS",
+        "question": "What is the difference between 'max-width' and 'min-width' in media queries?",
+        "answer": "`max-width` applies styles when the screen size is below the specified width, while `min-width` applies styles when it is above.",
+        "keyPoints": [
+            "`max-width`: Targets smaller screens (`mobile-first` approach).",
+            "`min-width`: Targets larger screens (`desktop-first` approach).",
+            "Use `@media (max-width: 768px)` for mobile styles."
+        ],
+        "codeExample": "@media (max-width: 768px) { body { background-color: lightgray; } }",
+        "resources": [
+            {
+                "name": "CSS Media Queries - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries"
+            }
+        ],
+        "tags": ["Responsive Design", "Media Queries"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 28,
+        "topic": "CSS",
+        "question": "What is the difference between 'overflow: hidden', 'scroll', and 'auto'?",
+        "answer": "The `overflow` property controls how content that exceeds an element's size is handled.",
+        "keyPoints": [
+            "`hidden`: Hides overflow content.",
+            "`scroll`: Always adds a scrollbar.",
+            "`auto`: Adds a scrollbar only when necessary."
+        ],
+        "codeExample": "div { overflow: auto; }",
+        "resources": [
+            {
+                "name": "CSS Overflow - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow"
+            }
+        ],
+        "tags": ["CSS Layout", "Overflow"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 29,
+        "topic": "CSS",
+        "question": "What is the difference between 'clip-path' and 'mask' in CSS?",
+        "answer": "`clip-path` defines visible parts of an element, while `mask` applies transparency effects.",
+        "keyPoints": [
+            "`clip-path`: Hides portions outside the defined shape.",
+            "`mask`: Uses an image or gradient to control visibility.",
+            "Both create complex visual effects."
+        ],
+        "codeExample": "div { clip-path: circle(50%); }",
+        "resources": [
+            {
+                "name": "CSS Clip-path - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path"
+            }
+        ],
+        "tags": ["CSS Effects", "Masking"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 30,
+        "topic": "CSS",
+        "question": "How do you make a website responsive without using media queries?",
+        "answer": "Use CSS properties like `flexbox`, `grid`, and `clamp()` for adaptable designs without explicit breakpoints.",
+        "keyPoints": [
+            "Use `flex-wrap` and `grid` to auto-adjust layout.",
+            "`clamp()` allows fluid typography.",
+            "`max-width: 100%` ensures images scale properly."
+        ],
+        "codeExample": "p { font-size: clamp(1rem, 2vw, 2rem); }",
+        "resources": [
+            {
+                "name": "CSS Responsive Techniques - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/responsive_design_strategy"
+            }
+        ],
+        "tags": ["Responsive Design", "Best Practices"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 31,
+        "topic": "CSS",
+        "question": "What is the difference between 'nth-child' and 'nth-of-type' selectors?",
+        "answer": "`nth-child(n)` selects an element based on position among all siblings, while `nth-of-type(n)` selects based on its type.",
+        "keyPoints": [
+            "`nth-child(n)`: Selects based on order among all children.",
+            "`nth-of-type(n)`: Selects based on order within its type.",
+            "Useful for styling table rows, lists, etc."
+        ],
+        "codeExample": "p:nth-child(2) { color: red; }\np:nth-of-type(2) { color: blue; }",
+        "resources": [
+            {
+                "name": "CSS nth-child vs nth-of-type - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child"
+            }
+        ],
+        "tags": ["Selectors", "CSS Basics"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 32,
+        "topic": "CSS",
+        "question": "How can you optimize CSS performance?",
+        "answer": "Optimizing CSS improves rendering speed and website performance.",
+        "keyPoints": [
+            "Minimize and compress CSS files.",
+            "Reduce unnecessary selectors and use efficient ones.",
+            "Use hardware-accelerated animations (`transform`, `opacity`)."
+        ],
+        "codeExample": "body { will-change: transform; }",
+        "resources": [
+            {
+                "name": "CSS Optimization - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/Performance/CSS"
+            }
+        ],
+        "tags": ["Performance", "Best Practices"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 33,
+        "topic": "CSS",
+        "question": "What is the difference between 'hover', 'focus', and 'active' pseudo-classes?",
+        "answer": "`hover` applies when the mouse is over an element, `focus` applies when the element is selected, and `active` applies when it is clicked.",
+        "keyPoints": [
+            "`hover`: Mouse pointer over the element.",
+            "`focus`: Keyboard or mouse selection.",
+            "`active`: Element is being clicked."
+        ],
+        "codeExample": "button:hover { background-color: blue; }",
+        "resources": [
+            {
+                "name": "CSS Pseudo-Classes - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes"
+            }
+        ],
+        "tags": ["Pseudo-classes", "Selectors"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 34,
+        "topic": "CSS",
+        "question": "How do you create a sticky header in CSS?",
+        "answer": "Use `position: sticky;` with `top: 0;` to keep an element fixed at the top of the viewport when scrolling.",
+        "keyPoints": [
+            "Use `position: sticky;` for better UX.",
+            "Requires a parent with `overflow: auto;`.",
+            "Works well with `z-index` for layering."
+        ],
+        "codeExample": "header { position: sticky; top: 0; background: white; z-index: 10; }",
+        "resources": [
+            {
+                "name": "CSS Sticky Positioning - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/position"
+            }
+        ],
+        "tags": ["Sticky Header", "Positioning"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 35,
+        "topic": "CSS",
         "question": "What is the difference between relative, absolute, fixed, and sticky positioning in CSS?",
         "answer": "The position property in CSS defines how an element is positioned in a document. 'Relative' positions an element relative to its normal position. 'Absolute' positions it relative to the nearest positioned ancestor or the viewport if none exists. 'Fixed' positions the element relative to the viewport, making it stay in place during scrolling. 'Sticky' toggles between relative and fixed positioning depending on the scroll position.",
         "keyPoints": [
@@ -25,7 +707,7 @@
         "difficulty": "medium"
     },
     {
-        "id": 2,
+        "id": 36,
         "topic": "CSS",
         "question": "What is the difference between 'em', 'rem', 'px', and '%' in CSS?",
         "answer": "'em' and 'rem' are relative units. 'em' is relative to the font-size of the parent element, while 'rem' is relative to the root element (usually <html>). 'px' is an absolute unit, not affected by parent elements. '%' is relative to the parent element\u2019s dimensions.",

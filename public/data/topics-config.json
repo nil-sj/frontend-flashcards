@@ -11,7 +11,7 @@
         "file": "css.json", 
         "slug": "css", 
         "description": "Style your web pages with Cascading Style Sheets for better presentation.",
-        "ready": false
+        "ready": true
     },
     { 
         "topic": "JavaScript", 
@@ -46,7 +46,7 @@
         "file": "react.json", 
         "slug": "react", 
         "description": "Master the popular JavaScript library for building user interfaces.",
-        "ready": false
+        "ready": true
     },
     { 
         "topic": "Redux", 

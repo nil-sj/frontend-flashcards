@@ -2,6 +2,926 @@
     {
         "id": 1,
         "topic": "React",
+        "question": "What is React and why is it used?",
+        "answer": "React is a JavaScript library for building user interfaces, developed by Facebook. It is used to create fast and interactive web applications using a component-based architecture.",
+        "keyPoints": [
+            "React is a JavaScript library for UI development.",
+            "Uses a component-based architecture.",
+            "Efficient due to the virtual DOM and declarative UI."
+        ],
+        "codeExample": "const element = <h1>Hello, React!</h1>;\nReactDOM.render(element, document.getElementById('root'));",
+        "resources": [
+            {
+                "name": "React Official Docs",
+                "url": "https://react.dev/"
+            }
+        ],
+        "tags": ["React Basics", "Introduction"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "React",
+        "question": "What are the main features of React?",
+        "answer": "React has several key features, including a virtual DOM, component-based architecture, JSX syntax, state management, and unidirectional data flow.",
+        "keyPoints": [
+            "Uses a virtual DOM for efficient updates.",
+            "Component-based structure allows reusable UI pieces.",
+            "JSX enables writing UI in JavaScript."
+        ],
+        "codeExample": "function App() {\n  return <h1>Hello, world!</h1>;\n}",
+        "resources": [
+            {
+                "name": "React Features - Official Docs",
+                "url": "https://react.dev/learn"
+            }
+        ],
+        "tags": ["React Features", "Fundamentals"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "React",
+        "question": "What is JSX in React?",
+        "answer": "JSX (JavaScript XML) is a syntax extension for JavaScript that allows writing HTML-like code inside JavaScript, which React converts into JavaScript function calls.",
+        "keyPoints": [
+            "JSX allows mixing HTML with JavaScript.",
+            "JSX is compiled into `React.createElement` calls.",
+            "Helps in writing readable and declarative UI."
+        ],
+        "codeExample": "const element = <h1>Hello, JSX!</h1>;\nReactDOM.render(element, document.getElementById('root'));",
+        "resources": [
+            {
+                "name": "JSX in React - Official Docs",
+                "url": "https://react.dev/learn/writing-markup-with-jsx"
+            }
+        ],
+        "tags": ["JSX", "React Basics"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "topic": "React",
+        "question": "What is the virtual DOM in React?",
+        "answer": "The virtual DOM is a lightweight JavaScript representation of the actual DOM. React updates the virtual DOM first and then efficiently updates only the changed parts in the real DOM.",
+        "keyPoints": [
+            "Virtual DOM improves performance.",
+            "Reduces direct DOM manipulations.",
+            "Uses a diffing algorithm for efficient updates."
+        ],
+        "codeExample": "ReactDOM.render(<App />, document.getElementById('root'));",
+        "resources": [
+            {
+                "name": "Virtual DOM - React Docs",
+                "url": "https://react.dev/learn/rendering"
+            }
+        ],
+        "tags": ["Virtual DOM", "Performance"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "React",
+        "question": "What are React components?",
+        "answer": "Components are the building blocks of a React application. They are reusable, self-contained pieces of UI that return JSX elements.",
+        "keyPoints": [
+            "React components can be functional or class-based.",
+            "Reusable and modular UI elements.",
+            "Each component has its own state and lifecycle."
+        ],
+        "codeExample": "function Welcome(props) {\n  return <h1>Hello, {props.name}!</h1>;\n}",
+        "resources": [
+            {
+                "name": "Components in React - Docs",
+                "url": "https://react.dev/learn/your-first-component"
+            }
+        ],
+        "tags": ["React Components", "UI"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "topic": "React",
+        "question": "What is the difference between functional and class components?",
+        "answer": "Functional components are simple JavaScript functions that return JSX, while class components are ES6 classes that extend `React.Component` and have lifecycle methods.",
+        "keyPoints": [
+            "Functional components are stateless before Hooks.",
+            "Class components support lifecycle methods.",
+            "Functional components are preferred with Hooks."
+        ],
+        "codeExample": "function Greeting() {\n  return <h1>Hello!</h1>;\n}",
+        "resources": [
+            {
+                "name": "React Components - Docs",
+                "url": "https://react.dev/learn"
+            }
+        ],
+        "tags": ["React Components", "Functional vs Class"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "React",
+        "question": "What are React Hooks?",
+        "answer": "React Hooks are functions that let you use state and lifecycle features in functional components without writing class components.",
+        "keyPoints": [
+            "Introduced in React 16.8.",
+            "Common hooks: `useState`, `useEffect`, `useContext`.",
+            "Hooks simplify component logic and reusability."
+        ],
+        "codeExample": "const [count, setCount] = useState(0);",
+        "resources": [
+            {
+                "name": "React Hooks - Docs",
+                "url": "https://react.dev/learn/state-and-lifecycle"
+            }
+        ],
+        "tags": ["React Hooks", "State Management"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "React",
+        "question": "What is the useState Hook in React?",
+        "answer": "The `useState` Hook allows functional components to manage local state.",
+        "keyPoints": [
+            "Allows state in functional components.",
+            "Returns a state variable and a setter function.",
+            "Triggers re-render when state changes."
+        ],
+        "codeExample": "const [count, setCount] = useState(0);\n<button onClick={() => setCount(count + 1)}>Increment</button>",
+        "resources": [
+            {
+                "name": "useState Hook - React Docs",
+                "url": "https://react.dev/reference/react/useState"
+            }
+        ],
+        "tags": ["useState", "React Hooks"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 9,
+        "topic": "React",
+        "question": "What is the useEffect Hook?",
+        "answer": "The `useEffect` Hook allows performing side effects like data fetching, subscriptions, or DOM updates in functional components.",
+        "keyPoints": [
+            "Replaces lifecycle methods like `componentDidMount`.",
+            "Runs after render and can depend on state/props.",
+            "Cleanup function helps avoid memory leaks."
+        ],
+        "codeExample": "useEffect(() => { document.title = 'Updated'; }, []);",
+        "resources": [
+            {
+                "name": "useEffect Hook - React Docs",
+                "url": "https://react.dev/reference/react/useEffect"
+            }
+        ],
+        "tags": ["useEffect", "React Lifecycle"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "React",
+        "question": "What is the difference between useEffect with an empty dependency array and one with dependencies?",
+        "answer": "An empty dependency array (`[]`) makes `useEffect` run only once after the initial render, while dependencies trigger `useEffect` when they change.",
+        "keyPoints": [
+            "Empty array (`[]`): Runs once after the component mounts.",
+            "Dependency array (`[state]`): Runs when the specified state/props change.",
+            "No array: Runs after every render."
+        ],
+        "codeExample": "useEffect(() => { console.log('Runs once'); }, []);",
+        "resources": [
+            {
+                "name": "useEffect Hook - React Docs",
+                "url": "https://react.dev/reference/react/useEffect"
+            }
+        ],
+        "tags": ["useEffect", "React Hooks"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "React",
+        "question": "What is the useContext Hook in React?",
+        "answer": "The `useContext` Hook allows components to access values from React's Context API without prop drilling.",
+        "keyPoints": [
+            "Avoids passing props manually through many levels.",
+            "Useful for global state like themes or authentication.",
+            "Works with the Context API."
+        ],
+        "codeExample": "const value = useContext(MyContext);",
+        "resources": [
+            {
+                "name": "useContext Hook - React Docs",
+                "url": "https://react.dev/reference/react/useContext"
+            }
+        ],
+        "tags": ["useContext", "State Management"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "React",
+        "question": "What is the difference between props and state in React?",
+        "answer": "Props are immutable inputs passed to a component, while state is mutable and controlled within a component.",
+        "keyPoints": [
+            "Props: Passed from parent to child, read-only.",
+            "State: Component-specific, managed internally.",
+            "State changes trigger re-renders."
+        ],
+        "codeExample": "const Greeting = ({ name }) => <h1>Hello, {name}!</h1>;",
+        "resources": [
+            {
+                "name": "Props vs State - React Docs",
+                "url": "https://react.dev/learn"
+            }
+        ],
+        "tags": ["Props", "State"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 13,
+        "topic": "React",
+        "question": "What are controlled and uncontrolled components in React?",
+        "answer": "Controlled components have their value controlled by React state, while uncontrolled components manage their state via the DOM.",
+        "keyPoints": [
+            "Controlled: Uses `useState` for input values.",
+            "Uncontrolled: Uses `ref` to access DOM elements.",
+            "Controlled components offer better form handling."
+        ],
+        "codeExample": "const [value, setValue] = useState('');\n<input value={value} onChange={(e) => setValue(e.target.value)} />",
+        "resources": [
+            {
+                "name": "Controlled Components - React Docs",
+                "url": "https://react.dev/reference/react-dom/components/input"
+            }
+        ],
+        "tags": ["Forms", "React State"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "React",
+        "question": "What is React Router, and why is it used?",
+        "answer": "React Router is a library that enables navigation and routing in React applications, allowing different views without full-page reloads.",
+        "keyPoints": [
+            "Enables client-side routing.",
+            "Supports dynamic routes with parameters.",
+            "Improves UX with smooth navigation."
+        ],
+        "codeExample": "<Route path='/about' element={<About />} />",
+        "resources": [
+            {
+                "name": "React Router - Official Docs",
+                "url": "https://reactrouter.com/"
+            }
+        ],
+        "tags": ["React Router", "Routing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "React",
+        "question": "What is lazy loading in React?",
+        "answer": "Lazy loading defers loading non-essential components until needed, improving initial page load performance.",
+        "keyPoints": [
+            "Uses `React.lazy` and `Suspense`.",
+            "Reduces initial bundle size.",
+            "Enhances performance for large applications."
+        ],
+        "codeExample": "const LazyComponent = React.lazy(() => import('./LazyComponent'));\n<Suspense fallback={<Loading />}><LazyComponent /></Suspense>",
+        "resources": [
+            {
+                "name": "React Lazy Loading - React Docs",
+                "url": "https://react.dev/reference/react/lazy"
+            }
+        ],
+        "tags": ["Lazy Loading", "Performance"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "React",
+        "question": "What are React Fragments, and why are they used?",
+        "answer": "React Fragments (`<></>`) allow grouping multiple elements without adding extra DOM nodes.",
+        "keyPoints": [
+            "Avoids unnecessary divs in the DOM.",
+            "Improves readability and performance.",
+            "Supports keys for list rendering."
+        ],
+        "codeExample": "<><h1>Title</h1><p>Paragraph</p></>",
+        "resources": [
+            {
+                "name": "React Fragments - React Docs",
+                "url": "https://react.dev/reference/react/Fragment"
+            }
+        ],
+        "tags": ["Fragments", "Best Practices"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 17,
+        "topic": "React",
+        "question": "What is the purpose of useRef in React?",
+        "answer": "`useRef` creates a mutable reference that persists across renders and can be used to access DOM elements or store values without causing re-renders.",
+        "keyPoints": [
+            "Does not trigger re-renders.",
+            "Useful for accessing DOM elements.",
+            "Can store mutable values across renders."
+        ],
+        "codeExample": "const inputRef = useRef();\n<input ref={inputRef} />",
+        "resources": [
+            {
+                "name": "useRef Hook - React Docs",
+                "url": "https://react.dev/reference/react/useRef"
+            }
+        ],
+        "tags": ["useRef", "DOM Manipulation"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "React",
+        "question": "What are higher-order components (HOC) in React?",
+        "answer": "A higher-order component (HOC) is a function that takes a component as input and returns a new component with added functionality.",
+        "keyPoints": [
+            "Enhances component behavior.",
+            "Used for code reuse and abstraction.",
+            "Example: Authentication wrappers, logging."
+        ],
+        "codeExample": "const withLogger = (Component) => (props) => { console.log(props); return <Component {...props} />; };",
+        "resources": [
+            {
+                "name": "Higher-Order Components - React Docs",
+                "url": "https://react.dev/reference/react/Component"
+            }
+        ],
+        "tags": ["HOC", "Advanced React"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 19,
+        "topic": "React",
+        "question": "What is the purpose of the useMemo Hook?",
+        "answer": "`useMemo` is a performance optimization hook that memoizes the result of a function to avoid unnecessary recalculations.",
+        "keyPoints": [
+            "Improves performance by memoizing expensive computations.",
+            "Runs only when dependencies change.",
+            "Useful for optimizing rendering in large applications."
+        ],
+        "codeExample": "const memoizedValue = useMemo(() => computeExpensiveValue(data), [data]);",
+        "resources": [
+            {
+                "name": "useMemo Hook - React Docs",
+                "url": "https://react.dev/reference/react/useMemo"
+            }
+        ],
+        "tags": ["Performance", "useMemo"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "React",
+        "question": "What is the useCallback Hook and how does it differ from useMemo?",
+        "answer": "`useCallback` memoizes a function reference to prevent unnecessary re-creations, while `useMemo` memoizes a computed value.",
+        "keyPoints": [
+            "`useCallback`: Caches function instances.",
+            "`useMemo`: Caches return values.",
+            "Useful for optimizing child components that depend on functions."
+        ],
+        "codeExample": "const handleClick = useCallback(() => console.log('Clicked'), []);",
+        "resources": [
+            {
+                "name": "useCallback Hook - React Docs",
+                "url": "https://react.dev/reference/react/useCallback"
+            }
+        ],
+        "tags": ["Performance", "useCallback"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "React",
+        "question": "What is React.memo and how does it work?",
+        "answer": "`React.memo` is a higher-order component that memoizes functional components to prevent unnecessary re-renders.",
+        "keyPoints": [
+            "Optimizes functional components by memoizing renders.",
+            "Re-renders only when props change.",
+            "Useful for performance optimization in React."
+        ],
+        "codeExample": "const MemoizedComponent = React.memo(MyComponent);",
+        "resources": [
+            {
+                "name": "React.memo - React Docs",
+                "url": "https://react.dev/reference/react/memo"
+            }
+        ],
+        "tags": ["Performance", "React.memo"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "React",
+        "question": "What is React Portals?",
+        "answer": "React Portals allow rendering child components outside of their parent DOM hierarchy while preserving React's state and event bubbling.",
+        "keyPoints": [
+            "Used to render elements in different DOM locations.",
+            "Helpful for modals, tooltips, and overlays.",
+            "Does not break event propagation."
+        ],
+        "codeExample": "ReactDOM.createPortal(<Modal />, document.getElementById('modal-root'));",
+        "resources": [
+            {
+                "name": "React Portals - React Docs",
+                "url": "https://react.dev/reference/react-dom/createPortal"
+            }
+        ],
+        "tags": ["Portals", "Advanced React"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "React",
+        "question": "What is server-side rendering (SSR) in React?",
+        "answer": "Server-side rendering (SSR) is a technique where React components are rendered on the server and sent as HTML to the browser, improving initial load time and SEO.",
+        "keyPoints": [
+            "Improves performance and SEO.",
+            "Rendered content is sent from the server to the client.",
+            "Popular in frameworks like Next.js."
+        ],
+        "codeExample": "export async function getServerSideProps() {\n  return { props: { data: await fetchData() } };\n}",
+        "resources": [
+            {
+                "name": "Server-Side Rendering - Next.js",
+                "url": "https://nextjs.org/docs/basic-features/pages"
+            }
+        ],
+        "tags": ["SSR", "Performance"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 24,
+        "topic": "React",
+        "question": "What is static site generation (SSG) in React?",
+        "answer": "Static site generation (SSG) pre-builds pages at compile time, improving performance and load speed.",
+        "keyPoints": [
+            "Pre-builds HTML at build time.",
+            "No need for runtime processing on the server.",
+            "Used in Next.js with `getStaticProps`."
+        ],
+        "codeExample": "export async function getStaticProps() {\n  return { props: { data: await fetchData() } };\n}",
+        "resources": [
+            {
+                "name": "Static Site Generation - Next.js",
+                "url": "https://nextjs.org/docs/basic-features/pages"
+            }
+        ],
+        "tags": ["SSG", "Performance"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 25,
+        "topic": "React",
+        "question": "What is hydration in React?",
+        "answer": "Hydration is the process of attaching event handlers and state to a server-rendered React application.",
+        "keyPoints": [
+            "Used in server-side rendering (SSR).",
+            "Merges client-side React with pre-rendered HTML.",
+            "Improves performance and SEO."
+        ],
+        "codeExample": "ReactDOM.hydrate(<App />, document.getElementById('root'));",
+        "resources": [
+            {
+                "name": "React Hydration - React Docs",
+                "url": "https://react.dev/learn/server-rendering"
+            }
+        ],
+        "tags": ["Hydration", "SSR"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 26,
+        "topic": "React",
+        "question": "What is Redux and how does it work?",
+        "answer": "Redux is a state management library for JavaScript applications that centralizes application state and follows a unidirectional data flow.",
+        "keyPoints": [
+            "Uses a single source of truth (store).",
+            "Actions describe state changes.",
+            "Reducers update state based on actions."
+        ],
+        "codeExample": "const store = createStore(reducer);",
+        "resources": [
+            {
+                "name": "Redux - Official Docs",
+                "url": "https://redux.js.org/"
+            }
+        ],
+        "tags": ["Redux", "State Management"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 27,
+        "topic": "React",
+        "question": "What is the difference between Redux and React Context API?",
+        "answer": "Redux is a state management library with middleware support, while React Context API is a built-in feature for passing state down the component tree.",
+        "keyPoints": [
+            "Redux: Centralized state management, middleware support.",
+            "Context API: Simple, built-in for sharing global state.",
+            "Redux is better for large-scale applications."
+        ],
+        "codeExample": "const ThemeContext = createContext('light');",
+        "resources": [
+            {
+                "name": "Redux vs Context API - React Docs",
+                "url": "https://react.dev/learn/passing-data-deeply-with-context"
+            }
+        ],
+        "tags": ["Redux", "Context API"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 28,
+        "topic": "React",
+        "question": "What are React error boundaries?",
+        "answer": "Error boundaries are React components that catch JavaScript errors in child components and display fallback UI instead of crashing the entire app.",
+        "keyPoints": [
+            "Use `componentDidCatch` in class components.",
+            "Cannot catch errors in event handlers or async code.",
+            "Useful for handling UI crashes gracefully."
+        ],
+        "codeExample": "class ErrorBoundary extends React.Component {\n  componentDidCatch(error, info) { console.log(error); }\n  render() { return this.props.children; }\n}",
+        "resources": [
+            {
+                "name": "Error Boundaries - React Docs",
+                "url": "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary"
+            }
+        ],
+        "tags": ["Error Handling", "Advanced React"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 29,
+        "topic": "React",
+        "question": "What is React Suspense?",
+        "answer": "React Suspense is a feature that lets components wait for asynchronous operations (such as lazy-loaded components or data fetching) before rendering.",
+        "keyPoints": [
+            "Used with `React.lazy()` for lazy loading components.",
+            "Wraps components and displays fallback UI while loading.",
+            "Improves user experience in data fetching scenarios."
+        ],
+        "codeExample": "<Suspense fallback={<Loading />}><LazyComponent /></Suspense>",
+        "resources": [
+            {
+                "name": "React Suspense - React Docs",
+                "url": "https://react.dev/reference/react/Suspense"
+            }
+        ],
+        "tags": ["Suspense", "Lazy Loading"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 30,
+        "topic": "React",
+        "question": "What is the difference between useReducer and useState?",
+        "answer": "`useState` is used for simple state management, while `useReducer` is better for complex state logic involving multiple actions.",
+        "keyPoints": [
+            "`useState` is simpler and used for local state.",
+            "`useReducer` is useful for managing state transitions.",
+            "`useReducer` uses a reducer function to update state."
+        ],
+        "codeExample": "const [state, dispatch] = useReducer(reducer, initialState);",
+        "resources": [
+            {
+                "name": "useReducer Hook - React Docs",
+                "url": "https://react.dev/reference/react/useReducer"
+            }
+        ],
+        "tags": ["State Management", "useReducer"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 31,
+        "topic": "React",
+        "question": "How does React handle reconciliation?",
+        "answer": "React reconciliation is the process by which React updates the virtual DOM and efficiently applies changes to the actual DOM.",
+        "keyPoints": [
+            "Uses a diffing algorithm to compare previous and current virtual DOM.",
+            "Updates only the changed parts of the real DOM.",
+            "Leverages keys to optimize reordering in lists."
+        ],
+        "codeExample": "const items = data.map(item => <Item key={item.id} {...item} />);",
+        "resources": [
+            {
+                "name": "React Reconciliation - React Docs",
+                "url": "https://react.dev/learn/rendering"
+            }
+        ],
+        "tags": ["Performance", "Virtual DOM"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 32,
+        "topic": "React",
+        "question": "What are controlled and uncontrolled components in React?",
+        "answer": "Controlled components are React-managed inputs with state, while uncontrolled components rely on the DOM for their state.",
+        "keyPoints": [
+            "Controlled: Uses `useState` for value management.",
+            "Uncontrolled: Uses `useRef` to access the DOM value.",
+            "Controlled components provide better form validation."
+        ],
+        "codeExample": "const [value, setValue] = useState('');\n<input value={value} onChange={(e) => setValue(e.target.value)} />",
+        "resources": [
+            {
+                "name": "Controlled vs Uncontrolled Components - React Docs",
+                "url": "https://react.dev/reference/react-dom/components/input"
+            }
+        ],
+        "tags": ["Forms", "Controlled Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 33,
+        "topic": "React",
+        "question": "What is the importance of keys in React lists?",
+        "answer": "Keys help React identify which list items have changed, improved performance by avoiding unnecessary re-renders, and ensuring efficient updates.",
+        "keyPoints": [
+            "Keys should be unique and stable.",
+            "Help React differentiate between elements during updates.",
+            "Using indexes as keys can lead to issues in dynamic lists."
+        ],
+        "codeExample": "items.map(item => <Item key={item.id} {...item} />);",
+        "resources": [
+            {
+                "name": "Keys in Lists - React Docs",
+                "url": "https://react.dev/learn/rendering"
+            }
+        ],
+        "tags": ["Lists", "Keys", "Performance"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 34,
+        "topic": "React",
+        "question": "What is the difference between shallow and deep copy in React state updates?",
+        "answer": "A shallow copy only copies object references, while a deep copy creates new copies of nested objects, ensuring immutability in React state updates.",
+        "keyPoints": [
+            "Shallow copies reference the original object.",
+            "Deep copies clone all nested values.",
+            "Use `spread` operator or `JSON.parse(JSON.stringify(obj))` for immutability."
+        ],
+        "codeExample": "const newState = { ...oldState, value: newValue };",
+        "resources": [
+            {
+                "name": "State Immutability - React Docs",
+                "url": "https://react.dev/learn/state-and-lifecycle"
+            }
+        ],
+        "tags": ["State Management", "Immutability"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 35,
+        "topic": "React",
+        "question": "How does React handle state batching?",
+        "answer": "React batches multiple state updates into a single re-render for performance optimization.",
+        "keyPoints": [
+            "Multiple state updates within the same event handler are batched.",
+            "Batching minimizes unnecessary re-renders.",
+            "Enabled automatically in React 18."
+        ],
+        "codeExample": "setCount(c => c + 1);\nsetCount(c => c + 1);",
+        "resources": [
+            {
+                "name": "State Batching - React Docs",
+                "url": "https://react.dev/blog/2022-03-29-react-18#batching"
+            }
+        ],
+        "tags": ["Performance", "State Updates"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 36,
+        "topic": "React",
+        "question": "How do you test React components?",
+        "answer": "React components can be tested using Jest for unit tests and React Testing Library for UI testing.",
+        "keyPoints": [
+            "Jest is used for testing logic and functions.",
+            "React Testing Library focuses on testing component behavior.",
+            "Enzyme (deprecated) was used for component tree manipulation."
+        ],
+        "codeExample": "import { render, screen } from '@testing-library/react';\ntest('renders Hello', () => { render(<App />); expect(screen.getByText(/Hello/)).toBeInTheDocument(); });",
+        "resources": [
+            {
+                "name": "Testing React Components - React Docs",
+                "url": "https://react.dev/learn/testing"
+            }
+        ],
+        "tags": ["Testing", "React Testing Library"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 37,
+        "topic": "React",
+        "question": "What is the purpose of React DevTools?",
+        "answer": "React DevTools is a browser extension that helps inspect React component hierarchy, props, state, and performance.",
+        "keyPoints": [
+            "Used for debugging React applications.",
+            "Shows component tree with state and props.",
+            "Includes profiler for performance analysis."
+        ],
+        "codeExample": "// Install React DevTools from Chrome Web Store",
+        "resources": [
+            {
+                "name": "React DevTools - React Docs",
+                "url": "https://react.dev/blog/2020-09-22-introducing-the-new-react-devtools"
+            }
+        ],
+        "tags": ["Debugging", "React DevTools"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 38,
+        "topic": "React",
+        "question": "What are React PropTypes, and how do they help?",
+        "answer": "PropTypes is a built-in type-checking feature in React that validates the types of props passed to a component.",
+        "keyPoints": [
+            "Helps catch bugs by enforcing prop type validation.",
+            "PropTypes are defined using `prop-types` package.",
+            "Alternative: TypeScript for stronger type safety."
+        ],
+        "codeExample": "import PropTypes from 'prop-types';\nMyComponent.propTypes = { name: PropTypes.string.isRequired };",
+        "resources": [
+            {
+                "name": "React PropTypes - React Docs",
+                "url": "https://react.dev/reference/react/Component#specifying-default-props"
+            }
+        ],
+        "tags": ["PropTypes", "Type Checking"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 39,
+        "topic": "React",
+        "question": "What is the difference between React and React Native?",
+        "answer": "React is used for building web applications, whereas React Native is used for building mobile applications.",
+        "keyPoints": [
+            "React renders HTML using the virtual DOM.",
+            "React Native renders native components for iOS/Android.",
+            "React Native uses JSX but has its own components (e.g., `View`, `Text`)."
+        ],
+        "codeExample": "<View><Text>Hello, React Native!</Text></View>",
+        "resources": [
+            {
+                "name": "React vs React Native - Official Docs",
+                "url": "https://reactnative.dev/"
+            }
+        ],
+        "tags": ["React Native", "Web vs Mobile"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 40,
+        "topic": "React",
+        "question": "What is the purpose of the useImperativeHandle Hook?",
+        "answer": "The `useImperativeHandle` Hook customizes the instance value that is exposed when using `React.forwardRef`.",
+        "keyPoints": [
+            "Used with `forwardRef` to expose specific functions to parent components.",
+            "Useful for controlling child component behavior.",
+            "Avoids direct DOM manipulation in most cases."
+        ],
+        "codeExample": "useImperativeHandle(ref, () => ({ focus: () => inputRef.current.focus() }));",
+        "resources": [
+            {
+                "name": "useImperativeHandle Hook - React Docs",
+                "url": "https://react.dev/reference/react/useImperativeHandle"
+            }
+        ],
+        "tags": ["useImperativeHandle", "Refs"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 41,
+        "topic": "React",
+        "question": "What is the difference between useLayoutEffect and useEffect?",
+        "answer": "`useLayoutEffect` fires synchronously after DOM mutations but before the browser paints, while `useEffect` runs asynchronously after rendering.",
+        "keyPoints": [
+            "`useEffect`: Runs after render, non-blocking.",
+            "`useLayoutEffect`: Runs before the browser updates the screen.",
+            "Use `useLayoutEffect` for measuring DOM size or synchronizing layout."
+        ],
+        "codeExample": "useLayoutEffect(() => { console.log('Runs before painting'); }, []);",
+        "resources": [
+            {
+                "name": "useLayoutEffect vs useEffect - React Docs",
+                "url": "https://react.dev/reference/react/useLayoutEffect"
+            }
+        ],
+        "tags": ["useEffect", "Performance"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 42,
+        "topic": "React",
+        "question": "What is the significance of concurrent rendering in React 18?",
+        "answer": "Concurrent rendering allows React to work on multiple UI updates simultaneously, improving responsiveness.",
+        "keyPoints": [
+            "Enables non-blocking rendering.",
+            "Improves performance by prioritizing user interactions.",
+            "Works with features like `startTransition` and `useDeferredValue`."
+        ],
+        "codeExample": "startTransition(() => { setState(newValue); });",
+        "resources": [
+            {
+                "name": "Concurrent Rendering - React 18 Docs",
+                "url": "https://react.dev/blog/2022-03-29-react-18"
+            }
+        ],
+        "tags": ["Performance", "React 18"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 43,
+        "topic": "React",
+        "question": "What are micro-frontends, and how do they relate to React?",
+        "answer": "Micro-frontends split a web application into smaller, independent front-end modules that work together.",
+        "keyPoints": [
+            "Each micro-frontend runs as an independent app.",
+            "Improves maintainability and scalability.",
+            "React applications can be integrated using Webpack Module Federation or iframe-based approaches."
+        ],
+        "codeExample": "// Example of module federation setup in Webpack\nnew ModuleFederationPlugin({ name: 'app1', remotes: { app2: 'app2@url' } });",
+        "resources": [
+            {
+                "name": "Micro-frontends - Martin Fowler",
+                "url": "https://martinfowler.com/articles/micro-frontends.html"
+            }
+        ],
+        "tags": ["Micro-frontends", "Architecture"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 44,
+        "topic": "React",
+        "question": "What is React Fiber, and how does it improve rendering?",
+        "answer": "React Fiber is the React reconciliation algorithm that enables incremental rendering, concurrency, and prioritization.",
+        "keyPoints": [
+            "Replaces the old reconciliation algorithm (stack-based).",
+            "Improves performance for large applications.",
+            "Enables React features like Suspense and Concurrent Mode."
+        ],
+        "codeExample": "// React Fiber is part of React's core, no explicit code required.",
+        "resources": [
+            {
+                "name": "React Fiber - React Docs",
+                "url": "https://react.dev/blog/2017-09-26-react-v16.0"
+            }
+        ],
+        "tags": ["React Fiber", "Performance"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 45,
+        "topic": "React",
+        "question": "What is the difference between CSR, SSR, and SSG in React?",
+        "answer": "Client-side rendering (CSR) renders content in the browser, server-side rendering (SSR) pre-renders on the server, and static site generation (SSG) pre-builds pages at compile time.",
+        "keyPoints": [
+            "CSR: Faster interaction but slower initial load.",
+            "SSR: Better SEO and performance, dynamic content.",
+            "SSG: Pre-rendered at build time, best for static content."
+        ],
+        "codeExample": "// Example of getStaticProps in Next.js\nexport async function getStaticProps() { return { props: { data: await fetchData() } }; }",
+        "resources": [
+            {
+                "name": "Rendering Strategies - Next.js Docs",
+                "url": "https://nextjs.org/docs/basic-features/pages"
+            }
+        ],
+        "tags": ["SSR", "CSR", "SSG"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 46,
+        "topic": "React",
+        "question": "What is React Server Components (RSC)?",
+        "answer": "React Server Components allow rendering components on the server and streaming them to the client without shipping JavaScript.",
+        "keyPoints": [
+            "Improves performance by reducing JavaScript bundle size.",
+            "Can fetch data directly on the server.",
+            "Introduced in Next.js 13."
+        ],
+        "codeExample": "// Example of RSC in Next.js 13\nexport default async function Page() { return <div>{await fetchData()}</div>; }",
+        "resources": [
+            {
+                "name": "React Server Components - Next.js",
+                "url": "https://nextjs.org/docs/getting-started/react-server-components"
+            }
+        ],
+        "tags": ["React Server Components", "Performance"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 47,
+        "topic": "React",
         "question": "What are the key features of React?",
         "answer": "React is a JavaScript library for building user interfaces. Its key features include component-based architecture, virtual DOM for efficient rendering, unidirectional data flow, JSX syntax, and React Hooks for state and lifecycle management.",
         "keyPoints": [
@@ -26,7 +946,7 @@
         "difficulty": "easy"
     },
     {
-        "id": 2,
+        "id": 48,
         "topic": "React",
         "question": "What is the Virtual DOM in React, and how does it improve performance?",
         "answer": "The Virtual DOM is a lightweight copy of the actual DOM that React uses to optimize updates. When changes occur, React first updates the Virtual DOM, compares it with the previous version using a diffing algorithm, and then applies minimal updates to the real DOM, improving performance.",
