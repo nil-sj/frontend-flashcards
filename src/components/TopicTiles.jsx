@@ -17,7 +17,7 @@ const TopicTiles = () => {
 
         {/* Topic Tiles Grid */}
         <div className="row">
-          {topicsConfig.slice(3).filter(t => t.ready).slice(0,6).map((topic, index) => (
+          {topicsConfig.slice(3).filter(t => t.ready).slice(0,9).map((topic, index) => (
             <TopicCard topic={topic} key={index} />
           ))}
         </div>

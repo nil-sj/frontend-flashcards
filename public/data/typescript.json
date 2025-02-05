@@ -1,0 +1,482 @@
+[
+    {
+        "id": 1,
+        "topic": "TypeScript",
+        "question": "What is TypeScript, and how does it differ from JavaScript?",
+        "answer": "TypeScript is a superset of JavaScript that adds static typing, interfaces, and advanced features to improve code quality and maintainability.",
+        "keyPoints": [
+            "TypeScript is a superset of JavaScript.",
+            "It adds static typing, interfaces, and better tooling support.",
+            "Compiles to plain JavaScript for execution."
+        ],
+        "codeExample": "let message: string = 'Hello, TypeScript!';\nconsole.log(message);",
+        "resources": [
+            {
+                "name": "Introduction to TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+            }
+        ],
+        "tags": ["TypeScript Basics", "Interview Question"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "TypeScript",
+        "question": "How do you install TypeScript?",
+        "answer": "You can install TypeScript globally or locally using npm: `npm install -g typescript` or `npm install --save-dev typescript`.",
+        "keyPoints": [
+            "Use `npm install -g typescript` for a global installation.",
+            "Use `npx tsc --init` to create a `tsconfig.json` file.",
+            "Compile `.ts` files using `tsc filename.ts`."
+        ],
+        "codeExample": "npm install -g typescript\nnpx tsc --init",
+        "resources": [
+            {
+                "name": "Installing TypeScript",
+                "url": "https://www.typescriptlang.org/download"
+            }
+        ],
+        "tags": ["Installation", "Setup"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "TypeScript",
+        "question": "What are the benefits of using TypeScript?",
+        "answer": "TypeScript offers static typing, improved tooling, better maintainability, and early error detection before runtime.",
+        "keyPoints": [
+            "Static typing prevents runtime errors.",
+            "Improved IDE support and autocompletion.",
+            "Better maintainability in large projects."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Why TypeScript?",
+                "url": "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html"
+            }
+        ],
+        "tags": ["Advantages", "Best Practices"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "topic": "TypeScript",
+        "question": "What are TypeScript interfaces, and how are they used?",
+        "answer": "Interfaces in TypeScript define the structure of an object, specifying property names and types without implementing functionality.",
+        "keyPoints": [
+            "Interfaces define object structure.",
+            "Useful for enforcing type contracts.",
+            "Can be implemented by classes."
+        ],
+        "codeExample": "interface User {\n  name: string;\n  age: number;\n}\nconst user: User = { name: 'Alice', age: 25 };",
+        "resources": [
+            {
+                "name": "Interfaces - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/interfaces.html"
+            }
+        ],
+        "tags": ["Interfaces", "TypeScript Features"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "TypeScript",
+        "question": "What is the difference between type alias and interface in TypeScript?",
+        "answer": "Interfaces are used for defining object structures, while type aliases can define primitive types, union types, and even interfaces.",
+        "keyPoints": [
+            "Interfaces define object structure and support extension.",
+            "Type aliases can represent primitives, unions, or intersections.",
+            "Interfaces are more extendable than type aliases."
+        ],
+        "codeExample": "type StringOrNumber = string | number;\ninterface Person { name: string; age: number; }",
+        "resources": [
+            {
+                "name": "Type Aliases vs Interfaces",
+                "url": "https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases"
+            }
+        ],
+        "tags": ["Interfaces", "Type Aliases"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "topic": "TypeScript",
+        "question": "What are generics in TypeScript?",
+        "answer": "Generics allow you to write flexible, reusable functions and classes that work with multiple data types.",
+        "keyPoints": [
+            "Generics provide type safety while allowing flexibility.",
+            "Defined using `<T>` syntax.",
+            "Useful for reusable functions and components."
+        ],
+        "codeExample": "function identity<T>(arg: T): T {\n  return arg;\n}\nconsole.log(identity<string>('Hello'));",
+        "resources": [
+            {
+                "name": "Generics - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/generics.html"
+            }
+        ],
+        "tags": ["Generics", "TypeScript Features"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "TypeScript",
+        "question": "How does TypeScript handle null and undefined?",
+        "answer": "TypeScript has strict null checks (`strictNullChecks` option) that prevent assigning `null` or `undefined` to a variable unless explicitly allowed.",
+        "keyPoints": [
+            "By default, null and undefined are assignable to any type.",
+            "Use `strictNullChecks` to enforce stricter type safety.",
+            "Union types (`type | null | undefined`) can be used explicitly."
+        ],
+        "codeExample": "let name: string | null = 'John';\nname = null;",
+        "resources": [
+            {
+                "name": "Null & Undefined - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined"
+            }
+        ],
+        "tags": ["Null & Undefined", "Type Safety"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "TypeScript",
+        "question": "What is the difference between 'unknown' and 'any' in TypeScript?",
+        "answer": "`unknown` is a safer alternative to `any` because it requires type checking before usage, whereas `any` allows unrestricted use.",
+        "keyPoints": [
+            "`any` disables type checking.",
+            "`unknown` forces explicit type checking before use.",
+            "Use `unknown` when you want a safer alternative to `any`."
+        ],
+        "codeExample": "let value: unknown = 'Hello';\nif (typeof value === 'string') {\n  console.log(value.toUpperCase());\n}",
+        "resources": [
+            {
+                "name": "Unknown vs Any - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/basic-types.html#unknown"
+            }
+        ],
+        "tags": ["Type Safety", "TypeScript Features"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "TypeScript",
+        "question": "What are utility types in TypeScript?",
+        "answer": "Utility types like `Partial<T>`, `Pick<T, K>`, `Omit<T, K>`, etc., provide shortcuts for modifying object types.",
+        "keyPoints": [
+            "`Partial<T>` makes all properties optional.",
+            "`Pick<T, K>` selects specific properties.",
+            "`Omit<T, K>` removes specified properties."
+        ],
+        "codeExample": "interface User { name: string; age: number; }\nlet partialUser: Partial<User> = { name: 'Alice' };",
+        "resources": [
+            {
+                "name": "Utility Types - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/utility-types.html"
+            }
+        ],
+        "tags": ["Utility Types", "Advanced TypeScript"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "TypeScript",
+        "question": "What is the difference between 'extends' and 'implements' in TypeScript?",
+        "answer": "Classes use `extends` to inherit from another class and `implements` to enforce a contract defined by an interface.",
+        "keyPoints": [
+            "`extends` is used for class inheritance.",
+            "`implements` enforces interface rules in a class.",
+            "A class can `implement` multiple interfaces but `extend` only one class."
+        ],
+        "codeExample": "class Animal { name: string; }\nclass Dog extends Animal {}\ninterface Barkable { bark(): void; }\nclass PetDog implements Barkable { bark() { console.log('Woof!'); } }",
+        "resources": [
+            {
+                "name": "Classes - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/classes.html"
+            }
+        ],
+        "tags": ["Classes", "OOP"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "TypeScript",
+        "question": "How do you enforce read-only properties in TypeScript?",
+        "answer": "Use the `readonly` modifier to prevent modifying object properties after initialization.",
+        "keyPoints": [
+            "Prevents reassignment of properties.",
+            "Useful for defining constants or immutable objects.",
+            "Can be used in interfaces and classes."
+        ],
+        "codeExample": "interface User { readonly id: number; name: string; }\nconst user: User = { id: 1, name: 'Alice' };\n// user.id = 2; // Error: Cannot assign to 'id' because it is a read-only property.",
+        "resources": [
+            {
+                "name": "Readonly Properties - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties"
+            }
+        ],
+        "tags": ["Readonly", "Type Safety"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 12,
+        "topic": "TypeScript",
+        "question": "What is type assertion in TypeScript?",
+        "answer": "Type assertions allow you to tell the compiler the expected type of a value using `as` or angle-bracket syntax.",
+        "keyPoints": [
+            "Does not perform runtime type checks.",
+            "Useful when the developer knows more about the value type than TypeScript.",
+            "Two syntaxes: `value as Type` and `<Type>value`."
+        ],
+        "codeExample": "let input: any = 'Hello';\nlet strLength: number = (input as string).length;",
+        "resources": [
+            {
+                "name": "Type Assertions - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/basic-types.html#type-assertions"
+            }
+        ],
+        "tags": ["Type Assertions", "Type Safety"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 13,
+        "topic": "TypeScript",
+        "question": "What are mapped types in TypeScript?",
+        "answer": "Mapped types allow you to create new types by transforming properties of an existing type.",
+        "keyPoints": [
+            "Uses `in` keyword to iterate over keys.",
+            "Common mapped types: `Partial<T>`, `Readonly<T>`.",
+            "Enables flexible type transformations."
+        ],
+        "codeExample": "type ReadonlyUser = { readonly [K in keyof User]: User[K] };",
+        "resources": [
+            {
+                "name": "Mapped Types - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/advanced-types.html#mapped-types"
+            }
+        ],
+        "tags": ["Mapped Types", "Advanced TypeScript"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 14,
+        "topic": "TypeScript",
+        "question": "How does TypeScript handle function overloading?",
+        "answer": "TypeScript allows defining multiple function signatures, but only one implementation.",
+        "keyPoints": [
+            "Multiple type signatures but a single function body.",
+            "Use cases: APIs supporting different input types.",
+            "Ensures stricter function typing."
+        ],
+        "codeExample": "function greet(name: string): string;\nfunction greet(age: number): string;\nfunction greet(param: any): string { return 'Hello ' + param; }",
+        "resources": [
+            {
+                "name": "Function Overloading - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/functions.html#overloads"
+            }
+        ],
+        "tags": ["Functions", "Overloading"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "TypeScript",
+        "question": "What is the 'never' type in TypeScript?",
+        "answer": "The `never` type represents values that never occur, such as functions that throw errors or infinite loops.",
+        "keyPoints": [
+            "Used for functions that never return.",
+            "Ensures exhaustive type checking in switch cases.",
+            "Prevents unintended cases in type safety."
+        ],
+        "codeExample": "function throwError(message: string): never { throw new Error(message); }",
+        "resources": [
+            {
+                "name": "Never Type - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/basic-types.html#never"
+            }
+        ],
+        "tags": ["Never Type", "Type Safety"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 16,
+        "topic": "TypeScript",
+        "question": "What are index signatures in TypeScript?",
+        "answer": "Index signatures allow objects to have flexible property names with specific types, useful when property names are not known in advance.",
+        "keyPoints": [
+            "Defined using `[key: Type]: ValueType` syntax.",
+            "Useful for dynamic object structures.",
+            "All property values must match the defined type."
+        ],
+        "codeExample": "interface Dictionary {\n  [key: string]: number;\n}\nconst scores: Dictionary = { Alice: 90, Bob: 85 };",
+        "resources": [
+            {
+                "name": "Index Signatures - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types"
+            }
+        ],
+        "tags": ["Index Signatures", "Type Safety"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "topic": "TypeScript",
+        "question": "What is the purpose of the 'keyof' operator in TypeScript?",
+        "answer": "The `keyof` operator returns a union type of all property keys of an object type.",
+        "keyPoints": [
+            "`keyof` extracts keys from an object type.",
+            "Often used with generics and mapped types.",
+            "Enables dynamic property access while maintaining type safety."
+        ],
+        "codeExample": "type User = { name: string; age: number; };\ntype UserKeys = keyof User; // 'name' | 'age'",
+        "resources": [
+            {
+                "name": "Keyof Operator - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/2/keyof-types.html"
+            }
+        ],
+        "tags": ["Keyof", "Advanced TypeScript"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "TypeScript",
+        "question": "How do you enforce immutability in TypeScript?",
+        "answer": "Use `readonly` properties, `Readonly<T>` utility type, and immutability patterns to prevent modification.",
+        "keyPoints": [
+            "`readonly` prevents property modification.",
+            "`Readonly<T>` makes all object properties immutable.",
+            "Immutable patterns improve maintainability."
+        ],
+        "codeExample": "type User = Readonly<{ name: string; age: number }>;\nconst user: User = { name: 'Alice', age: 30 };\n// user.age = 31; // Error: Cannot assign to 'age' because it is a read-only property.",
+        "resources": [
+            {
+                "name": "Readonly Type - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlyt"
+            }
+        ],
+        "tags": ["Immutability", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "TypeScript",
+        "question": "What are conditional types in TypeScript?",
+        "answer": "Conditional types allow defining types based on conditions using `T extends U ? X : Y` syntax.",
+        "keyPoints": [
+            "Syntax: `T extends U ? X : Y`.",
+            "Used for advanced type transformations.",
+            "Helps in narrowing and generic programming."
+        ],
+        "codeExample": "type IsString<T> = T extends string ? 'Yes' : 'No';\ntype Result = IsString<number>; // 'No'",
+        "resources": [
+            {
+                "name": "Conditional Types - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/2/conditional-types.html"
+            }
+        ],
+        "tags": ["Conditional Types", "Advanced TypeScript"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 20,
+        "topic": "TypeScript",
+        "question": "How do you define tuple types in TypeScript?",
+        "answer": "Tuples allow defining fixed-length arrays with specific types for each index.",
+        "keyPoints": [
+            "Tuples specify exact types for each element.",
+            "Useful for returning multiple values from functions.",
+            "Syntax: `[Type1, Type2, ...]`."
+        ],
+        "codeExample": "let person: [string, number] = ['Alice', 30];",
+        "resources": [
+            {
+                "name": "Tuple Types - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types"
+            }
+        ],
+        "tags": ["Tuples", "Type Safety"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "TypeScript",
+        "question": "What is the difference between interface and abstract class in TypeScript?",
+        "answer": "Interfaces define a contract without implementation, while abstract classes provide partial implementation and enforce structure.",
+        "keyPoints": [
+            "Interfaces define only structure, no implementation.",
+            "Abstract classes can have method implementations.",
+            "Classes can extend abstract classes but only implement interfaces."
+        ],
+        "codeExample": "abstract class Animal {\n  abstract makeSound(): void;\n  move(): void { console.log('Moving'); }\n}\nclass Dog extends Animal {\n  makeSound() { console.log('Bark'); }\n}",
+        "resources": [
+            {
+                "name": "Abstract Classes vs Interfaces",
+                "url": "https://www.typescriptlang.org/docs/handbook/2/classes.html#abstract-classes"
+            }
+        ],
+        "tags": ["OOP", "Interfaces"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "TypeScript",
+        "question": "How does TypeScript support decorators?",
+        "answer": "Decorators in TypeScript allow modifying classes and properties at runtime and require `experimentalDecorators` to be enabled.",
+        "keyPoints": [
+            "Decorators are functions applied to classes, methods, or properties.",
+            "Requires `experimentalDecorators: true` in `tsconfig.json`.",
+            "Used in frameworks like Angular."
+        ],
+        "codeExample": "function Log(target: any, key: string) {\n  console.log(`Property ${key} was accessed.`);\n}\nclass Person {\n  @Log name: string;\n}",
+        "resources": [
+            {
+                "name": "Decorators - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/decorators.html"
+            }
+        ],
+        "tags": ["Decorators", "Advanced TypeScript"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 23,
+        "topic": "TypeScript",
+        "question": "What is the purpose of 'declare' keyword in TypeScript?",
+        "answer": "The `declare` keyword tells TypeScript that a variable or function exists but is defined elsewhere, commonly used for third-party libraries.",
+        "keyPoints": [
+            "Used for defining external modules or global variables.",
+            "Does not emit JavaScript output.",
+            "Commonly used in declaration files (`.d.ts`)."
+        ],
+        "codeExample": "declare var jQuery: any;\njQuery('div').hide();",
+        "resources": [
+            {
+                "name": "Declare Keyword - TypeScript",
+                "url": "https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html"
+            }
+        ],
+        "tags": ["Declaration Files", "Type Safety"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "topic": "TypeScript",
+        "question": "How do you use TypeScript with React?",
+        "answer": "Use `.tsx` files and define props using interfaces or types to enforce type safety in React components.",
+        "keyPoints": [
+            "Use `.tsx` extension for TypeScript with React.",
+            "Define props with interfaces.",
+            "Use `React.FC<Props>` for functional components."
+        ],
+        "codeExample": "interface Props { title: string; }\nconst Header: React.FC<Props> = ({ title }) => <h1>{title}</h1>;",
+        "resources": [
+            {
+                "name": "Using TypeScript with React",
+                "url": "https://react-typescript-cheatsheet.netlify.app/"
+            }
+        ],
+        "tags": ["React", "Type Safety"],
+        "difficulty": "medium"
+    }
+]

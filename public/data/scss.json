@@ -1,0 +1,372 @@
+[
+    {
+        "id": 1,
+        "topic": "SCSS",
+        "question": "What is the difference between Sass and SCSS?",
+        "answer": "Sass is the preprocessor language with two syntaxes: SCSS (Sassy CSS) uses `.scss` extension with CSS-like syntax, while the indented syntax (`.sass`) uses indentation and no semicolons. SCSS is more widely used.",
+        "keyPoints": [
+            "SCSS is CSS-compatible syntax",
+            "Sass has two syntax versions",
+            "SCSS uses braces and semicolons"
+        ],
+        "codeExample": "// SCSS\n$color: red;\n.container { color: $color; }\n\n// Sass\n$color: red\n.container\n  color: $color",
+        "resources": [
+            {
+                "name": "Sass Documentation",
+                "url": "https://sass-lang.com/documentation/syntax"
+            }
+        ],
+        "tags": ["SCSS Basics"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "SCSS",
+        "question": "How do variables work in SCSS?",
+        "answer": "Variables in SCSS are declared with `$` followed by name and value. They can store colors, numbers, strings, lists, maps, and are block-scoped.",
+        "keyPoints": [
+            "Declared with `$variable-name: value;`",
+            "Block-scoped like JavaScript",
+            "Can be globally scoped with `!global` flag"
+        ],
+        "codeExample": "$primary-color: #3498db;\n.button {\n  background: $primary-color;\n}",
+        "resources": [],
+        "tags": ["Variables"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "SCSS",
+        "question": "Explain nesting in SCSS and its potential issues.",
+        "answer": "SCSS allows nesting selectors within parent rules. Over-nesting can create overly specific CSS and maintenance issues. Use `&` for parent reference.",
+        "keyPoints": [
+            "Mimics HTML structure",
+            "Use `&` for parent selector",
+            "Avoid nesting deeper than 3 levels"
+        ],
+        "codeExample": ".nav {\n  ul {\n    margin: 0;\n    li { \n      padding: 5px;\n      &:hover { color: red; }\n    }\n  }\n}",
+        "resources": [],
+        "tags": ["Nesting"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "SCSS",
+        "question": "What are mixins and how are they used?",
+        "answer": "Mixins are reusable code blocks defined with `@mixin` and included with `@include`. They can accept parameters and output CSS rules.",
+        "keyPoints": [
+            "Created with `@mixin name { ... }`",
+            "Included with `@include name;`",
+            "Can accept arguments"
+        ],
+        "codeExample": "@mixin center-content {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n.container {\n  @include center-content;\n}",
+        "resources": [],
+        "tags": ["Mixins"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "SCSS",
+        "question": "What's the difference between @extend and mixins?",
+        "answer": "@extend shares CSS properties between selectors (DRY principle), while mixins copy rules. @extend creates relationships between selectors, mixins duplicate code.",
+        "keyPoints": [
+            "@extend shares properties between selectors",
+            "Mixins duplicate code",
+            "@extend can lead to selector grouping"
+        ],
+        "codeExample": ".message {\n  padding: 10px;\n}\n\n.error {\n  @extend .message;\n  color: red;\n}",
+        "resources": [],
+        "tags": ["Mixins", "Inheritance"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 6,
+        "topic": "SCSS",
+        "question": "What are placeholder selectors?",
+        "answer": "Placeholders (%name) are selectors that only output when extended. They prevent unused CSS and act as abstract base classes.",
+        "keyPoints": [
+            "Defined with `%placeholder-name`",
+            "Only compiled when extended",
+            "Useful for silent utility classes"
+        ],
+        "codeExample": "%center-layout {\n  margin: 0 auto;\n  max-width: 1200px;\n}\n\n.header {\n  @extend %center-layout;\n}",
+        "resources": [],
+        "tags": ["Placeholders"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "SCSS",
+        "question": "What's the purpose of @use vs @import?",
+        "answer": "@use is modern module system with namespacing, while @import is legacy. @use prevents conflicts and enables private members with `-` prefix.",
+        "keyPoints": [
+            "@use introduces modules",
+            "Requires namespace for access",
+            "Variables/functions are private by default"
+        ],
+        "codeExample": "// _variables.scss\n$primary: #333;\n\n// main.scss\n@use 'variables';\n.body { color: variables.$primary; }",
+        "resources": [
+            {
+                "name": "Sass Modules Documentation",
+                "url": "https://sass-lang.com/documentation/at-rules/use"
+            }
+        ],
+        "tags": ["Modules"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 8,
+        "topic": "SCSS",
+        "question": "How to use conditional logic (@if/@else) in SCSS?",
+        "answer": "SCSS supports @if, @else if, and @else directives for conditional styling based on variables or expressions.",
+        "keyPoints": [
+            "Similar to programming conditionals",
+            "Used in mixins/functions",
+            "Evaluates expressions during compilation"
+        ],
+        "codeExample": "@mixin theme($mode) {\n  @if $mode == dark {\n    background: #000;\n  } @else {\n    background: #fff;\n  }\n}",
+        "resources": [],
+        "tags": ["Control Directives"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "SCSS",
+        "question": "How to create loops with @each?",
+        "answer": "@each iterates over lists or maps. Useful for generating repetitive styles with different values.",
+        "keyPoints": [
+            "Iterates over lists/maps",
+            "Access both key and value in maps",
+            "Reduces code repetition"
+        ],
+        "codeExample": "$colors: red, green, blue;\n@each $color in $colors {\n  .btn-#{$color} {\n    background: $color;\n  }\n}",
+        "resources": [],
+        "tags": ["Loops"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "SCSS",
+        "question": "How does @for loop work in SCSS?",
+        "answer": "@for loops through a range of numbers. Syntax: `@for $var from <start> through/to <end>`. `through` includes end value.",
+        "keyPoints": [
+            "Used for numerical iterations",
+            "`to` excludes end value",
+            "Common for grid systems"
+        ],
+        "codeExample": "@for $i from 1 through 3 {\n  .col-#{$i} {\n    width: 100% / $i;\n  }\n}",
+        "resources": [],
+        "tags": ["Loops"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "SCSS",
+        "question": "What is string interpolation?",
+        "answer": "Interpolation `#{}` inserts variables into selectors/properties. Allows dynamic name generation.",
+        "keyPoints": [
+            "Syntax: `#{variable}`",
+            "Used in selectors/property names",
+            "Evaluates expressions"
+        ],
+        "codeExample": "$side: left;\n.margin-#{$side} {\n  margin-#{$side}: 20px;\n}",
+        "resources": [],
+        "tags": ["Interpolation"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 12,
+        "topic": "SCSS",
+        "question": "How to use maps in SCSS?",
+        "answer": "Maps store key-value pairs. Use `map-get()`, `map-merge()`, etc. for manipulation. Similar to JS objects.",
+        "keyPoints": [
+            "Created with `(key: value, ...)`",
+            "Access values with `map-get()`",
+            "Use with @each for iteration"
+        ],
+        "codeExample": "$theme: (\n  primary: #3498db,\n  secondary: #2ecc71\n);\n.button {\n  color: map-get($theme, primary);\n}",
+        "resources": [],
+        "tags": ["Maps"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 13,
+        "topic": "SCSS",
+        "question": "Explain the parent selector (&).",
+        "answer": "The `&` refers to the parent selector. Used for pseudo-classes, modifier classes, and BEM syntax.",
+        "keyPoints": [
+            "Represents parent selector",
+            "Essential for pseudo-classes",
+            "Used in nested rules"
+        ],
+        "codeExample": ".button {\n  &:hover { opacity: 0.8; }\n  &--large { padding: 20px; }\n}",
+        "resources": [],
+        "tags": ["Parent Selector"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 14,
+        "topic": "SCSS",
+        "question": "What's the difference between functions and mixins?",
+        "answer": "Functions (`@function`) return values, mixins output CSS. Functions are used in property values, mixins generate CSS rules.",
+        "keyPoints": [
+            "Functions return values",
+            "Mixins output CSS",
+            "Functions used in calculations"
+        ],
+        "codeExample": "@function em($px, $base: 16) {\n  @return ($px / $base) * 1em;\n}\n\n.text { font-size: em(24); }",
+        "resources": [],
+        "tags": ["Functions", "Mixins"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 15,
+        "topic": "SCSS",
+        "question": "How to set default values for mixin parameters?",
+        "answer": "Set defaults in mixin definition: `@mixin name($param: default)`. Parameters can be optional.",
+        "keyPoints": [
+            "Define after parameter name",
+            "Allows optional arguments",
+            "Similar to JS default parameters"
+        ],
+        "codeExample": "@mixin pad($size: 10px) {\n  padding: $size;\n}\n\n.box { @include pad; }",
+        "resources": [],
+        "tags": ["Mixins"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "SCSS",
+        "question": "What is @content in mixins?",
+        "answer": "@content directive allows passing content blocks to mixins. Used for media queries or context-specific styles.",
+        "keyPoints": [
+            "Accepts style blocks",
+            "Used with @include content",
+            "Common in responsive mixins"
+        ],
+        "codeExample": "@mixin mobile {\n  @media (max-width: 600px) {\n    @content;\n  }\n}\n\n@include mobile {\n  .menu { display: none; }\n}",
+        "resources": [],
+        "tags": ["Mixins"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 17,
+        "topic": "SCSS",
+        "question": "Name some built-in color functions.",
+        "answer": "lighten(), darken(), rgba(), mix(), complement(), adjust-hue(), saturate(), desaturate(), transparentize(), opacify().",
+        "keyPoints": [
+            "Manipulate colors programmatically",
+            "Create color variations",
+            "Useful for themes"
+        ],
+        "codeExample": "$primary: #3498db;\n.button {\n  background: darken($primary, 20%);\n}",
+        "resources": [],
+        "tags": ["Color Functions"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "SCSS",
+        "question": "How to perform math operations in SCSS?",
+        "answer": "SCSS supports +, -, *, /, %. Use parentheses for order. `/` needs parentheses unless using variables.",
+        "keyPoints": [
+            "Operators work with compatible units",
+            "Use `calc()` for dynamic CSS calculations",
+            "Division requires parentheses"
+        ],
+        "codeExample": "$gap: 30px;\n.container {\n  width: 100% / 3;\n  margin: $gap * 2;\n}",
+        "resources": [],
+        "tags": ["Operators"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 19,
+        "topic": "SCSS",
+        "question": "How to handle errors in SCSS?",
+        "answer": "Use @error, @warn, and @debug directives. @error stops compilation, @warn shows message, @debug logs values.",
+        "keyPoints": [
+            "@error for fatal errors",
+            "@warn for non-critical notices",
+            "@debug for debugging"
+        ],
+        "codeExample": "@mixin size($width) {\n  @if type-of($width) != number {\n    @error 'Width must be a number';\n  }\n  width: $width;\n}",
+        "resources": [],
+        "tags": ["Error Handling"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 20,
+        "topic": "SCSS",
+        "question": "What's the purpose of @while directive?",
+        "answer": "@while loops until condition is false. Less common than @for/@each, useful for complex iterations.",
+        "keyPoints": [
+            "Similar to JS while loops",
+            "Use with caution to prevent infinite loops",
+            "Rarely needed in CSS generation"
+        ],
+        "codeExample": "$i: 1;\n@while $i < 4 {\n  .item-#{$i} { z-index: $i; }\n  $i: $i + 1;\n}",
+        "resources": [],
+        "tags": ["Loops"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 21,
+        "topic": "SCSS",
+        "question": "How to prevent CSS output from @extend?",
+        "answer": "Use placeholder selectors (%) instead of class selectors. Placeholders only output when extended.",
+        "keyPoints": [
+            "Use %placeholder syntax",
+            "Prevents unused CSS",
+            "Requires @extend to output"
+        ],
+        "codeExample": "%clearfix {\n  &::after { content: ''; display: table; }\n}\n\n.container {\n  @extend %clearfix;\n}",
+        "resources": [],
+        "tags": ["Placeholders"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "SCSS",
+        "question": "How to modularize SCSS code?",
+        "answer": "Use partials (_filename.scss) with @use. Split code into components, utilities, variables, etc. Follow 7-1 pattern or similar.",
+        "keyPoints": [
+            "Partials start with _",
+            "Organize by component/function",
+            "Use @use for dependencies"
+        ],
+        "codeExample": "// _buttons.scss\n.button { /* styles */ }\n\n// main.scss\n@use 'buttons';",
+        "resources": [],
+        "tags": ["Architecture"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "SCSS",
+        "question": "How to use variables in media queries?",
+        "answer": "Define breakpoint variables and use interpolation. SCSS variables compile to fixed values, not CSS custom properties.",
+        "keyPoints": [
+            "Variables compile to fixed values",
+            "Use interpolation in media queries",
+            "Cannot use CSS variables in media queries"
+        ],
+        "codeExample": "$tablet: 768px;\n@media (min-width: #{$tablet}) {\n  .menu { display: flex; }\n}",
+        "resources": [],
+        "tags": ["Media Queries"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "topic": "SCSS",
+        "question": "What is selector inheritance?",
+        "answer": "Using @extend to share properties between selectors. Child selectors inherit styles from parent selectors.",
+        "keyPoints": [
+            "Promotes DRY principles",
+            "Creates relationship between selectors",
+            "Can lead to large selector groups"
+        ],
+        "codeExample": ".alert {\n  padding: 10px;\n}\n\n.error {\n  @extend .alert;\n  color: red;\n}",
+        "resources": [],
+        "tags": ["Inheritance"],
+        "difficulty": "easy"
+    }
+]

@@ -1,0 +1,462 @@
+[
+    {
+        "id": 1,
+        "topic": "Tailwind CSS",
+        "question": "What is Tailwind CSS and how is it different from other CSS frameworks?",
+        "answer": "Tailwind CSS is a utility-first CSS framework that provides low-level utility classes to build designs directly in your HTML. Unlike traditional frameworks like Bootstrap, it does not come with predefined components.",
+        "keyPoints": [
+            "Utility-first CSS framework.",
+            "Provides utility classes instead of prebuilt components.",
+            "Allows rapid and flexible design creation."
+        ],
+        "codeExample": "<div class='p-4 bg-blue-500 text-white'>Hello Tailwind</div>",
+        "resources": [
+            {
+                "name": "Tailwind CSS Documentation",
+                "url": "https://tailwindcss.com/docs"
+            }
+        ],
+        "tags": ["Tailwind CSS", "CSS Frameworks"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "Tailwind CSS",
+        "question": "How do you install Tailwind CSS in a project?",
+        "answer": "You can install Tailwind CSS using npm, Yarn, or via a CDN. The recommended way is through npm or Yarn for better customization.",
+        "keyPoints": [
+            "Install via npm: `npm install -D tailwindcss postcss autoprefixer`",
+            "Initialize Tailwind: `npx tailwindcss init`",
+            "Use CDN for quick setup: `<script src='https://cdn.tailwindcss.com'></script>`"
+        ],
+        "codeExample": "npm install -D tailwindcss postcss autoprefixer \nnpx tailwindcss init",
+        "resources": [
+            {
+                "name": "Tailwind Installation Guide",
+                "url": "https://tailwindcss.com/docs/installation"
+            }
+        ],
+        "tags": ["Installation", "Setup"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "Tailwind CSS",
+        "question": "How do you enable JIT mode in Tailwind CSS?",
+        "answer": "JIT (Just-In-Time) mode in Tailwind CSS generates styles on demand instead of compiling a large CSS file upfront. It is enabled by adding `mode: 'jit'` in the Tailwind config file.",
+        "keyPoints": [
+            "JIT mode optimizes Tailwind CSS by generating styles dynamically.",
+            "Enabled by adding `mode: 'jit'` in `tailwind.config.js`.",
+            "Significantly reduces file size and improves performance."
+        ],
+        "codeExample": "module.exports = {\n  mode: 'jit',\n  purge: ['./src/**/*.{html,js}'],\n  theme: { extend: {} },\n  plugins: []\n}",
+        "resources": [
+            {
+                "name": "JIT Mode - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/just-in-time-mode"
+            }
+        ],
+        "tags": ["JIT Mode", "Performance"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "Tailwind CSS",
+        "question": "What is the purpose of the `purge` option in Tailwind CSS?",
+        "answer": "The `purge` option helps remove unused CSS, reducing the final file size. It is configured in `tailwind.config.js` to specify which files to scan for class usage.",
+        "keyPoints": [
+            "Reduces final CSS file size by removing unused styles.",
+            "Configured in `tailwind.config.js` under the `purge` key.",
+            "Ensures only necessary styles are included in production."
+        ],
+        "codeExample": "module.exports = {\n  purge: ['./src/**/*.{html,js}'],\n  theme: { extend: {} },\n  plugins: []\n}",
+        "resources": [
+            {
+                "name": "Optimizing for Production - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/optimizing-for-production"
+            }
+        ],
+        "tags": ["Optimization", "Performance"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "Tailwind CSS",
+        "question": "How can you customize colors in Tailwind CSS?",
+        "answer": "Tailwind allows you to customize colors by extending or replacing the default color palette in the `theme.extend.colors` section of `tailwind.config.js`.",
+        "keyPoints": [
+            "Customization is done in `tailwind.config.js`.",
+            "Use `extend` to add custom colors while keeping defaults.",
+            "Directly override colors in the `theme` object."
+        ],
+        "codeExample": "module.exports = {\n  theme: {\n    extend: {\n      colors: {\n        brand: '#3490dc',\n        dark: '#1a202c'\n      }\n    }\n  }\n}",
+        "resources": [
+            {
+                "name": "Tailwind Color Customization",
+                "url": "https://tailwindcss.com/docs/customizing-colors"
+            }
+        ],
+        "tags": ["Customization", "Colors"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "topic": "Tailwind CSS",
+        "question": "What are responsive variants in Tailwind CSS, and how do they work?",
+        "answer": "Responsive variants allow you to apply styles conditionally based on screen size using prefixes like `sm:`, `md:`, `lg:`, etc.",
+        "keyPoints": [
+            "Apply styles based on breakpoints.",
+            "Prefixes: `sm:`, `md:`, `lg:`, `xl:`, `2xl:`.",
+            "Example: `md:text-lg` applies `text-lg` on medium screens and larger."
+        ],
+        "codeExample": "<p class='text-sm md:text-lg lg:text-xl'>Responsive Text</p>",
+        "resources": [
+            {
+                "name": "Responsive Design - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/responsive-design"
+            }
+        ],
+        "tags": ["Responsive Design", "Variants"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "Tailwind CSS",
+        "question": "What are pseudo-class variants in Tailwind CSS?",
+        "answer": "Pseudo-class variants let you apply styles based on user interactions, states, or element conditions using prefixes like `hover:`, `focus:`, `active:`, etc.",
+        "keyPoints": [
+            "Used for styling based on interaction states.",
+            "Common variants: `hover:`, `focus:`, `active:`, `disabled:`.",
+            "Example: `hover:bg-blue-700` changes background color on hover."
+        ],
+        "codeExample": "<button class='bg-blue-500 hover:bg-blue-700 text-white'>Hover Me</button>",
+        "resources": [
+            {
+                "name": "State Variants - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/hover-focus-and-other-states"
+            }
+        ],
+        "tags": ["Variants", "Pseudo-classes"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "Tailwind CSS",
+        "question": "How do you use grid and flex utilities in Tailwind CSS?",
+        "answer": "Tailwind CSS provides utility classes for both Flexbox and CSS Grid. You can use `flex`, `grid`, `flex-row`, `grid-cols-3`, etc., to control layout structure.",
+        "keyPoints": [
+            "Use `flex` for flexible box layout.",
+            "Use `grid` for CSS Grid layout.",
+            "Example: `grid grid-cols-3` creates a three-column grid."
+        ],
+        "codeExample": "<div class='grid grid-cols-3 gap-4'>\n  <div class='bg-gray-200 p-4'>1</div>\n  <div class='bg-gray-300 p-4'>2</div>\n  <div class='bg-gray-400 p-4'>3</div>\n</div>",
+        "resources": [
+            {
+                "name": "Grid & Flexbox - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/grid-template-columns"
+            }
+        ],
+        "tags": ["Layout", "Flexbox", "Grid"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "Tailwind CSS",
+        "question": "How do you handle dark mode in Tailwind CSS?",
+        "answer": "Tailwind CSS supports dark mode by adding `dark:` variants in classes. You can configure it to work based on system preference or use a manual class switch.",
+        "keyPoints": [
+            "Dark mode enabled via `darkMode` option in `tailwind.config.js`.",
+            "Use `dark:` prefix in class names to define dark mode styles.",
+            "Example: `dark:bg-gray-900` applies a dark background in dark mode."
+        ],
+        "codeExample": "<div class='bg-white dark:bg-gray-900 text-black dark:text-white'>Dark Mode</div>",
+        "resources": [
+            {
+                "name": "Dark Mode - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/dark-mode"
+            }
+        ],
+        "tags": ["Dark Mode", "Theming"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "Tailwind CSS",
+        "question": "What is the purpose of @apply in Tailwind CSS?",
+        "answer": "The `@apply` directive allows you to use Tailwind utility classes inside CSS for better reusability and maintainability.",
+        "keyPoints": [
+            "Used inside CSS files.",
+            "Combines multiple utility classes into reusable custom classes.",
+            "Example: `.btn { @apply bg-blue-500 text-white px-4 py-2; }`."
+        ],
+        "codeExample": ".btn {\n  @apply bg-blue-500 text-white px-4 py-2 rounded;\n}",
+        "resources": [
+            {
+                "name": "@apply - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/reusing-styles"
+            }
+        ],
+        "tags": ["CSS Customization", "Reusability"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 11,
+        "topic": "Tailwind CSS",
+        "question": "How can you create animations using Tailwind CSS?",
+        "answer": "Tailwind provides utility classes for animations like `animate-bounce`, `animate-spin`, `animate-pulse`, etc. You can also define custom animations in `tailwind.config.js`.",
+        "keyPoints": [
+            "Built-in animation classes like `animate-spin`, `animate-bounce`.",
+            "Custom animations can be defined using `keyframes` in Tailwind config.",
+            "Animations improve UI interactions and user experience."
+        ],
+        "codeExample": "<div class='animate-bounce bg-green-500 p-4'>Bouncing Box</div>",
+        "resources": [
+            {
+                "name": "Animations - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/animation"
+            }
+        ],
+        "tags": ["Animations", "Transitions"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "Tailwind CSS",
+        "question": "What are arbitrary values in Tailwind CSS and how do you use them?",
+        "answer": "Arbitrary values allow you to use custom values in Tailwind by enclosing them in square brackets, e.g., `[100px]` for width or `[red]` for color.",
+        "keyPoints": [
+            "Syntax: `[value]` for using custom styles.",
+            "Example: `w-[100px]` for a specific width.",
+            "Allows non-standard sizes, colors, or spacing values."
+        ],
+        "codeExample": "<div class='w-[200px] h-[100px] bg-[tomato]'>Custom Box</div>",
+        "resources": [
+            {
+                "name": "Arbitrary Values - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/adding-custom-styles"
+            }
+        ],
+        "tags": ["Customization", "Arbitrary Values"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "Tailwind CSS",
+        "question": "How do you use hover and focus states in Tailwind CSS?",
+        "answer": "Tailwind provides `hover:` and `focus:` prefixes to apply styles when an element is hovered over or focused.",
+        "keyPoints": [
+            "Use `hover:` for hover effects.",
+            "Use `focus:` for focus styles.",
+            "Example: `hover:bg-red-500 focus:ring focus:ring-blue-500`."
+        ],
+        "codeExample": "<button class='bg-blue-500 hover:bg-blue-700 focus:ring focus:ring-blue-300'>Hover & Focus Me</button>",
+        "resources": [
+            {
+                "name": "Hover & Focus - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/hover-focus-and-other-states"
+            }
+        ],
+        "tags": ["Pseudo-classes", "User Interaction"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 14,
+        "topic": "Tailwind CSS",
+        "question": "How do you optimize Tailwind CSS for production?",
+        "answer": "To optimize Tailwind CSS, use the `purge` option to remove unused styles and minify the CSS output.",
+        "keyPoints": [
+            "Enable PurgeCSS in `tailwind.config.js`.",
+            "Use PostCSS and minification for smaller files.",
+            "Reduces build size and improves performance."
+        ],
+        "codeExample": "module.exports = {\n  purge: ['./src/**/*.{html,js}'],\n  theme: { extend: {} },\n  plugins: []\n}",
+        "resources": [
+            {
+                "name": "Optimization - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/optimizing-for-production"
+            }
+        ],
+        "tags": ["Optimization", "Performance"],
+        "difficulty": "medium"
+    },    
+    {
+        "id": 15,
+        "topic": "Tailwind CSS",
+        "question": "How can you add custom fonts in Tailwind CSS?",
+        "answer": "You can add custom fonts by defining them in `tailwind.config.js` under `theme.extend.fontFamily`.",
+        "keyPoints": [
+            "Use `extend.fontFamily` in Tailwind config.",
+            "Ensure fonts are imported via @import or @font-face.",
+            "Apply custom font using `class='font-custom'`."
+        ],
+        "codeExample": "module.exports = {\n  theme: {\n    extend: {\n      fontFamily: {\n        custom: ['Poppins', 'sans-serif']\n      }\n    }\n  }\n}",
+        "resources": [
+            {
+                "name": "Custom Fonts - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/font-family"
+            }
+        ],
+        "tags": ["Typography", "Customization"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "Tailwind CSS",
+        "question": "How do you control spacing (margin and padding) in Tailwind CSS?",
+        "answer": "Tailwind provides spacing utilities like `m-4` for margins and `p-4` for padding, with variants for specific sides (`mt-2`, `px-3`, etc.).",
+        "keyPoints": [
+            "Use `m-{size}` for margin and `p-{size}` for padding.",
+            "Customize with `mx-`, `my-`, `px-`, `py-` for directional control.",
+            "Responsive variants available, e.g., `lg:px-6`."
+        ],
+        "codeExample": "<div class='p-4 mt-2 mx-auto'>Spacing Example</div>",
+        "resources": [
+            {
+                "name": "Spacing - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/spacing"
+            }
+        ],
+        "tags": ["Spacing", "Margin & Padding"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 17,
+        "topic": "Tailwind CSS",
+        "question": "What are aspect ratio utilities in Tailwind CSS?",
+        "answer": "Tailwind provides `aspect-{ratio}` utilities like `aspect-w-16 aspect-h-9` to maintain a specific aspect ratio for elements.",
+        "keyPoints": [
+            "Used to maintain a fixed aspect ratio.",
+            "Common ratios: `aspect-w-16 aspect-h-9` (16:9).",
+            "Helpful for responsive video embeds or images."
+        ],
+        "codeExample": "<div class='aspect-w-16 aspect-h-9 bg-gray-300'>Aspect Ratio Box</div>",
+        "resources": [
+            {
+                "name": "Aspect Ratio - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/aspect-ratio"
+            }
+        ],
+        "tags": ["Layout", "Aspect Ratio"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "Tailwind CSS",
+        "question": "How do you apply conditionally generated classes in Tailwind CSS with JavaScript?",
+        "answer": "Use template literals or libraries like `clsx` to dynamically generate Tailwind classes in JavaScript frameworks like React or Vue.",
+        "keyPoints": [
+            "Use template literals for conditional classes.",
+            "`clsx` and `classnames` libraries simplify dynamic class handling.",
+            "Example: `const btnClass = isActive ? 'bg-blue-500' : 'bg-gray-500'`."
+        ],
+        "codeExample": "const btnClass = isActive ? 'bg-blue-500 text-white' : 'bg-gray-500 text-black';",
+        "resources": [
+            {
+                "name": "Dynamic Classes in Tailwind",
+                "url": "https://tailwindcss.com/docs/dynamic-classes"
+            }
+        ],
+        "tags": ["JavaScript", "React", "Dynamic Styling"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "Tailwind CSS",
+        "question": "How can you create a sticky navbar using Tailwind CSS?",
+        "answer": "Use `sticky` positioning with `top-0` to keep the navbar fixed at the top while scrolling.",
+        "keyPoints": [
+            "Use `sticky` with `top-0`.",
+            "Ensure parent has no `overflow: hidden`.",
+            "Can combine with `z-index` for layering."
+        ],
+        "codeExample": "<nav class='sticky top-0 bg-white shadow-md p-4'>Sticky Navbar</nav>",
+        "resources": [
+            {
+                "name": "Positioning - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/position"
+            }
+        ],
+        "tags": ["Navbar", "Sticky"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 20,
+        "topic": "Tailwind CSS",
+        "question": "How do you create a card component using Tailwind CSS?",
+        "answer": "Use utility classes for padding, shadow, and rounded corners to style a simple card component.",
+        "keyPoints": [
+            "Use `bg-white shadow-lg rounded-lg` for styling.",
+            "Use `p-4` for inner padding.",
+            "Add `hover:shadow-xl` for an interactive effect."
+        ],
+        "codeExample": "<div class='bg-white shadow-lg rounded-lg p-4'>Card Content</div>",
+        "resources": [
+            {
+                "name": "Card Component - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/shadow"
+            }
+        ],
+        "tags": ["UI Components", "Cards"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 21,
+        "topic": "Tailwind CSS",
+        "question": "What are the benefits of using Tailwind CSS?",
+        "answer": "Tailwind CSS speeds up development by providing utility-first styling, improving maintainability and reducing CSS bloat.",
+        "keyPoints": [
+            "Utility-first approach speeds up design.",
+            "No need for writing custom CSS in many cases.",
+            "Highly customizable through configuration."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Why Tailwind CSS?",
+                "url": "https://tailwindcss.com/docs"
+            }
+        ],
+        "tags": ["Advantages", "Best Practices"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 22,
+        "topic": "Tailwind CSS",
+        "question": "How do you control visibility in Tailwind CSS?",
+        "answer": "Use `hidden`, `block`, `inline-block`, or `invisible` to control element visibility.",
+        "keyPoints": [
+            "Use `hidden` to remove from the layout.",
+            "Use `invisible` to keep in layout but hide visibility.",
+            "Use `block`, `inline`, and `inline-block` for display control."
+        ],
+        "codeExample": "<div class='hidden md:block'>Visible only on medium screens</div>",
+        "resources": [
+            {
+                "name": "Visibility - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/display"
+            }
+        ],
+        "tags": ["Visibility", "Responsive Design"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 23,
+        "topic": "Tailwind CSS",
+        "question": "How do you use Z-index in Tailwind CSS?",
+        "answer": "Use `z-{value}` classes like `z-10` to control stacking order.",
+        "keyPoints": [
+            "Higher values appear above lower values.",
+            "Use `z-0`, `z-10`, `z-20`, etc.",
+            "Helpful for modals and dropdowns."
+        ],
+        "codeExample": "<div class='z-10'>Z-Index Example</div>",
+        "resources": [
+            {
+                "name": "Z-Index - Tailwind CSS",
+                "url": "https://tailwindcss.com/docs/z-index"
+            }
+        ],
+        "tags": ["Z-Index", "Positioning"],
+        "difficulty": "medium"
+    }    
+]

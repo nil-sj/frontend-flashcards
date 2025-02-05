@@ -74,7 +74,7 @@
         "file": "typescript.json", 
         "slug": "typescript", 
         "description": "Add type safety to your JavaScript applications with TypeScript.",
-        "ready": false
+        "ready": true
     },
     { 
         "topic": "Git", 
@@ -95,14 +95,14 @@
         "file": "tailwind.json", 
         "slug": "tailwind", 
         "description": "Style your web pages efficiently with utility-first CSS using Tailwind CSS.",
-        "ready": false
+        "ready": true
     },
     { 
         "topic": "SCSS", 
         "file": "scss.json", 
         "slug": "scss", 
         "description": "Extend CSS with variables, mixins, and nesting using SCSS, the most popular preprocessor.",
-        "ready": false
+        "ready": true
     },
     { 
         "topic": "SEO", 
