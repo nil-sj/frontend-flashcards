@@ -1,0 +1,297 @@
+[
+    {
+        "id": 1,
+        "topic": "Redux",
+        "question": "What is Redux, and why is it used?",
+        "answer": "Redux is a predictable state container for JavaScript applications. It helps manage global state in applications, making state predictable and easier to debug.",
+        "keyPoints": [
+            "Centralized state management.",
+            "Predictable state changes using pure functions.",
+            "Works well with React but can be used with other libraries.",
+            "Uses actions, reducers, and a store to manage state."
+        ],
+        "codeExample": "const initialState = { count: 0 };\nfunction reducer(state = initialState, action) {\n  switch (action.type) {\n    case 'INCREMENT': return { count: state.count + 1 };\n    default: return state;\n  }\n}",
+        "resources": [
+            {
+                "name": "Redux Official Documentation",
+                "url": "https://redux.js.org/introduction/getting-started"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "state-management",
+            "React-Redux"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 2,
+        "topic": "Redux",
+        "question": "What are the core principles of Redux?",
+        "answer": "Redux follows three core principles: 1) Single source of truth - The application state is stored in one central store. 2) State is read-only - The state can only be changed via actions. 3) Changes are made with pure functions - Reducers are pure functions that specify how the state should change.",
+        "keyPoints": [
+            "Single source of truth ensures a centralized state.",
+            "State is immutable and updated only through actions.",
+            "Reducers must be pure functions with no side effects."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Redux Core Principles - Official Docs",
+                "url": "https://redux.js.org/introduction/three-principles"
+            }
+        ],
+        "tags": [
+            "important-concept",
+            "interview-question"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "topic": "Redux",
+        "question": "Sample question 3 on Redux?",
+        "answer": "Sample answer 3 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "Redux",
+        "question": "Sample question 4 on Redux?",
+        "answer": "Sample answer 4 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://redux.js.org/introduction/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "Redux",
+        "question": "Sample question 5 on Redux?",
+        "answer": "Sample answer 5 with important details.",
+        "keyPoints": null,
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "topic": "Redux",
+        "question": "Sample question 6 on Redux?",
+        "answer": "Sample answer 6 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "Redux",
+        "question": "Sample question 7 on Redux?",
+        "answer": "Sample answer 7 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [
+            "interview-question",
+            "challenging"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "Redux",
+        "question": "Sample question 8 on Redux?",
+        "answer": "Sample answer 8 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://redux.js.org/introduction/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "Redux",
+        "question": "Sample question 9 on Redux?",
+        "answer": "Sample answer 9 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "Redux",
+        "question": "Sample question 10 on Redux?",
+        "answer": "Sample answer 10 with important details.",
+        "keyPoints": null,
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [],
+        "tags": [],
+        "difficulty": "hard"
+    },
+    {
+        "id": 11,
+        "topic": "Redux",
+        "question": "Sample question 11 on Redux?",
+        "answer": "Sample answer 11 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "Redux",
+        "question": "Sample question 12 on Redux?",
+        "answer": "Sample answer 12 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://redux.js.org/introduction/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "Redux",
+        "question": "Sample question 13 on Redux?",
+        "answer": "Sample answer 13 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "Redux",
+        "question": "Sample question 14 on Redux?",
+        "answer": "Sample answer 14 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [
+            "interview-question",
+            "challenging"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "Redux",
+        "question": "Sample question 15 on Redux?",
+        "answer": "Sample answer 15 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "Redux",
+        "question": "Sample question 16 on Redux?",
+        "answer": "Sample answer 16 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://redux.js.org/introduction/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "topic": "Redux",
+        "question": "Sample question 17 on Redux?",
+        "answer": "Sample answer 17 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "Redux",
+        "question": "Sample question 18 on Redux?",
+        "answer": "Sample answer 18 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "Redux",
+        "question": "Sample question 19 on Redux?",
+        "answer": "Sample answer 19 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "Redux",
+        "question": "Sample question 20 on Redux?",
+        "answer": "Sample answer 20 with important details.",
+        "keyPoints": null,
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://redux.js.org/introduction/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "hard"
+    }
+]

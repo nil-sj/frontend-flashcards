@@ -1,0 +1,613 @@
+[
+    {
+        "id": 1,
+        "topic": "Accessibility",
+        "question": "What is web accessibility, and why is it important?",
+        "answer": "Web accessibility ensures that websites, tools, and technologies are designed and developed so that people with disabilities can use them. It is important because it promotes inclusivity, ensures legal compliance, and improves user experience for everyone.",
+        "keyPoints": [
+            "Ensures usability for people with disabilities.",
+            "Promotes inclusivity and equal access.",
+            "Helps meet legal requirements like ADA and Section 508.",
+            "Improves overall user experience and SEO."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Introduction to Web Accessibility - W3C",
+                "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "Accessibility",
+        "question": "What is the WCAG (Web Content Accessibility Guidelines) and why is it significant?",
+        "answer": "WCAG is a set of guidelines developed by the W3C to make web content accessible to people with disabilities. It is significant because it provides a global standard for accessibility, ensuring that websites are perceivable, operable, understandable, and robust.",
+        "keyPoints": [
+            "Developed by the W3C.",
+            "Provides a global standard for accessibility.",
+            "Based on four principles: Perceivable, Operable, Understandable, and Robust (POUR)."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "WCAG Overview - W3C",
+                "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "topic": "Accessibility",
+        "question": "What are the four main principles of WCAG (What is POUR)?",
+        "answer": "The four principles of WCAG are: 1) Perceivable - Information and UI components must be presented in ways users can perceive. 2) Operable - UI components and navigation must be operable. 3) Understandable - Information and operation of the UI must be understandable. 4) Robust - Content must be robust enough to be interpreted reliably by a wide variety of user agents, including assistive technologies.",
+        "keyPoints": [
+            "Perceivable: Content must be perceivable by all users.",
+            "Operable: Users must be able to interact with the interface.",
+            "Understandable: Content and UI must be clear and intuitive.",
+            "Robust: Content must work across different devices and assistive technologies."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "WCAG Principles - W3C",
+                "url": "https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "Accessibility",
+        "question": "How does web accessibility benefit users beyond those with disabilities?",
+        "answer": "Web accessibility benefits all users by improving usability, especially in challenging situations like low bandwidth, small screens, or noisy environments. It also enhances SEO, ensures legal compliance, and promotes a positive brand image.",
+        "keyPoints": [
+            "Improves usability for all users.",
+            "Enhances SEO and search engine rankings.",
+            "Ensures compliance with legal standards.",
+            "Promotes inclusivity and positive brand perception."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Benefits of Accessibility - W3C",
+                "url": "https://www.w3.org/WAI/business-case/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 5,
+        "topic": "Accessibility",
+        "question": "What are some common disabilities that affect web usage?",
+        "answer": "Common disabilities affecting web usage include visual impairments (e.g., blindness, low vision), hearing impairments, motor disabilities (e.g., difficulty using a mouse), cognitive disabilities (e.g., learning difficulties), and speech disabilities.",
+        "keyPoints": [
+            "Visual impairments: Blindness, low vision, color blindness.",
+            "Hearing impairments: Deafness or hard of hearing.",
+            "Motor disabilities: Difficulty using a mouse or keyboard.",
+            "Cognitive disabilities: Learning difficulties or memory issues.",
+            "Speech disabilities: Difficulty speaking or using voice commands."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Disabilities and Web Accessibility - W3C",
+                "url": "https://www.w3.org/WAI/people-use-web/abilities-barriers/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "topic": "Accessibility",
+        "question": "What is the difference between ADA, Section 508, and WCAG?",
+        "answer": "ADA (Americans with Disabilities Act) is a US law prohibiting discrimination against people with disabilities. Section 508 is a US federal law requiring federal agencies to make their electronic and information technology accessible. WCAG is a set of guidelines for making web content accessible, widely adopted globally. While ADA and Section 508 are legal requirements, WCAG provides technical standards for compliance.",
+        "keyPoints": [
+            "ADA: US law prohibiting discrimination.",
+            "Section 508: US law for federal agency accessibility.",
+            "WCAG: Global technical guidelines for web accessibility."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "ADA vs Section 508 vs WCAG - Level Access",
+                "url": "https://www.levelaccess.com/ada-vs-section-508-vs-wcag/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "Accessibility",
+        "question": "Why is using semantic HTML important for accessibility?",
+        "answer": "Semantic HTML provides meaning to web content, making it easier for assistive technologies like screen readers to interpret and navigate. It also improves SEO and ensures a consistent experience across different devices and browsers.",
+        "keyPoints": [
+            "Provides meaning to web content.",
+            "Enhances screen reader interpretation.",
+            "Improves SEO and cross-browser compatibility."
+        ],
+        "codeExample": "<header>\n  <h1>Page Title</h1>\n</header>\n<nav>\n  <ul>\n    <li><a href='#'>Home</a></li>\n  </ul>\n</nav>",
+        "resources": [
+            {
+                "name": "Semantic HTML - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 8,
+        "topic": "Accessibility",
+        "question": "How does a <button> element provide better accessibility than a <div> or <span>?",
+        "answer": "A &lt;button&gt; element is natively focusable and operable via keyboard, making it accessible to screen readers and keyboard users. Using a &lt;div&gt; or &lt;span&gt; for interactive elements requires additional ARIA roles and JavaScript to achieve the same functionality, which can lead to inconsistencies and accessibility issues.",
+        "keyPoints": [
+            "Native keyboard and screen reader support.",
+            "No need for additional ARIA roles or JavaScript.",
+            "Ensures consistent behavior across browsers."
+        ],
+        "codeExample": "<button onclick='alert(\"Clicked!\")'>Click Me</button>",
+        "resources": [
+            {
+                "name": "Button Accessibility - W3C",
+                "url": "https://www.w3.org/WAI/tutorials/forms/controls/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "Accessibility",
+        "question": "What is ARIA (Accessible Rich Internet Applications), and when should it be used?",
+        "answer": "ARIA is a set of attributes that make web content more accessible to people with disabilities, especially when native HTML elements are insufficient. It should be used to enhance accessibility for custom widgets, dynamic content, and complex UI components.",
+        "keyPoints": [
+            "Enhances accessibility for custom and dynamic content.",
+            "Should be used when native HTML is insufficient.",
+            "Requires careful implementation to avoid misuse."
+        ],
+        "codeExample": "<div role='button' tabindex='0' aria-label='Click Me'>Custom Button</div>",
+        "resources": [
+            {
+                "name": "ARIA Overview - W3C",
+                "url": "https://www.w3.org/WAI/standards-guidelines/aria/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "Accessibility",
+        "question": "What are some common ARIA roles used in web development?",
+        "answer": "Common ARIA roles include `role='button'`, `role='navigation'`, `role='main'`, `role='alert'`, `role='dialog'`, and `role='tablist'`. These roles help define the purpose of elements for assistive technologies.",
+        "keyPoints": [
+            "`role='button'`: Defines a clickable element.",
+            "`role='navigation'`: Defines a navigation section.",
+            "`role='main'`: Defines the main content area.",
+            "`role='alert'`: Defines an important message.",
+            "`role='dialog'`: Defines a modal or dialog box."
+        ],
+        "codeExample": "<nav role='navigation'>\n  <ul>\n    <li><a href='#'>Home</a></li>\n  </ul>\n</nav>",
+        "resources": [
+            {
+                "name": "ARIA Roles - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "Accessibility",
+        "question": "What is the difference between aria-labelledby and aria-describedby?",
+        "answer": "`aria-labelledby` is used to provide a visible label for an element, while `aria-describedby` provides additional descriptive information. Both attributes reference the `id` of another element that contains the label or description.",
+        "keyPoints": [
+            "`aria-labelledby`: Provides a visible label.",
+            "`aria-describedby`: Provides additional description.",
+            "Both reference the `id` of another element."
+        ],
+        "codeExample": "<div id='label'>Username</div>\n<input aria-labelledby='label' />\n<div id='description'>Enter your username.</div>\n<input aria-describedby='description' />",
+        "resources": [
+            {
+                "name": "aria-labelledby vs aria-describedby - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-labelledby_attribute"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "Accessibility",
+        "question": "When should aria-hidden='true' be used?",
+        "answer": "`aria-hidden='true'` should be used to hide decorative or redundant content from assistive technologies, such as screen readers. It does not affect visual rendering.",
+        "keyPoints": [
+            "Hides content from assistive technologies.",
+            "Useful for decorative or redundant elements.",
+            "Does not affect visual rendering."
+        ],
+        "codeExample": "<span aria-hidden='true'>⭐</span>",
+        "resources": [
+            {
+                "name": "aria-hidden - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-hidden_attribute"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "Accessibility",
+        "question": "What are some misuses of ARIA that can harm accessibility?",
+        "answer": "Common misuses of ARIA include using ARIA roles without proper semantics, overusing ARIA attributes, and using ARIA to fix inaccessible HTML. These practices can confuse assistive technologies and worsen accessibility.",
+        "keyPoints": [
+            "Using ARIA roles without proper semantics.",
+            "Overusing ARIA attributes.",
+            "Using ARIA to fix inaccessible HTML."
+        ],
+        "codeExample": "<div role='button' onclick='doSomething()'>Click Me</div> <!-- Misuse: Use <button> instead -->",
+        "resources": [
+            {
+                "name": "ARIA Misuse - W3C",
+                "url": "https://www.w3.org/TR/using-aria/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 14,
+        "topic": "Accessibility",
+        "question": "How can landmark roles (like role='navigation' or role='main') improve accessibility?",
+        "answer": "Landmark roles help screen readers and other assistive technologies identify and navigate key sections of a webpage, such as navigation, main content, and complementary sections.",
+        "keyPoints": [
+            "Improves navigation for screen readers.",
+            "Common roles: `navigation`, `main`, `header`, `footer`.",
+            "Enhances structural understanding of the page."
+        ],
+        "codeExample": "<nav role='navigation'>\n  <ul>\n    <li><a href='#'>Home</a></li>\n  </ul>\n</nav>",
+        "resources": [
+            {
+                "name": "Landmark Roles - W3C",
+                "url": "https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "Accessibility",
+        "question": "What is the tabindex attribute, and how does it affect accessibility?",
+        "answer": "The `tabindex` attribute controls whether an element is focusable and its position in the tab order. `tabindex='0'` makes an element focusable, `tabindex='-1'` allows programmatic focus, and positive values disrupt the natural tab order.",
+        "keyPoints": [
+            "`tabindex='0'`: Adds element to natural tab order.",
+            "`tabindex='-1'`: Allows programmatic focus.",
+            "Positive values disrupt the natural tab order."
+        ],
+        "codeExample": "<div tabindex='0'>Focusable Div</div>",
+        "resources": [
+            {
+                "name": "tabindex - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "Accessibility",
+        "question": "How do you ensure a website is fully navigable using only a keyboard?",
+        "answer": "Ensure all interactive elements are focusable, provide a logical tab order, use skip navigation links, and avoid keyboard traps. Test the website using only the keyboard to verify accessibility.",
+        "keyPoints": [
+            "Make interactive elements focusable.",
+            "Ensure logical tab order.",
+            "Provide skip navigation links.",
+            "Avoid keyboard traps."
+        ],
+        "codeExample": "<a href='#main' class='skip-link'>Skip to Main Content</a>",
+        "resources": [
+            {
+                "name": "Keyboard Accessibility - W3C",
+                "url": "https://www.w3.org/WAI/tutorials/keyboard/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "topic": "Accessibility",
+        "question": "What is focus trapping, and when is it used?",
+        "answer": "Focus trapping restricts keyboard focus to a specific element or group of elements, such as a modal dialog. It ensures users cannot accidentally navigate outside the modal using the keyboard.",
+        "keyPoints": [
+            "Restricts focus to a specific area.",
+            "Commonly used in modals and dialogs.",
+            "Prevents accidental navigation outside the modal."
+        ],
+        "codeExample": "<div role='dialog' aria-modal='true'>\n  <button>Close</button>\n</div>",
+        "resources": [
+            {
+                "name": "Focus Trapping - W3C",
+                "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 18,
+        "topic": "Accessibility",
+        "question": "How can you create an accessible modal dialog?",
+        "answer": "To create an accessible modal dialog, use semantic HTML (`&lt;dialog&gt;`), ensure it is focusable, trap focus within the modal, provide a close button, and announce the modal to screen readers using ARIA attributes.",
+        "keyPoints": [
+            "Use `<dialog>` or `role='dialog'`.",
+            "Trap focus within the modal.",
+            "Provide a close button.",
+            "Use ARIA attributes like `aria-modal='true'`."
+        ],
+        "codeExample": "<dialog aria-labelledby='dialog-title'>\n  <h2 id='dialog-title'>Modal Title</h2>\n  <button onclick='closeDialog()'>Close</button>\n</dialog>",
+        "resources": [
+            {
+                "name": "Accessible Modals - W3C",
+                "url": "https://www.w3.org/WAI/ARIA/apg/patterns/dialog-modal/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 19,
+        "topic": "Accessibility",
+        "question": "What are some best practices for managing focus in web applications?",
+        "answer": "Best practices include ensuring logical tab order, providing skip navigation links, managing focus in dynamic content, avoiding keyboard traps, and using ARIA attributes to announce focus changes.",
+        "keyPoints": [
+            "Ensure logical tab order.",
+            "Provide skip navigation links.",
+            "Manage focus in dynamic content.",
+            "Avoid keyboard traps."
+        ],
+        "codeExample": "<a href='#main' class='skip-link'>Skip to Main Content</a>",
+        "resources": [
+            {
+                "name": "Focus Management - W3C",
+                "url": "https://www.w3.org/WAI/tutorials/keyboard/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "Accessibility",
+        "question": "How do screen readers announce focus changes?",
+        "answer": "Screen readers announce focus changes by reading the content of the focused element, its role, and any associated ARIA attributes. Developers can use ARIA live regions to announce dynamic changes.",
+        "keyPoints": [
+            "Announces content, role, and ARIA attributes.",
+            "ARIA live regions announce dynamic changes.",
+            "Ensure focusable elements have meaningful labels."
+        ],
+        "codeExample": "<div aria-live='polite'>New content loaded.</div>",
+        "resources": [
+            {
+                "name": "Screen Reader Announcements - W3C",
+                "url": "https://www.w3.org/WAI/ARIA/apg/practices/names-and-descriptions/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "Accessibility",
+        "question": "Why should developers avoid using tabindex='0' and tabindex='-1' incorrectly?",
+        "answer": "Using `tabindex='0'` incorrectly can disrupt the natural tab order, making navigation confusing. Using `tabindex='-1'` incorrectly can make elements programmatically focusable without being accessible via keyboard, leading to inconsistent behavior.",
+        "keyPoints": [
+            "`tabindex='0'`: Adds element to natural tab order; misuse can disrupt navigation.",
+            "`tabindex='-1'`: Allows programmatic focus but not keyboard focus; misuse can create inconsistencies.",
+            "Use these attributes judiciously to maintain accessibility."
+        ],
+        "codeExample": "<div tabindex='0'>Focusable Div</div> <!-- Use sparingly -->",
+        "resources": [
+            {
+                "name": "tabindex Best Practices - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "Accessibility",
+        "question": "How can you ensure an accessible skip navigation link?",
+        "answer": "An accessible skip navigation link allows users to bypass repetitive content and go directly to the main content. It should be visually hidden by default but visible when focused, and it should use proper semantic HTML and ARIA attributes.",
+        "keyPoints": [
+            "Use a link (`<a>`) with an `href` pointing to the main content.",
+            "Visually hide the link by default but make it visible on focus.",
+            "Ensure it is the first focusable element on the page."
+        ],
+        "codeExample": "<a href='#main' class='skip-link'>Skip to Main Content</a>",
+        "resources": [
+            {
+                "name": "Skip Navigation Links - W3C",
+                "url": "https://www.w3.org/WAI/tutorials/page-structure/skip-navigation/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "Accessibility",
+        "question": "Why is using the <label> element with form inputs important?",
+        "answer": "The `<label>` element associates text with form inputs, making them accessible to screen readers and improving usability. It also increases the clickable area for inputs like checkboxes and radio buttons.",
+        "keyPoints": [
+            "Improves accessibility for screen readers.",
+            "Increases clickable area for inputs.",
+            "Ensures proper association between text and input."
+        ],
+        "codeExample": "<label for='username'>Username:</label>\n<input id='username' type='text' />",
+        "resources": [
+            {
+                "name": "Label Element - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 24,
+        "topic": "Accessibility",
+        "question": "How can you make an accessible checkbox group?",
+        "answer": "To make an accessible checkbox group, use `<fieldset>` and `<legend>` to group related checkboxes, and associate each checkbox with a `<label>`. Ensure the group is keyboard-navigable and properly announced by screen readers.",
+        "keyPoints": [
+            "Use `<fieldset>` and `<legend>` for grouping.",
+            "Associate each checkbox with a `<label>`.",
+            "Ensure keyboard navigability."
+        ],
+        "codeExample": "<fieldset>\n  <legend>Choose your interests:</legend>\n  <label><input type='checkbox' name='interest' value='sports'> Sports</label>\n  <label><input type='checkbox' name='interest' value='music'> Music</label>\n</fieldset>",
+        "resources": [
+            {
+                "name": "Accessible Forms - W3C",
+                "url": "https://www.w3.org/WAI/tutorials/forms/grouping/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 25,
+        "topic": "Accessibility",
+        "question": "What is the importance of the aria-live attribute in dynamic form validation messages?",
+        "answer": "The `aria-live` attribute ensures that dynamic content, such as form validation messages, is announced by screen readers in real-time. It is crucial for providing immediate feedback to users with disabilities.",
+        "keyPoints": [
+            "Ensures real-time announcements for dynamic content.",
+            "Use `aria-live='polite'` for non-urgent updates.",
+            "Use `aria-live='assertive'` for urgent updates."
+        ],
+        "codeExample": "<div aria-live='polite' id='error-message'></div>",
+        "resources": [
+            {
+                "name": "aria-live - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 26,
+        "topic": "Accessibility",
+        "question": "How do placeholder texts differ from labels in terms of accessibility?",
+        "answer": "Placeholder texts are temporary hints inside form inputs, while labels provide a permanent description. Placeholders are not a substitute for labels because they disappear when the user types and are often not read by screen readers.",
+        "keyPoints": [
+            "Placeholders are temporary hints; labels are permanent descriptions.",
+            "Placeholders disappear when the user types.",
+            "Labels are essential for accessibility and screen readers."
+        ],
+        "codeExample": "<label for='email'>Email:</label>\n<input id='email' type='email' placeholder='Enter your email' />",
+        "resources": [
+            {
+                "name": "Placeholder Accessibility - W3C",
+                "url": "https://www.w3.org/WAI/tutorials/forms/instructions/#placeholder-text"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 27,
+        "topic": "Accessibility",
+        "question": "What is the best way to provide an accessible error message in a form?",
+        "answer": "The best way to provide an accessible error message is to associate it with the relevant input using `aria-describedby`, ensure it is announced by screen readers using `aria-live`, and make it visually clear and descriptive.",
+        "keyPoints": [
+            "Use `aria-describedby` to associate the error with the input.",
+            "Use `aria-live` to announce the error dynamically.",
+            "Ensure the error is visually clear and descriptive."
+        ],
+        "codeExample": "<label for='password'>Password:</label>\n<input id='password' type='password' aria-describedby='password-error' />\n<div id='password-error' aria-live='polite'>Password must be at least 8 characters.</div>",
+        "resources": [
+            {
+                "name": "Accessible Error Messages - W3C",
+                "url": "https://www.w3.org/WAI/tutorials/forms/notifications/"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 28,
+        "topic": "Accessibility",
+        "question": "What are some tools used to test web accessibility?",
+        "answer": "Common tools for testing web accessibility include Lighthouse (for automated audits), Axe (for accessibility testing), NVDA (a free screen reader), and JAWS (a commercial screen reader). These tools help identify and fix accessibility issues.",
+        "keyPoints": [
+            "Lighthouse: Automated accessibility audits.",
+            "Axe: Accessibility testing library.",
+            "NVDA: Free screen reader for Windows.",
+            "JAWS: Commercial screen reader for Windows."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Accessibility Testing Tools - W3C",
+                "url": "https://www.w3.org/WAI/test-evaluate/tools/"
+            }
+        ],
+        "tags": ["Interview Question", "Tools"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 29,
+        "topic": "Accessibility",
+        "question": "How do you manually test for screen reader accessibility?",
+        "answer": "Manually test for screen reader accessibility by navigating the website using a screen reader (e.g., NVDA, JAWS, or VoiceOver). Ensure all content is announced correctly, focus is managed properly, and interactive elements are operable.",
+        "keyPoints": [
+            "Use screen readers like NVDA, JAWS, or VoiceOver.",
+            "Check if all content is announced correctly.",
+            "Ensure focus is managed properly and interactive elements are operable."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Screen Reader Testing - W3C",
+                "url": "https://www.w3.org/WAI/test-evaluate/screen-reader/"
+            }
+        ],
+        "tags": ["Interview Question", "Testing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 30,
+        "topic": "Accessibility",
+        "question": "What are color contrast ratios, and how do they affect accessibility?",
+        "answer": "Color contrast ratios measure the difference in luminance between text and background colors. They affect accessibility by ensuring text is readable for users with visual impairments. WCAG recommends a minimum contrast ratio of 4.5:1 for normal text.",
+        "keyPoints": [
+            "Measures luminance difference between text and background.",
+            "WCAG recommends 4.5:1 for normal text and 3:1 for large text.",
+            "Ensures readability for users with visual impairments."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Color Contrast - W3C",
+                "url": "https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "easy"
+    }
+]

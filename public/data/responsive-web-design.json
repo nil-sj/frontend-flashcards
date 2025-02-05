@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "topic": "Responsive Web Design",
+        "question": "What is responsive web design?",
+        "answer": "Responsive web design is an approach to web development that ensures a website adapts to different screen sizes and devices, providing an optimal viewing experience.",
+        "keyPoints": [
+            "Ensures adaptability to different screen sizes.",
+            "Uses flexible layouts, images, and CSS media queries.",
+            "Improves user experience across devices."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Responsive Web Design - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "Responsive Web Design",
+        "question": "What are the key components of responsive web design?",
+        "answer": "The key components are: 1) Flexible grids, 2) Flexible images and media, and 3) CSS media queries.",
+        "keyPoints": [
+            "Flexible grids: Use relative units like percentages.",
+            "Flexible images: Scale with the container.",
+            "Media queries: Apply styles based on device characteristics."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Responsive Web Design Basics - Google Developers",
+                "url": "https://developers.google.com/web/fundamentals/design-and-ux/responsive"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "Responsive Web Design",
+        "question": "What is a media query in CSS?",
+        "answer": "A media query is a CSS technique that applies styles based on device characteristics, such as screen width, height, or orientation. It is a key tool in responsive web design.",
+        "keyPoints": [
+            "Applies styles based on device characteristics.",
+            "Commonly used for screen width, height, and orientation.",
+            "Syntax: `@media (condition) { styles }`."
+        ],
+        "codeExample": "@media (max-width: 768px) {\n  body { font-size: 14px; }\n}",
+        "resources": [
+            {
+                "name": "CSS Media Queries - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "topic": "Responsive Web Design",
+        "question": "What is the viewport meta tag, and why is it important?",
+        "answer": "The viewport meta tag controls the layout on mobile browsers. It ensures the page width scales to the device's screen width, preventing unwanted zooming or scrolling.",
+        "keyPoints": [
+            "Controls layout on mobile browsers.",
+            "Ensures proper scaling to device width.",
+            "Syntax: `<meta name='viewport' content='width=device-width, initial-scale=1'>`."
+        ],
+        "codeExample": "<meta name='viewport' content='width=device-width, initial-scale=1'>",
+        "resources": [
+            {
+                "name": "Viewport Meta Tag - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag"
+            }
+        ],
+        "tags": ["Interview Question", "HTML"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 5,
+        "topic": "Responsive Web Design",
+        "question": "What are breakpoints in responsive web design?",
+        "answer": "Breakpoints are specific screen widths at which the layout of a website changes to adapt to different devices. They are defined using CSS media queries.",
+        "keyPoints": [
+            "Specific screen widths for layout changes.",
+            "Defined using media queries.",
+            "Common breakpoints: 320px, 768px, 1024px."
+        ],
+        "codeExample": "@media (max-width: 768px) {\n  .container { flex-direction: column; }\n}",
+        "resources": [
+            {
+                "name": "Breakpoints in Responsive Design - Smashing Magazine",
+                "url": "https://www.smashingmagazine.com/2011/01/guidelines-for-responsive-web-design/"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "topic": "Responsive Web Design",
+        "question": "What is a fluid layout in responsive web design?",
+        "answer": "A fluid layout uses relative units like percentages instead of fixed units like pixels. It allows the layout to resize smoothly based on the screen size.",
+        "keyPoints": [
+            "Uses relative units like percentages.",
+            "Resizes smoothly based on screen size.",
+            "Provides flexibility across devices."
+        ],
+        "codeExample": ".container { width: 100%; }\n.column { width: 50%; }",
+        "resources": [
+            {
+                "name": "Fluid Layouts - CSS-Tricks",
+                "url": "https://css-tricks.com/look-ma-no-media-queries-responsive-layouts-using-css-grid/"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "Responsive Web Design",
+        "question": "What is the difference between fluid and fixed layouts?",
+        "answer": "A fluid layout uses relative units (e.g., percentages) and resizes based on screen size, while a fixed layout uses absolute units (e.g., pixels) and remains the same regardless of screen size.",
+        "keyPoints": [
+            "Fluid layout: Relative units, resizes with screen.",
+            "Fixed layout: Absolute units, remains static.",
+            "Fluid layouts are better for responsiveness."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Fluid vs Fixed Layouts - Smashing Magazine",
+                "url": "https://www.smashingmagazine.com/2009/06/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of CSS Flexbox in responsive design?",
+        "answer": "CSS Flexbox is a layout model that allows flexible and efficient arrangement of elements within a container. It is widely used in responsive design to create flexible and adaptive layouts.",
+        "keyPoints": [
+            "Provides flexible and efficient layouts.",
+            "Aligns and distributes space among items.",
+            "Ideal for responsive design."
+        ],
+        "codeExample": ".container {\n  display: flex;\n  justify-content: space-between;\n}",
+        "resources": [
+            {
+                "name": "CSS Flexbox - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of CSS Grid in responsive design?",
+        "answer": "CSS Grid is a layout system that allows the creation of complex, grid-based layouts. It is highly effective for responsive design, enabling precise control over rows and columns.",
+        "keyPoints": [
+            "Creates complex, grid-based layouts.",
+            "Provides precise control over rows and columns.",
+            "Ideal for responsive design."
+        ],
+        "codeExample": ".container {\n  display: grid;\n  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));\n}",
+        "resources": [
+            {
+                "name": "CSS Grid - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "Responsive Web Design",
+        "question": "What is the difference between CSS Flexbox and CSS Grid?",
+        "answer": "CSS Flexbox is designed for one-dimensional layouts (rows or columns), while CSS Grid is designed for two-dimensional layouts (rows and columns). Flexbox is ideal for smaller components, while Grid is better for overall page layouts.",
+        "keyPoints": [
+            "Flexbox: One-dimensional (rows or columns).",
+            "Grid: Two-dimensional (rows and columns).",
+            "Flexbox for components, Grid for page layouts."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Flexbox vs Grid - CSS-Tricks",
+                "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `max-width` property in responsive design?",
+        "answer": "The `max-width` property ensures that an element does not exceed a specified width, allowing it to scale down on smaller screens while maintaining a maximum size on larger screens.",
+        "keyPoints": [
+            "Limits the maximum width of an element.",
+            "Ensures scalability on smaller screens.",
+            "Commonly used for images and containers."
+        ],
+        "codeExample": "img { max-width: 100%; height: auto; }",
+        "resources": [
+            {
+                "name": "max-width - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/max-width"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 12,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `min-width` property in responsive design?",
+        "answer": "The `min-width` property ensures that an element does not shrink below a specified width, maintaining a minimum size on smaller screens.",
+        "keyPoints": [
+            "Sets a minimum width for an element.",
+            "Prevents elements from becoming too small.",
+            "Useful for maintaining readability on small screens."
+        ],
+        "codeExample": ".container { min-width: 300px; }",
+        "resources": [
+            {
+                "name": "min-width - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/min-width"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 13,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `vh` and `vw` units in CSS?",
+        "answer": "The `vh` (viewport height) and `vw` (viewport width) units are relative to the size of the viewport. They allow elements to scale based on the screen size, making them useful for responsive design.",
+        "keyPoints": [
+            "`vh`: Relative to viewport height.",
+            "`vw`: Relative to viewport width.",
+            "Useful for scaling elements based on screen size."
+        ],
+        "codeExample": ".header { height: 100vh; }\n.container { width: 80vw; }",
+        "resources": [
+            {
+                "name": "CSS Viewport Units - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/length"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `rem` unit in CSS?",
+        "answer": "The `rem` unit is relative to the root element's font size. It allows for scalable and consistent sizing across different screen sizes, making it useful for responsive design.",
+        "keyPoints": [
+            "Relative to the root element's font size.",
+            "Provides scalable and consistent sizing.",
+            "Useful for responsive typography."
+        ],
+        "codeExample": "html { font-size: 16px; }\nbody { font-size: 1rem; }",
+        "resources": [
+            {
+                "name": "CSS rem Unit - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/length"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `em` unit in CSS?",
+        "answer": "The `em` unit is relative to the font size of the parent element. It allows for scalable and context-dependent sizing, making it useful for responsive design.",
+        "keyPoints": [
+            "Relative to the parent element's font size.",
+            "Provides scalable and context-dependent sizing.",
+            "Useful for responsive typography and spacing."
+        ],
+        "codeExample": ".parent { font-size: 16px; }\n.child { font-size: 1.5em; }",
+        "resources": [
+            {
+                "name": "CSS em Unit - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/length"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `calc()` function in CSS?",
+        "answer": "The `calc()` function allows you to perform calculations to determine CSS property values. It is useful for creating responsive layouts by combining different units like percentages and pixels.",
+        "keyPoints": [
+            "Performs calculations for CSS property values.",
+            "Combines different units (e.g., percentages and pixels).",
+            "Useful for responsive layouts."
+        ],
+        "codeExample": ".container { width: calc(100% - 20px); }",
+        "resources": [
+            {
+                "name": "CSS calc() - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/calc"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `object-fit` property in CSS?",
+        "answer": "The `object-fit` property controls how an image or video resizes to fit its container. It is useful for maintaining aspect ratios in responsive designs.",
+        "keyPoints": [
+            "Controls resizing of images and videos.",
+            "Maintains aspect ratios.",
+            "Common values: `cover`, `contain`, `fill`."
+        ],
+        "codeExample": "img { width: 100%; height: 100%; object-fit: cover; }",
+        "resources": [
+            {
+                "name": "CSS object-fit - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `picture` element in HTML?",
+        "answer": "The `&lt;picture&gt;` element allows you to define multiple sources for an image, enabling the browser to choose the most appropriate one based on device characteristics like screen size and resolution.",
+        "keyPoints": [
+            "Provides multiple image sources.",
+            "Enables responsive images.",
+            "Uses `<source>` and `<img>` elements."
+        ],
+        "codeExample": "<picture>\n  <source srcset='large.jpg' media='(min-width: 768px)'>\n  <img src='small.jpg' alt='Example'>\n</picture>",
+        "resources": [
+            {
+                "name": "HTML picture Element - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture"
+            }
+        ],
+        "tags": ["Interview Question", "HTML"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `srcset` attribute in HTML?",
+        "answer": "The `srcset` attribute allows you to specify multiple image sources with different resolutions or sizes. The browser selects the most appropriate image based on the device's screen size and resolution.",
+        "keyPoints": [
+            "Specifies multiple image sources.",
+            "Enables responsive images.",
+            "Uses descriptors like `1x`, `2x`, or `w`."
+        ],
+        "codeExample": "<img src='small.jpg' srcset='small.jpg 1x, large.jpg 2x' alt='Example'>",
+        "resources": [
+            {
+                "name": "HTML srcset Attribute - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-srcset"
+            }
+        ],
+        "tags": ["Interview Question", "HTML"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `sizes` attribute in HTML?",
+        "answer": "The `sizes` attribute works with `srcset` to specify the layout size of an image for different screen widths. It helps the browser choose the most appropriate image source.",
+        "keyPoints": [
+            "Specifies layout size for responsive images.",
+            "Works with `srcset`.",
+            "Uses media conditions and layout sizes."
+        ],
+        "codeExample": "<img src='small.jpg' srcset='small.jpg 480w, large.jpg 800w' sizes='(max-width: 600px) 480px, 800px' alt='Example'>",
+        "resources": [
+            {
+                "name": "HTML sizes Attribute - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-sizes"
+            }
+        ],
+        "tags": ["Interview Question", "HTML"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `@media` rule in CSS?",
+        "answer": "The `@media` rule is used to apply styles based on specific conditions, such as screen width, height, or orientation. It is a key tool for creating responsive designs.",
+        "keyPoints": [
+            "Applies styles based on conditions.",
+            "Common conditions: screen width, height, orientation.",
+            "Syntax: `@media (condition) { styles }`."
+        ],
+        "codeExample": "@media (max-width: 768px) {\n  .container { flex-direction: column; }\n}",
+        "resources": [
+            {
+                "name": "CSS @media Rule - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 22,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `orientation` media feature in CSS?",
+        "answer": "The `orientation` media feature applies styles based on whether the device is in portrait or landscape mode. It is useful for optimizing layouts for different device orientations.",
+        "keyPoints": [
+            "Applies styles based on device orientation.",
+            "Values: `portrait`, `landscape`.",
+            "Useful for optimizing layouts."
+        ],
+        "codeExample": "@media (orientation: portrait) {\n  .container { flex-direction: column; }\n}",
+        "resources": [
+            {
+                "name": "CSS orientation Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `aspect-ratio` media feature in CSS?",
+        "answer": "The `aspect-ratio` media feature applies styles based on the aspect ratio of the viewport. It is useful for creating layouts that adapt to different screen proportions.",
+        "keyPoints": [
+            "Applies styles based on viewport aspect ratio.",
+            "Syntax: `@media (aspect-ratio: width/height)`.",
+            "Useful for adaptive layouts."
+        ],
+        "codeExample": "@media (aspect-ratio: 16/9) {\n  .container { padding: 10%; }\n}",
+        "resources": [
+            {
+                "name": "CSS aspect-ratio Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/aspect-ratio"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `hover` media feature in CSS?",
+        "answer": "The `hover` media feature applies styles based on whether the primary input mechanism can hover over elements. It is useful for optimizing interactions for touch and non-touch devices.",
+        "keyPoints": [
+            "Applies styles based on hover capability.",
+            "Values: `hover`, `none`.",
+            "Useful for touch and non-touch devices."
+        ],
+        "codeExample": "@media (hover: hover) {\n  .button:hover { background-color: blue; }\n}",
+        "resources": [
+            {
+                "name": "CSS hover Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/hover"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 25,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `pointer` media feature in CSS?",
+        "answer": "The `pointer` media feature applies styles based on the accuracy of the primary input mechanism (e.g., mouse, touch). It is useful for optimizing interactions for different input types.",
+        "keyPoints": [
+            "Applies styles based on input accuracy.",
+            "Values: `fine`, `coarse`, `none`.",
+            "Useful for optimizing interactions."
+        ],
+        "codeExample": "@media (pointer: coarse) {\n  .button { padding: 20px; }\n}",
+        "resources": [
+            {
+                "name": "CSS pointer Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/pointer"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 26,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `prefers-color-scheme` media feature in CSS?",
+        "answer": "The `prefers-color-scheme` media feature applies styles based on the user's system-wide color scheme preference (e.g., light or dark mode). It is useful for creating adaptive designs.",
+        "keyPoints": [
+            "Applies styles based on color scheme preference.",
+            "Values: `light`, `dark`.",
+            "Useful for adaptive designs."
+        ],
+        "codeExample": "@media (prefers-color-scheme: dark) {\n  body { background-color: black; color: white; }\n}",
+        "resources": [
+            {
+                "name": "CSS prefers-color-scheme Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 27,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `prefers-reduced-motion` media feature in CSS?",
+        "answer": "The `prefers-reduced-motion` media feature applies styles based on the user's preference for reduced motion. It is useful for creating accessible designs for users with motion sensitivities.",
+        "keyPoints": [
+            "Applies styles based on motion preference.",
+            "Values: `reduce`, `no-preference`.",
+            "Useful for accessible designs."
+        ],
+        "codeExample": "@media (prefers-reduced-motion: reduce) {\n  .animation { display: none; }\n}",
+        "resources": [
+            {
+                "name": "CSS prefers-reduced-motion Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 28,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `any-pointer` media feature in CSS?",
+        "answer": "The `any-pointer` media feature applies styles based on the accuracy of any available input mechanism (e.g., mouse, touch). It is useful for optimizing interactions across multiple input types.",
+        "keyPoints": [
+            "Applies styles based on any input accuracy.",
+            "Values: `fine`, `coarse`, `none`.",
+            "Useful for multi-input optimization."
+        ],
+        "codeExample": "@media (any-pointer: coarse) {\n  .button { padding: 20px; }\n}",
+        "resources": [
+            {
+                "name": "CSS any-pointer Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-pointer"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 29,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `any-hover` media feature in CSS?",
+        "answer": "The `any-hover` media feature applies styles based on whether any available input mechanism can hover over elements. It is useful for optimizing interactions across multiple input types.",
+        "keyPoints": [
+            "Applies styles based on any hover capability.",
+            "Values: `hover`, `none`.",
+            "Useful for multi-input optimization."
+        ],
+        "codeExample": "@media (any-hover: hover) {\n  .button:hover { background-color: blue; }\n}",
+        "resources": [
+            {
+                "name": "CSS any-hover Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/any-hover"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 30,
+        "topic": "Responsive Web Design",
+        "question": "What is the purpose of the `prefers-contrast` media feature in CSS?",
+        "answer": "The `prefers-contrast` media feature applies styles based on the user's preference for higher or lower contrast. It is useful for creating accessible designs for users with visual impairments.",
+        "keyPoints": [
+            "Applies styles based on contrast preference.",
+            "Values: `more`, `less`, `no-preference`.",
+            "Useful for accessible designs."
+        ],
+        "codeExample": "@media (prefers-contrast: more) {\n  body { background-color: white; color: black; }\n}",
+        "resources": [
+            {
+                "name": "CSS prefers-contrast Media Feature - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast"
+            }
+        ],
+        "tags": ["Interview Question", "CSS"],
+        "difficulty": "medium"
+    }
+]

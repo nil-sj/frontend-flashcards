@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "topic": "React",
+        "question": "What are the key features of React?",
+        "answer": "React is a JavaScript library for building user interfaces. Its key features include component-based architecture, virtual DOM for efficient rendering, unidirectional data flow, JSX syntax, and React Hooks for state and lifecycle management.",
+        "keyPoints": [
+            "Component-based: UI is built using reusable components.",
+            "Virtual DOM: Improves performance by minimizing actual DOM updates.",
+            "JSX: A syntax extension allowing HTML-like code in JavaScript.",
+            "Unidirectional data flow: Data flows in one direction, ensuring predictable behavior.",
+            "Hooks: Manage state and side effects in functional components."
+        ],
+        "codeExample": "function Welcome() {\n  return <h1>Hello, React!</h1>;\n}",
+        "resources": [
+            {
+                "name": "React Official Documentation",
+                "url": "https://reactjs.org/docs/getting-started.html"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "fundamentals",
+            "React-basics"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "React",
+        "question": "What is the Virtual DOM in React, and how does it improve performance?",
+        "answer": "The Virtual DOM is a lightweight copy of the actual DOM that React uses to optimize updates. When changes occur, React first updates the Virtual DOM, compares it with the previous version using a diffing algorithm, and then applies minimal updates to the real DOM, improving performance.",
+        "keyPoints": [
+            "React creates a virtual representation of the UI.",
+            "Uses diffing algorithm to detect changes efficiently.",
+            "Only the necessary updates are applied to the real DOM.",
+            "Minimizes reflow and repaint, enhancing rendering speed."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Virtual DOM - React Docs",
+                "url": "https://reactjs.org/docs/reconciliation.html"
+            }
+        ],
+        "tags": [
+            "performance",
+            "interview-question",
+            "React-core"
+        ],
+        "difficulty": "medium"
+    }
+]

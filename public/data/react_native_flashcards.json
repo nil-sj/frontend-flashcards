@@ -1,0 +1,437 @@
+[
+    {
+        "id": 1,
+        "topic": "React Native",
+        "question": "What is React Native, and how does it differ from React?",
+        "answer": "React Native is a framework that allows developers to build mobile applications using JavaScript and React. Unlike React, which is used for web applications, React Native renders components using native mobile UI elements instead of HTML.",
+        "keyPoints": [
+            "React Native enables cross-platform mobile app development.",
+            "Uses native UI components instead of HTML elements.",
+            "Allows JavaScript code to interact with native APIs.",
+            "Shares a large part of its logic with React but uses different components."
+        ],
+        "codeExample": "import { Text, View } from 'react-native';\nfunction App() {\n  return <View><Text>Hello, React Native!</Text></View>;\n}",
+        "resources": [
+            {
+                "name": "React Native Official Docs",
+                "url": "https://reactnative.dev/docs/getting-started"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "React-Native-basics",
+            "cross-platform"
+        ],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "React Native",
+        "question": "How does React Native handle navigation between screens?",
+        "answer": "React Native does not have built-in navigation like a browser. Instead, it uses libraries such as 'React Navigation' to enable navigation between screens in a mobile app.",
+        "keyPoints": [
+            "React Navigation is the most commonly used library.",
+            "Supports stack, tab, and drawer-based navigation.",
+            "Uses navigators like StackNavigator and BottomTabNavigator.",
+            "Navigation state is managed internally by React Navigation."
+        ],
+        "codeExample": "import { createStackNavigator } from '@react-navigation/stack';\nconst Stack = createStackNavigator();\nfunction App() {\n  return (\n    <NavigationContainer>\n      <Stack.Navigator>\n        <Stack.Screen name='Home' component={HomeScreen} />\n      </Stack.Navigator>\n    </NavigationContainer>\n  );\n}",
+        "resources": [
+            {
+                "name": "React Navigation Documentation",
+                "url": "https://reactnavigation.org/docs/getting-started/"
+            }
+        ],
+        "tags": [
+            "navigation",
+            "interview-question",
+            "commonly-misunderstood"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "topic": "React Native",
+        "question": "Sample question 3 on React Native?",
+        "answer": "Sample answer 3 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "React Native",
+        "question": "Sample question 4 on React Native?",
+        "answer": "Sample answer 4 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://reactnative.dev/docs/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "React Native",
+        "question": "Sample question 5 on React Native?",
+        "answer": "Sample answer 5 with important details.",
+        "keyPoints": null,
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "topic": "React Native",
+        "question": "Sample question 6 on React Native?",
+        "answer": "Sample answer 6 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "React Native",
+        "question": "Sample question 7 on React Native?",
+        "answer": "Sample answer 7 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [
+            "interview-question",
+            "challenging"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "React Native",
+        "question": "Sample question 8 on React Native?",
+        "answer": "Sample answer 8 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://reactnative.dev/docs/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "React Native",
+        "question": "Sample question 9 on React Native?",
+        "answer": "Sample answer 9 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "React Native",
+        "question": "Sample question 10 on React Native?",
+        "answer": "Sample answer 10 with important details.",
+        "keyPoints": null,
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [],
+        "tags": [],
+        "difficulty": "hard"
+    },
+    {
+        "id": 11,
+        "topic": "React Native",
+        "question": "Sample question 11 on React Native?",
+        "answer": "Sample answer 11 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "React Native",
+        "question": "Sample question 12 on React Native?",
+        "answer": "Sample answer 12 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://reactnative.dev/docs/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "React Native",
+        "question": "Sample question 13 on React Native?",
+        "answer": "Sample answer 13 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "React Native",
+        "question": "Sample question 14 on React Native?",
+        "answer": "Sample answer 14 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [
+            "interview-question",
+            "challenging"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "React Native",
+        "question": "Sample question 15 on React Native?",
+        "answer": "Sample answer 15 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "React Native",
+        "question": "Sample question 16 on React Native?",
+        "answer": "Sample answer 16 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://reactnative.dev/docs/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "topic": "React Native",
+        "question": "Sample question 17 on React Native?",
+        "answer": "Sample answer 17 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "React Native",
+        "question": "Sample question 18 on React Native?",
+        "answer": "Sample answer 18 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "React Native",
+        "question": "Sample question 19 on React Native?",
+        "answer": "Sample answer 19 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "React Native",
+        "question": "Sample question 20 on React Native?",
+        "answer": "Sample answer 20 with important details.",
+        "keyPoints": null,
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://reactnative.dev/docs/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "hard"
+    },
+    {
+        "id": 21,
+        "topic": "React Native",
+        "question": "Sample question 21 on React Native?",
+        "answer": "Sample answer 21 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [
+            "interview-question",
+            "challenging"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "React Native",
+        "question": "Sample question 22 on React Native?",
+        "answer": "Sample answer 22 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "React Native",
+        "question": "Sample question 23 on React Native?",
+        "answer": "Sample answer 23 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "topic": "React Native",
+        "question": "Sample question 24 on React Native?",
+        "answer": "Sample answer 24 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://reactnative.dev/docs/getting-started"
+            }
+        ],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 25,
+        "topic": "React Native",
+        "question": "Sample question 25 on React Native?",
+        "answer": "Sample answer 25 with important details.",
+        "keyPoints": null,
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 26,
+        "topic": "React Native",
+        "question": "Sample question 26 on React Native?",
+        "answer": "Sample answer 26 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 27,
+        "topic": "React Native",
+        "question": "Sample question 27 on React Native?",
+        "answer": "Sample answer 27 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 28,
+        "topic": "React Native",
+        "question": "Sample question 28 on React Native?",
+        "answer": "Sample answer 28 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "Sample Resource",
+                "url": "https://reactnative.dev/docs/getting-started"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "challenging"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 29,
+        "topic": "React Native",
+        "question": "Sample question 29 on React Native?",
+        "answer": "Sample answer 29 with important details.",
+        "keyPoints": null,
+        "codeExample": null,
+        "resources": [],
+        "tags": [],
+        "difficulty": "medium"
+    },
+    {
+        "id": 30,
+        "topic": "React Native",
+        "question": "Sample question 30 on React Native?",
+        "answer": "Sample answer 30 with important details.",
+        "keyPoints": [
+            "Key point 1",
+            "Key point 2"
+        ],
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [],
+        "tags": [],
+        "difficulty": "hard"
+    }
+]

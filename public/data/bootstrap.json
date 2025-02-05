@@ -1,0 +1,802 @@
+[
+    {
+        "id": 1,
+        "topic": "Bootstrap",
+        "question": "What is Bootstrap, and why is it used?",
+        "answer": "Bootstrap is a popular open-source front-end framework for building responsive and mobile-first websites. It provides pre-designed components, utilities, and a grid system to simplify development.",
+        "keyPoints": [
+            "Open-source front-end framework.",
+            "Focuses on responsive and mobile-first design.",
+            "Provides pre-designed components and utilities."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Bootstrap Documentation",
+                "url": "https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "Bootstrap",
+        "question": "What are the key features of Bootstrap?",
+        "answer": "Key features include a responsive grid system, pre-designed components (e.g., buttons, forms, navbars), utility classes, and support for customization via Sass.",
+        "keyPoints": [
+            "Responsive grid system.",
+            "Pre-designed components.",
+            "Utility classes and Sass customization."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Bootstrap Features - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "Bootstrap",
+        "question": "What is the Bootstrap grid system?",
+        "answer": "The Bootstrap grid system is a responsive, mobile-first layout system that uses a 12-column grid to create flexible and consistent layouts. It uses rows and columns to structure content.",
+        "keyPoints": [
+            "Responsive, mobile-first layout system.",
+            "Uses a 12-column grid.",
+            "Structures content with rows and columns."
+        ],
+        "codeExample": "<div class='container'>\n  <div class='row'>\n    <div class='col-md-6'>Column 1</div>\n    <div class='col-md-6'>Column 2</div>\n  </div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Grid System - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/layout/grid/"
+            }
+        ],
+        "tags": ["Interview Question", "Grid System"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "topic": "Bootstrap",
+        "question": "What are breakpoints in Bootstrap?",
+        "answer": "Breakpoints are predefined screen widths at which the layout of a website changes. Bootstrap uses breakpoints like `xs`, `sm`, `md`, `lg`, and `xl` to create responsive designs.",
+        "keyPoints": [
+            "Predefined screen widths for layout changes.",
+            "Breakpoints: `xs`, `sm`, `md`, `lg`, `xl`.",
+            "Used for responsive design."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Bootstrap Breakpoints - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/layout/breakpoints/"
+            }
+        ],
+        "tags": ["Interview Question", "Grid System"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.container` class in Bootstrap?",
+        "answer": "The `.container` class creates a responsive, fixed-width container for content. It centers the content and adds padding based on the screen size.",
+        "keyPoints": [
+            "Creates a responsive, fixed-width container.",
+            "Centers content and adds padding.",
+            "Adjusts width based on screen size."
+        ],
+        "codeExample": "<div class='container'>\n  <!-- Content goes here -->\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Containers - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/layout/containers/"
+            }
+        ],
+        "tags": ["Interview Question", "Layout"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "topic": "Bootstrap",
+        "question": "What is the difference between `.container` and `.container-fluid` in Bootstrap?",
+        "answer": "The `.container` class creates a fixed-width container, while `.container-fluid` creates a full-width container that spans the entire width of the viewport.",
+        "keyPoints": [
+            "`.container`: Fixed-width, responsive.",
+            "`.container-fluid`: Full-width, spans viewport.",
+            "Use `.container-fluid` for edge-to-edge layouts."
+        ],
+        "codeExample": "<div class='container-fluid'>\n  <!-- Full-width content -->\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Containers - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/layout/containers/"
+            }
+        ],
+        "tags": ["Interview Question", "Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "Bootstrap",
+        "question": "What are utility classes in Bootstrap?",
+        "answer": "Utility classes are pre-defined classes in Bootstrap that provide quick styling for common tasks, such as margins, padding, text alignment, and colors.",
+        "keyPoints": [
+            "Pre-defined classes for quick styling.",
+            "Examples: Margins, padding, text alignment, colors.",
+            "Simplify development and reduce custom CSS."
+        ],
+        "codeExample": "<div class='text-center p-3 bg-primary text-white'>Centered Text</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Utilities - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/utilities/"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 8,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.row` class in Bootstrap?",
+        "answer": "The `.row` class is used to create a horizontal group of columns within the grid system. It ensures proper alignment and spacing of columns.",
+        "keyPoints": [
+            "Creates a horizontal group of columns.",
+            "Ensures proper alignment and spacing.",
+            "Must be used inside a `.container` or `.container-fluid`."
+        ],
+        "codeExample": "<div class='row'>\n  <div class='col'>Column 1</div>\n  <div class='col'>Column 2</div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Grid System - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/layout/grid/"
+            }
+        ],
+        "tags": ["Interview Question", "Grid System"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 9,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.col` class in Bootstrap?",
+        "answer": "The `.col` class is used to create columns within a row. It automatically divides the available space equally among columns.",
+        "keyPoints": [
+            "Creates columns within a row.",
+            "Divides space equally among columns.",
+            "Can be combined with breakpoints for responsiveness."
+        ],
+        "codeExample": "<div class='row'>\n  <div class='col'>Column 1</div>\n  <div class='col'>Column 2</div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Grid System - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/layout/grid/"
+            }
+        ],
+        "tags": ["Interview Question", "Grid System"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 10,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.navbar` component in Bootstrap?",
+        "answer": "The `.navbar` component is used to create a responsive navigation bar. It can include links, dropdowns, forms, and branding, and it adapts to different screen sizes.",
+        "keyPoints": [
+            "Creates a responsive navigation bar.",
+            "Includes links, dropdowns, forms, and branding.",
+            "Adapts to different screen sizes."
+        ],
+        "codeExample": "<nav class='navbar navbar-expand-lg navbar-light bg-light'>\n  <a class='navbar-brand' href='#'>Brand</a>\n  <!-- Navbar content -->\n</nav>",
+        "resources": [
+            {
+                "name": "Bootstrap Navbar - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/navbar/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.card` component in Bootstrap?",
+        "answer": "The `.card` component is a flexible container for displaying content, such as text, images, and buttons. It provides a consistent and customizable layout.",
+        "keyPoints": [
+            "Flexible container for content.",
+            "Displays text, images, and buttons.",
+            "Provides a consistent and customizable layout."
+        ],
+        "codeExample": "<div class='card'>\n  <div class='card-body'>\n    <h5 class='card-title'>Card Title</h5>\n    <p class='card-text'>Card content.</p>\n  </div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Cards - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/card/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 12,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.modal` component in Bootstrap?",
+        "answer": "The `.modal` component is used to create pop-up dialogs for displaying additional content or forms. It is often triggered by a button or link.",
+        "keyPoints": [
+            "Creates pop-up dialogs.",
+            "Displays additional content or forms.",
+            "Triggered by a button or link."
+        ],
+        "codeExample": "<button class='btn btn-primary' data-bs-toggle='modal' data-bs-target='#exampleModal'>Open Modal</button>\n<div class='modal fade' id='exampleModal'>\n  <!-- Modal content -->\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Modals - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/modal/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.carousel` component in Bootstrap?",
+        "answer": "The `.carousel` component is used to create a slideshow of images or content. It supports automatic sliding, manual controls, and indicators.",
+        "keyPoints": [
+            "Creates a slideshow of images or content.",
+            "Supports automatic sliding and manual controls.",
+            "Includes indicators for navigation."
+        ],
+        "codeExample": "<div id='carouselExample' class='carousel slide'>\n  <!-- Carousel content -->\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Carousel - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/carousel/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.btn` class in Bootstrap?",
+        "answer": "The `.btn` class is used to style buttons in Bootstrap. It provides pre-designed styles and supports different sizes, colors, and states (e.g., hover, active).",
+        "keyPoints": [
+            "Styles buttons in Bootstrap.",
+            "Supports sizes, colors, and states.",
+            "Examples: `.btn-primary`, `.btn-lg`, `.btn-outline-secondary`."
+        ],
+        "codeExample": "<button class='btn btn-primary'>Primary Button</button>",
+        "resources": [
+            {
+                "name": "Bootstrap Buttons - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/buttons/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 15,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.form-control` class in Bootstrap?",
+        "answer": "The `.form-control` class is used to style form inputs, textareas, and selects in Bootstrap. It provides consistent styling and responsiveness.",
+        "keyPoints": [
+            "Styles form inputs, textareas, and selects.",
+            "Provides consistent styling and responsiveness.",
+            "Works with other form-related classes."
+        ],
+        "codeExample": "<input type='text' class='form-control' placeholder='Enter text'>",
+        "resources": [
+            {
+                "name": "Bootstrap Forms - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/forms/overview/"
+            }
+        ],
+        "tags": ["Interview Question", "Forms"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 16,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.alert` component in Bootstrap?",
+        "answer": "The `.alert` component is used to display contextual feedback messages, such as success, warning, or error messages. It provides pre-designed styles for different alert types.",
+        "keyPoints": [
+            "Displays contextual feedback messages.",
+            "Supports types like success, warning, and error.",
+            "Examples: `.alert-success`, `.alert-warning`."
+        ],
+        "codeExample": "<div class='alert alert-success'>Success message!</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Alerts - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/alerts/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 17,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.badge` component in Bootstrap?",
+        "answer": "The `.badge` component is used to highlight small pieces of information, such as notifications or counts. It provides pre-designed styles and supports contextual colors.",
+        "keyPoints": [
+            "Highlights small pieces of information.",
+            "Supports contextual colors.",
+            "Examples: `.badge-primary`, `.badge-pill`."
+        ],
+        "codeExample": "<span class='badge bg-primary'>New</span>",
+        "resources": [
+            {
+                "name": "Bootstrap Badges - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/badge/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 18,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.spinner` component in Bootstrap?",
+        "answer": "The `.spinner` component is used to indicate loading or processing states. It provides animated spinners in different styles and sizes.",
+        "keyPoints": [
+            "Indicates loading or processing states.",
+            "Supports different styles and sizes.",
+            "Examples: `.spinner-border`, `.spinner-grow`."
+        ],
+        "codeExample": "<div class='spinner-border' role='status'>\n  <span class='visually-hidden'>Loading...</span>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Spinners - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/spinners/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.toast` component in Bootstrap?",
+        "answer": "The `.toast` component is used to display non-intrusive notifications or messages. It appears as a small pop-up and can be dismissed by the user.",
+        "keyPoints": [
+            "Displays non-intrusive notifications.",
+            "Appears as a small pop-up.",
+            "Can be dismissed by the user."
+        ],
+        "codeExample": "<div class='toast' role='alert'>\n  <div class='toast-body'>Hello, world!</div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Toasts - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/toasts/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.dropdown` component in Bootstrap?",
+        "answer": "The `.dropdown` component is used to create toggleable menus that display a list of options. It supports single and multi-level dropdowns.",
+        "keyPoints": [
+            "Creates toggleable menus.",
+            "Displays a list of options.",
+            "Supports single and multi-level dropdowns."
+        ],
+        "codeExample": "<div class='dropdown'>\n  <button class='btn btn-secondary dropdown-toggle' data-bs-toggle='dropdown'>Dropdown</button>\n  <ul class='dropdown-menu'>\n    <li><a class='dropdown-item' href='#'>Option 1</a></li>\n  </ul>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Dropdowns - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/dropdowns/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.collapse` component in Bootstrap?",
+        "answer": "The `.collapse` component is used to hide and show content with a toggle button. It is commonly used for accordions, collapsible menus, and expandable sections.",
+        "keyPoints": [
+            "Hides and shows content with a toggle button.",
+            "Used for accordions, menus, and expandable sections.",
+            "Supports animations and accessibility."
+        ],
+        "codeExample": "<button class='btn btn-primary' data-bs-toggle='collapse' data-bs-target='#content'>Toggle</button>\n<div id='content' class='collapse'>\n  <!-- Content goes here -->\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Collapse - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/collapse/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.tooltip` component in Bootstrap?",
+        "answer": "The `.tooltip` component is used to display additional information when a user hovers over or focuses on an element. It is often used for hints or explanations.",
+        "keyPoints": [
+            "Displays additional information on hover or focus.",
+            "Used for hints or explanations.",
+            "Supports positioning and animations."
+        ],
+        "codeExample": "<button class='btn btn-secondary' data-bs-toggle='tooltip' title='Tooltip text'>Hover me</button>",
+        "resources": [
+            {
+                "name": "Bootstrap Tooltips - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/tooltips/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.popover` component in Bootstrap?",
+        "answer": "The `.popover` component is used to display additional information in a small overlay when a user clicks or focuses on an element. It is often used for detailed hints or explanations.",
+        "keyPoints": [
+            "Displays additional information in an overlay.",
+            "Triggered by click or focus.",
+            "Supports positioning and animations."
+        ],
+        "codeExample": "<button class='btn btn-secondary' data-bs-toggle='popover' title='Popover title' data-bs-content='Popover content'>Click me</button>",
+        "resources": [
+            {
+                "name": "Bootstrap Popovers - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/popovers/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.list-group` component in Bootstrap?",
+        "answer": "The `.list-group` component is used to create a list of items with consistent styling. It supports interactive items, badges, and contextual colors.",
+        "keyPoints": [
+            "Creates a list of items with consistent styling.",
+            "Supports interactive items, badges, and colors.",
+            "Examples: `.list-group-item`, `.list-group-flush`."
+        ],
+        "codeExample": "<ul class='list-group'>\n  <li class='list-group-item'>Item 1</li>\n  <li class='list-group-item'>Item 2</li>\n</ul>",
+        "resources": [
+            {
+                "name": "Bootstrap List Groups - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/list-group/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 25,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.breadcrumb` component in Bootstrap?",
+        "answer": "The `.breadcrumb` component is used to display a navigation trail, showing the user's location within a website hierarchy. It improves navigation and user experience.",
+        "keyPoints": [
+            "Displays a navigation trail.",
+            "Shows the user's location within a hierarchy.",
+            "Improves navigation and user experience."
+        ],
+        "codeExample": "<nav aria-label='breadcrumb'>\n  <ol class='breadcrumb'>\n    <li class='breadcrumb-item'><a href='#'>Home</a></li>\n    <li class='breadcrumb-item active'>Page</li>\n  </ol>\n</nav>",
+        "resources": [
+            {
+                "name": "Bootstrap Breadcrumbs - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/breadcrumb/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 26,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.pagination` component in Bootstrap?",
+        "answer": "The `.pagination` component is used to create a navigation bar for paginated content. It supports previous/next buttons, page numbers, and disabled states.",
+        "keyPoints": [
+            "Creates a navigation bar for paginated content.",
+            "Supports previous/next buttons and page numbers.",
+            "Examples: `.page-item`, `.page-link`."
+        ],
+        "codeExample": "<nav aria-label='Page navigation'>\n  <ul class='pagination'>\n    <li class='page-item'><a class='page-link' href='#'>1</a></li>\n  </ul>\n</nav>",
+        "resources": [
+            {
+                "name": "Bootstrap Pagination - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/pagination/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 27,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.progress` component in Bootstrap?",
+        "answer": "The `.progress` component is used to display the progress of a task or operation. It supports different colors, striped styles, and animated bars.",
+        "keyPoints": [
+            "Displays the progress of a task or operation.",
+            "Supports colors, stripes, and animations.",
+            "Examples: `.progress-bar`, `.progress-bar-striped`."
+        ],
+        "codeExample": "<div class='progress'>\n  <div class='progress-bar' style='width: 50%'>50%</div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Progress Bars - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/progress/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 28,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.table` component in Bootstrap?",
+        "answer": "The `.table` component is used to create responsive and styled tables. It supports striped rows, hover effects, and contextual colors.",
+        "keyPoints": [
+            "Creates responsive and styled tables.",
+            "Supports striped rows, hover effects, and colors.",
+            "Examples: `.table-striped`, `.table-hover`."
+        ],
+        "codeExample": "<table class='table'>\n  <thead>\n    <tr><th>Header</th></tr>\n  </thead>\n  <tbody>\n    <tr><td>Row 1</td></tr>\n  </tbody>\n</table>",
+        "resources": [
+            {
+                "name": "Bootstrap Tables - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/content/tables/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 29,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.accordion` component in Bootstrap?",
+        "answer": "The `.accordion` component is used to create collapsible sections of content. It allows users to expand or collapse sections individually or in a group.",
+        "keyPoints": [
+            "Creates collapsible sections of content.",
+            "Supports individual or grouped sections.",
+            "Examples: `.accordion-item`, `.accordion-button`."
+        ],
+        "codeExample": "<div class='accordion'>\n  <div class='accordion-item'>\n    <h2 class='accordion-header'>\n      <button class='accordion-button' data-bs-toggle='collapse' data-bs-target='#collapseOne'>Section 1</button>\n    </h2>\n    <div id='collapseOne' class='accordion-collapse collapse'>\n      <div class='accordion-body'>Content</div>\n    </div>\n  </div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Accordion - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/accordion/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 30,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.offcanvas` component in Bootstrap?",
+        "answer": "The `.offcanvas` component is used to create a hidden sidebar or panel that slides into view when triggered. It is often used for navigation menus or additional content.",
+        "keyPoints": [
+            "Creates a hidden sidebar or panel.",
+            "Slides into view when triggered.",
+            "Used for navigation menus or additional content."
+        ],
+        "codeExample": "<button class='btn btn-primary' data-bs-toggle='offcanvas' data-bs-target='#offcanvasExample'>Open Offcanvas</button>\n<div id='offcanvasExample' class='offcanvas offcanvas-start'>\n  <!-- Offcanvas content -->\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Offcanvas - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/components/offcanvas/"
+            }
+        ],
+        "tags": ["Interview Question", "Components"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 31,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.flex` utility classes in Bootstrap?",
+        "answer": "The `.flex` utility classes are used to control the layout and alignment of flexbox containers and items. They provide shortcuts for properties like `flex-direction`, `justify-content`, and `align-items`.",
+        "keyPoints": [
+            "Controls layout and alignment in flexbox.",
+            "Examples: `.d-flex`, `.justify-content-center`, `.align-items-end`.",
+            "Simplifies flexbox usage."
+        ],
+        "codeExample": "<div class='d-flex justify-content-between align-items-center'>\n  <div>Item 1</div>\n  <div>Item 2</div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Flex - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/utilities/flex/"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 32,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.shadow` utility classes in Bootstrap?",
+        "answer": "The `.shadow` utility classes are used to add or remove box shadows from elements. They provide pre-defined shadow styles for different levels of depth.",
+        "keyPoints": [
+            "Adds or removes box shadows.",
+            "Examples: `.shadow-sm`, `.shadow-lg`, `.shadow-none`.",
+            "Enhances visual hierarchy."
+        ],
+        "codeExample": "<div class='shadow p-3 mb-5 bg-body rounded'>Shadowed box</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Shadows - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/utilities/shadows/"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 33,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.position` utility classes in Bootstrap?",
+        "answer": "The `.position` utility classes are used to control the positioning of elements, such as `static`, `relative`, `absolute`, `fixed`, and `sticky`.",
+        "keyPoints": [
+            "Controls element positioning.",
+            "Examples: `.position-relative`, `.position-fixed`, `.sticky-top`.",
+            "Supports advanced layout designs."
+        ],
+        "codeExample": "<div class='position-relative'>\n  <div class='position-absolute top-0 start-0'>Absolute</div>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Position - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/utilities/position/"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 34,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.text-truncate` utility class in Bootstrap?",
+        "answer": "The `.text-truncate` utility class is used to truncate long text with an ellipsis (`...`) to prevent overflow. It is useful for displaying limited text in a constrained space.",
+        "keyPoints": [
+            "Truncates long text with an ellipsis.",
+            "Prevents text overflow.",
+            "Useful for constrained spaces."
+        ],
+        "codeExample": "<div class='text-truncate' style='max-width: 200px;'>This is a long text that will be truncated.</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Text Truncation - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/utilities/text/#text-truncation"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 35,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.ratio` utility class in Bootstrap?",
+        "answer": "The `.ratio` utility class is used to maintain consistent aspect ratios for embedded content, such as videos or images. It ensures responsive scaling.",
+        "keyPoints": [
+            "Maintains consistent aspect ratios.",
+            "Supports embedded content like videos and images.",
+            "Examples: `.ratio-16x9`, `.ratio-4x3`."
+        ],
+        "codeExample": "<div class='ratio ratio-16x9'>\n  <iframe src='https://www.youtube.com/embed/example'></iframe>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Ratio - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/helpers/ratio/"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 36,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.stretched-link` utility class in Bootstrap?",
+        "answer": "The `.stretched-link` utility class makes the entire parent block clickable by stretching a link to cover the parent element. It is useful for card components.",
+        "keyPoints": [
+            "Makes the entire parent block clickable.",
+            "Stretches a link to cover the parent element.",
+            "Useful for card components."
+        ],
+        "codeExample": "<div class='card'>\n  <a href='#' class='stretched-link'>Clickable Card</a>\n</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Stretched Link - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/helpers/stretched-link/"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 37,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.visually-hidden` utility class in Bootstrap?",
+        "answer": "The `.visually-hidden` utility class hides an element visually while keeping it accessible to screen readers. It is useful for accessibility purposes.",
+        "keyPoints": [
+            "Hides an element visually.",
+            "Keeps the element accessible to screen readers.",
+            "Improves accessibility."
+        ],
+        "codeExample": "<button class='btn btn-primary'>\n  <span class='visually-hidden'>Hidden text for screen readers</span>\n  Visible Button\n</button>",
+        "resources": [
+            {
+                "name": "Bootstrap Visually Hidden - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/helpers/visually-hidden/"
+            }
+        ],
+        "tags": ["Interview Question", "Accessibility"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 38,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.overflow` utility classes in Bootstrap?",
+        "answer": "The `.overflow` utility classes control how content overflows its container. They provide options like `auto`, `hidden`, `scroll`, and `visible`.",
+        "keyPoints": [
+            "Controls content overflow.",
+            "Examples: `.overflow-auto`, `.overflow-hidden`, `.overflow-scroll`.",
+            "Useful for managing scrollable content."
+        ],
+        "codeExample": "<div class='overflow-auto' style='height: 100px;'>Scrollable content</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Overflow - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/utilities/overflow/"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 39,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.text-wrap` and `.text-nowrap` utility classes in Bootstrap?",
+        "answer": "The `.text-wrap` class allows text to wrap within its container, while `.text-nowrap` prevents text from wrapping and forces it to stay on a single line.",
+        "keyPoints": [
+            "`.text-wrap`: Allows text to wrap.",
+            "`.text-nowrap`: Prevents text from wrapping.",
+            "Useful for controlling text layout."
+        ],
+        "codeExample": "<div class='text-nowrap'>This text will not wrap.</div>\n<div class='text-wrap'>This text will wrap.</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Text Wrapping - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/utilities/text/#text-wrapping-and-overflow"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 40,
+        "topic": "Bootstrap",
+        "question": "What is the purpose of the `.float` utility classes in Bootstrap?",
+        "answer": "The `.float` utility classes are used to float elements to the left or right within their container. They are useful for creating layouts with floated content.",
+        "keyPoints": [
+            "Floats elements to the left or right.",
+            "Examples: `.float-start`, `.float-end`, `.float-none`.",
+            "Useful for creating floated layouts."
+        ],
+        "codeExample": "<div class='float-start'>Floated left</div>\n<div class='float-end'>Floated right</div>",
+        "resources": [
+            {
+                "name": "Bootstrap Float - Bootstrap Docs",
+                "url": "https://getbootstrap.com/docs/5.3/utilities/float/"
+            }
+        ],
+        "tags": ["Interview Question", "Utilities"],
+        "difficulty": "easy"
+    }
+]

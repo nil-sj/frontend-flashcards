@@ -1,0 +1,522 @@
+[
+    {
+        "id": 1,
+        "topic": "SEO",
+        "question": "What is SEO, and why is it important?",
+        "answer": "SEO (Search Engine Optimization) involves optimizing websites to rank higher on search engines organically. It drives traffic, credibility, and conversions without paid ads.",
+        "keyPoints": [
+            "Improves organic search rankings",
+            "Drives traffic and conversions",
+            "Builds website credibility"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Beginner's Guide to SEO - Moz",
+                "url": "https://moz.com/beginners-guide-to-seo"
+            }
+        ],
+        "tags": ["Core Concepts"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "SEO",
+        "question": "Differentiate between on-page, off-page, and technical SEO.",
+        "answer": "On-page: Content/HTML optimization. Off-page: Backlink building. Technical: Site structure/crawlability improvements.",
+        "keyPoints": [
+            "On-page: Keywords, meta tags, content",
+            "Off-page: Backlinks, mentions",
+            "Technical: Speed, mobile-friendliness"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Types of SEO - Search Engine Journal",
+                "url": "https://www.searchenginejournal.com/seo-guide/types-of-seo/"
+            }
+        ],
+        "tags": ["Core Concepts"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "topic": "SEO",
+        "question": "How do you conduct keyword research?",
+        "answer": "Use tools like Ahrefs/SEMrush to find high-volume, low-competition keywords. Prioritize user intent and long-tail keywords.",
+        "keyPoints": [
+            "Analyze search volume",
+            "Focus on user intent",
+            "Long-tail keyword prioritization"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Keyword Research Guide - Ahrefs",
+                "url": "https://ahrefs.com/blog/keyword-research/"
+            }
+        ],
+        "tags": ["Keyword Research"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "SEO",
+        "question": "Why are long-tail keywords valuable?",
+        "answer": "They’re specific, less competitive, and align closely with user intent, leading to higher conversion rates.",
+        "keyPoints": [
+            "Lower competition",
+            "Higher conversion potential",
+            "Targets niche audiences"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Long-Tail Keywords - Backlinko",
+                "url": "https://backlinko.com/long-tail-keywords"
+            }
+        ],
+        "tags": ["Keyword Research"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 5,
+        "topic": "SEO",
+        "question": "What is keyword cannibalization?",
+        "answer": "When multiple pages target the same keyword, confusing search engines and diluting rankings.",
+        "keyPoints": [
+            "Causes ranking dilution",
+            "Confuses search engines",
+            "Requires content consolidation"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Keyword Cannibalization Fix - Moz",
+                "url": "https://moz.com/blog/keyword-cannibalization"
+            }
+        ],
+        "tags": ["Keyword Research"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "topic": "SEO",
+        "question": "What meta tags are critical for SEO?",
+        "answer": "Title tags, meta descriptions, and alt text for images. Use keywords naturally and keep titles under 60 characters.",
+        "keyPoints": [
+            "Title tags and meta descriptions",
+            "Alt text for images",
+            "Keyword placement"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Meta Tags - Google Search Central",
+                "url": "https://developers.google.com/search/docs/appearance/snippet"
+            }
+        ],
+        "tags": ["On-Page SEO"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 7,
+        "topic": "SEO",
+        "question": "How do header tags (H1, H2) impact SEO?",
+        "answer": "They structure content for readability and signal topic hierarchy to search engines.",
+        "keyPoints": [
+            "Improves content structure",
+            "Enhances readability",
+            "Signals content hierarchy"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Header Tags Best Practices - Ahrefs",
+                "url": "https://ahrefs.com/blog/header-tags/"
+            }
+        ],
+        "tags": ["On-Page SEO"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 8,
+        "topic": "SEO",
+        "question": "What is TF-IDF in content optimization?",
+        "answer": "A statistical measure to evaluate keyword relevance in content compared to other documents.",
+        "keyPoints": [
+            "Measures keyword relevance",
+            "Identifies content gaps",
+            "Improves topical authority"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "TF-IDF Explained - Search Engine Journal",
+                "url": "https://www.searchenginejournal.com/tf-idf-seo/395639/"
+            }
+        ],
+        "tags": ["On-Page SEO"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 9,
+        "topic": "SEO",
+        "question": "How do you fix duplicate content issues?",
+        "answer": "Use canonical tags to specify the preferred page or consolidate content.",
+        "keyPoints": [
+            "Canonical tags",
+            "Content consolidation",
+            "301 redirects"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Duplicate Content Guide - Google",
+                "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+            }
+        ],
+        "tags": ["Technical SEO"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "SEO",
+        "question": "Explain the role of robots.txt.",
+        "answer": "Directs search engine crawlers to disallow/allow specific pages (e.g., blocking duplicate content).",
+        "keyPoints": [
+            "Controls crawler access",
+            "Blocks low-value pages",
+            "Prevents duplicate indexing"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Robots.txt Tutorial - Moz",
+                "url": "https://moz.com/learn/seo/robots-txt"
+            }
+        ],
+        "tags": ["Technical SEO"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "SEO",
+        "question": "What are Core Web Vitals?",
+        "answer": "Google’s metrics for UX: loading speed (LCP), interactivity (FID), and visual stability (CLS). Aim for 'good' scores.",
+        "keyPoints": [
+            "LCP (Loading speed)",
+            "FID (Interactivity)",
+            "CLS (Visual stability)"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Core Web Vitals - Google",
+                "url": "https://web.dev/vitals/"
+            }
+        ],
+        "tags": ["Technical SEO"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "SEO",
+        "question": "What makes a backlink high-quality?",
+        "answer": "Relevance, authority (high Domain Rating), and editorial context (natural placement).",
+        "keyPoints": [
+            "Relevance to niche",
+            "High authority source",
+            "Editorial context"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Backlink Quality Guide - Ahrefs",
+                "url": "https://ahrefs.com/blog/what-is-a-good-backlink/"
+            }
+        ],
+        "tags": ["Off-Page SEO"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "SEO",
+        "question": "Difference between nofollow and dofollow links?",
+        "answer": "Dofollow links pass SEO value; nofollow links don’t but still drive traffic.",
+        "keyPoints": [
+            "Dofollow: Passes link equity",
+            "Nofollow: No equity transfer",
+            "Both drive referral traffic"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Nofollow Links - Google",
+                "url": "https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-links"
+            }
+        ],
+        "tags": ["Off-Page SEO"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 14,
+        "topic": "SEO",
+        "question": "How to build backlinks ethically?",
+        "answer": "Guest posting, creating shareable content, and earning mentions via PR.",
+        "keyPoints": [
+            "Guest blogging",
+            "Content outreach",
+            "Digital PR campaigns"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "White Hat Link Building - Backlinko",
+                "url": "https://backlinko.com/link-building"
+            }
+        ],
+        "tags": ["Off-Page SEO"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "SEO",
+        "question": "How to optimize for local SEO?",
+        "answer": "Claim Google My Business, optimize NAP (Name, Address, Phone), and gather local reviews.",
+        "keyPoints": [
+            "Google My Business setup",
+            "NAP consistency",
+            "Local review management"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Local SEO Guide - Moz",
+                "url": "https://moz.com/learn/seo/local-seo"
+            }
+        ],
+        "tags": ["Local SEO"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "SEO",
+        "question": "What are local citations?",
+        "answer": "Online mentions of a business’s name and address on directories (e.g., Yelp).",
+        "keyPoints": [
+            "Directory listings",
+            "NAP consistency",
+            "Local search trust"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Local Citations - BrightLocal",
+                "url": "https://www.brightlocal.com/what-are-local-citations/"
+            }
+        ],
+        "tags": ["Local SEO"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 17,
+        "topic": "SEO",
+        "question": "Key features of Google Search Console?",
+        "answer": "Track indexing, crawl errors, performance metrics, and mobile usability.",
+        "keyPoints": [
+            "Index coverage reports",
+            "Performance analytics",
+            "Mobile usability checks"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Google Search Console Guide",
+                "url": "https://developers.google.com/search/docs/appearance/search-console"
+            }
+        ],
+        "tags": ["Tools & Analytics"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "SEO",
+        "question": "How does SEMrush differ from Ahrefs?",
+        "answer": "SEMrush excels in keyword tracking; Ahrefs is stronger for backlink analysis.",
+        "keyPoints": [
+            "SEMrush: Keyword tools",
+            "Ahrefs: Backlink analysis",
+            "Different data accuracy"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "SEMrush vs Ahrefs - Search Engine Journal",
+                "url": "https://www.searchenginejournal.com/semrush-vs-ahrefs/405539/"
+            }
+        ],
+        "tags": ["Tools & Analytics"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "SEO",
+        "question": "Why is content freshness important?",
+        "answer": "Regularly updated content signals relevance, improving rankings (e.g., 'Evergreen' updates).",
+        "keyPoints": [
+            "Signals topical relevance",
+            "Improves user engagement",
+            "Aligns with algorithm updates"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Content Freshness - Moz",
+                "url": "https://moz.com/learn/seo/content-freshness"
+            }
+        ],
+        "tags": ["Content & UX"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 20,
+        "topic": "SEO",
+        "question": "How does UX affect SEO?",
+        "answer": "High bounce rates and low engagement (e.g., time on page) harm rankings.",
+        "keyPoints": [
+            "Bounce rate impact",
+            "Dwell time matters",
+            "Mobile responsiveness"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "UX and SEO - Google",
+                "url": "https://developers.google.com/search/docs/advanced/experience/page-experience"
+            }
+        ],
+        "tags": ["Content & UX"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "SEO",
+        "question": "What is schema markup?",
+        "answer": "Structured data added to HTML to help search engines understand content (e.g., reviews, events).",
+        "keyPoints": [
+            "Enhances rich snippets",
+            "Improves content understanding",
+            "Requires JSON-LD or microdata"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Schema Markup Guide - Schema.org",
+                "url": "https://schema.org/"
+            }
+        ],
+        "tags": ["Advanced Topics"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 22,
+        "topic": "SEO",
+        "question": "How to optimize for voice search?",
+        "answer": "Use conversational phrases, answer questions directly, and target featured snippets.",
+        "keyPoints": [
+            "Natural language keywords",
+            "FAQ content optimization",
+            "Featured snippet targeting"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Voice Search Optimization - Backlinko",
+                "url": "https://backlinko.com/voice-search-seo"
+            }
+        ],
+        "tags": ["Advanced Topics"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "SEO",
+        "question": "What is hreflang for international SEO?",
+        "answer": "Tags specifying language/region to serve correct content to global audiences.",
+        "keyPoints": [
+            "Avoids duplicate content",
+            "Targets geo-specific users",
+            "Implemented in HTTP headers or XML sitemaps"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Hreflang Guide - Moz",
+                "url": "https://moz.com/learn/seo/hreflang-tag"
+            }
+        ],
+        "tags": ["Advanced Topics"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 24,
+        "topic": "SEO",
+        "question": "How to handle a sudden drop in rankings?",
+        "answer": "Check for algorithm updates, technical issues (e.g., broken links), or penalties.",
+        "keyPoints": [
+            "Audit technical SEO",
+            "Review recent algorithm changes",
+            "Check for manual penalties"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Ranking Drops - Search Engine Journal",
+                "url": "https://www.searchenginejournal.com/why-did-my-rankings-drop/478971/"
+            }
+        ],
+        "tags": ["Troubleshooting"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 25,
+        "topic": "SEO",
+        "question": "What to do with 404 errors?",
+        "answer": "Redirect broken links to relevant pages or create custom 404 pages.",
+        "keyPoints": [
+            "301 redirects",
+            "Custom 404 pages",
+            "Regular broken link audits"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Fix 404 Errors - Google",
+                "url": "https://developers.google.com/search/docs/crawling-indexing/soft-404-errors"
+            }
+        ],
+        "tags": ["Troubleshooting"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 26,
+        "topic": "SEO",
+        "question": "Impact of AI on SEO?",
+        "answer": "AI tools (e.g., ChatGPT) aid content creation, but originality and EEAT (Expertise, Authoritativeness, Trustworthiness) remain key.",
+        "keyPoints": [
+            "Automates content generation",
+            "Requires EEAT compliance",
+            "Enhances data analysis"
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "AI and SEO - Search Engine Land",
+                "url": "https://searchengineland.com/ai-seo-content-394754"
+            }
+        ],
+        "tags": ["Trends & Strategy"],
+        "difficulty": "medium"
+    }
+]

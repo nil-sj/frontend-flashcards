@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import FlipCard from '../components/FlipCard';
 import topicsConfig from '../../public/data/topics-config.json';
+import underConstructionImage from '../assets/under-construction.png'; 
 
 const TopicFlashcards = () => {
   const [searchParams] = useSearchParams();
@@ -10,9 +11,11 @@ const TopicFlashcards = () => {
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
   const [resetFlip, setResetFlip] = useState(0); // Added a state to reset the flip state
 
+  const topicName = topicsConfig.find((topic) => topic.slug === topicSlug).topic;
+
   useEffect(() => {
     const topic = topicsConfig.find((t) => t.slug === topicSlug);
-
+  
     if (topic) {
       fetch(`/data/${topic.file}`)
         .then((response) => {
@@ -51,8 +54,16 @@ const TopicFlashcards = () => {
       <section className="sec-py bg-white">
         <div className="container">
           <div className="text-center mb-5">
-            <h1 className="page-heading">{topicSlug.toUpperCase()} Flashcards</h1>
+            <h1 className="page-heading">{topicName} Flashcards</h1>
+            <img
+              src={underConstructionImage}
+              alt="Topic Under Construction"
+              className="img-fluid"
+            />
             <p className="lead text-muted">Sorry! No flashcards available for this topic. Please select another topic.</p>
+            <Link to="/flashcards" className="btn btn-primary mt-5 mb-5">
+              Back to Topics
+            </Link>
           </div>
         </div>
       </section>
@@ -64,7 +75,7 @@ const TopicFlashcards = () => {
       <section className="sec-py bg-white">
         <div className="container">
           <div className="text-center mb-5">
-            <h1 className="page-heading">{topicSlug.toUpperCase()} Flashcards</h1>
+            <h1 className="page-heading">{topicName} Flashcards</h1>
             <p className="lead text-muted mb-3">Click and flip the cards to explore the answer or navigate to another card.</p>
             <div className="text-center">
               <button className="btn btn-secondary me-2" onClick={handlePrevious}>
@@ -81,14 +92,18 @@ const TopicFlashcards = () => {
 
           <div className="row justify-content-center">
             <div className="col-md-10 col-lg-9">
-              <FlipCard
-                question={flashcards[currentCardIndex].question}
-                answer={flashcards[currentCardIndex].answer}
-                keyPoints={flashcards[currentCardIndex].keyPoints}
-                resources={flashcards[currentCardIndex].resources}
-                codeExample={flashcards[currentCardIndex].codeExample}
-                resetFlip={resetFlip} // Pass resetFlip to FlipCard
-              />
+            <FlipCard
+              id={flashcards[currentCardIndex].id} // Ensure the ID is passed
+              topic={flashcards[currentCardIndex].topic} // Pass topic name
+              question={flashcards[currentCardIndex].question}
+              answer={flashcards[currentCardIndex].answer}
+              keyPoints={flashcards[currentCardIndex].keyPoints || []} // Ensure it's always an array
+              resources={flashcards[currentCardIndex].resources || []} // Ensure it's always an array
+              codeExample={flashcards[currentCardIndex].codeExample || ''} // Ensure empty string if no example
+              tags={flashcards[currentCardIndex].tags || []} // Pass tags (or empty array)
+              difficulty={flashcards[currentCardIndex].difficulty || 'medium'} // Default to "medium" if not set
+              resetFlip={resetFlip} // Pass resetFlip to FlipCard
+            />
             </div>
           </div>
         </div>

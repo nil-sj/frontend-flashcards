@@ -1,0 +1,644 @@
+[
+    {
+        "id": 1,
+        "topic": "UI/UX",
+        "question": "What is the difference between UI and UX?",
+        "answer": "UI (User Interface) refers to the visual elements and design of a product, while UX (User Experience) refers to the overall experience and interaction a user has with the product.",
+        "keyPoints": [
+            "UI: Visual design and interface.",
+            "UX: Overall user experience and interaction.",
+            "UI is a subset of UX."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "UI vs UX - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/ui-vs-ux-what-s-the-difference"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "UI/UX",
+        "question": "What are the key principles of good UX design?",
+        "answer": "Key principles include usability, accessibility, consistency, user-centered design, and feedback. These ensure a positive and intuitive user experience.",
+        "keyPoints": [
+            "Usability: Easy to use.",
+            "Accessibility: Inclusive for all users.",
+            "Consistency: Uniform design and behavior.",
+            "User-centered design: Focus on user needs.",
+            "Feedback: Inform users of actions and results."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "UX Design Principles - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "UI/UX",
+        "question": "What is user-centered design (UCD)?",
+        "answer": "User-centered design is an iterative design process that focuses on understanding user needs, behaviors, and preferences to create products that are intuitive and effective.",
+        "keyPoints": [
+            "Focuses on user needs and behaviors.",
+            "Iterative process: Research, design, test, refine.",
+            "Aims for intuitive and effective products."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "User-Centered Design - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/topics/user-centered-design"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "UI/UX",
+        "question": "What is a persona in UX design?",
+        "answer": "A persona is a fictional representation of a target user, based on research and data. It helps designers understand user needs, goals, and behaviors.",
+        "keyPoints": [
+            "Fictional representation of a target user.",
+            "Based on research and data.",
+            "Helps understand user needs and behaviors."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Personas in UX Design - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/persona/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "UI/UX",
+        "question": "What is a user journey map?",
+        "answer": "A user journey map is a visual representation of a user's experience with a product, showing their interactions, emotions, and pain points at each stage.",
+        "keyPoints": [
+            "Visual representation of user experience.",
+            "Shows interactions, emotions, and pain points.",
+            "Helps identify areas for improvement."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "User Journey Mapping - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/user-journey-maps-walk-in-your-user-s-shoes"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "topic": "UI/UX",
+        "question": "What is the purpose of wireframing in UX design?",
+        "answer": "Wireframing is a low-fidelity design technique used to outline the structure and layout of a product. It helps designers focus on functionality and user flow without getting distracted by visual details.",
+        "keyPoints": [
+            "Low-fidelity design technique.",
+            "Outlines structure and layout.",
+            "Focuses on functionality and user flow."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Wireframing in UX Design - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/what-is-wireframing"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 7,
+        "topic": "UI/UX",
+        "question": "What is the difference between low-fidelity and high-fidelity prototypes?",
+        "answer": "Low-fidelity prototypes are simple, rough sketches that focus on functionality and layout. High-fidelity prototypes are detailed, interactive designs that closely resemble the final product.",
+        "keyPoints": [
+            "Low-fidelity: Simple, rough sketches.",
+            "High-fidelity: Detailed, interactive designs.",
+            "Low-fidelity focuses on functionality; high-fidelity on visual details."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Prototyping in UX Design - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/prototyping/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "UI/UX",
+        "question": "What is the purpose of usability testing?",
+        "answer": "Usability testing evaluates how easy and intuitive a product is to use by observing real users interacting with it. It helps identify usability issues and improve the user experience.",
+        "keyPoints": [
+            "Evaluates ease of use and intuitiveness.",
+            "Involves observing real users.",
+            "Identifies usability issues and areas for improvement."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Usability Testing - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/usability-testing-101/"
+            }
+        ],
+        "tags": ["Interview Question", "Testing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "UI/UX",
+        "question": "What is the difference between qualitative and quantitative research in UX?",
+        "answer": "Qualitative research focuses on understanding user behaviors, motivations, and opinions through methods like interviews and observations. Quantitative research uses numerical data and statistics to measure user behavior and preferences.",
+        "keyPoints": [
+            "Qualitative: Focuses on behaviors, motivations, and opinions.",
+            "Quantitative: Uses numerical data and statistics.",
+            "Both are essential for a comprehensive understanding of users."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Qualitative vs Quantitative Research - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/qualitative-vs-quantitative-research"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "UI/UX",
+        "question": "What is the purpose of A/B testing in UX?",
+        "answer": "A/B testing compares two versions of a product or feature to determine which performs better based on user behavior and metrics. It helps optimize design and improve user experience.",
+        "keyPoints": [
+            "Compares two versions of a product or feature.",
+            "Measures performance based on user behavior.",
+            "Helps optimize design and improve UX."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "A/B Testing - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/ab-testing/"
+            }
+        ],
+        "tags": ["Interview Question", "Testing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design system?",
+        "answer": "A design system is a collection of reusable components, guidelines, and standards that ensure consistency and efficiency in design and development. It helps maintain a unified look and feel across a product.",
+        "keyPoints": [
+            "Collection of reusable components and guidelines.",
+            "Ensures consistency and efficiency.",
+            "Maintains a unified look and feel."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Systems - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/design-systems-101"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "UI/UX",
+        "question": "What is the purpose of accessibility in UX design?",
+        "answer": "Accessibility ensures that a product is usable by people with disabilities. It involves designing for inclusivity, following guidelines like WCAG, and providing alternative ways to interact with the product.",
+        "keyPoints": [
+            "Ensures usability for people with disabilities.",
+            "Follows guidelines like WCAG.",
+            "Promotes inclusivity and equal access."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Accessibility in UX - W3C",
+                "url": "https://www.w3.org/WAI/fundamentals/accessibility-intro/"
+            }
+        ],
+        "tags": ["Interview Question", "Accessibility"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "UI/UX",
+        "question": "What is the purpose of microinteractions in UX design?",
+        "answer": "Microinteractions are small, subtle animations or feedback mechanisms that enhance user experience by providing immediate feedback, guiding users, and making interactions more engaging.",
+        "keyPoints": [
+            "Small, subtle animations or feedback.",
+            "Provide immediate feedback and guidance.",
+            "Enhance user engagement."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Microinteractions - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/microinteractions-the-secret-to-great-app-design"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a style guide in UI design?",
+        "answer": "A style guide defines the visual and design standards for a product, including colors, typography, spacing, and components. It ensures consistency and coherence across the product.",
+        "keyPoints": [
+            "Defines visual and design standards.",
+            "Includes colors, typography, spacing, and components.",
+            "Ensures consistency and coherence."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Style Guides - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/style-guides"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 15,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a mood board in UX design?",
+        "answer": "A mood board is a visual tool that communicates the overall look and feel of a design. It includes colors, typography, imagery, and other design elements to inspire and guide the design process.",
+        "keyPoints": [
+            "Communicates the look and feel of a design.",
+            "Includes colors, typography, imagery, and more.",
+            "Inspires and guides the design process."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Mood Boards - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/mood-boards"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 16,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a heatmap in UX design?",
+        "answer": "A heatmap visually represents user interactions on a webpage, such as clicks, scrolls, and mouse movements. It helps identify areas of high and low engagement.",
+        "keyPoints": [
+            "Visual representation of user interactions.",
+            "Shows clicks, scrolls, and mouse movements.",
+            "Identifies areas of high and low engagement."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Heatmaps in UX - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/heatmaps/"
+            }
+        ],
+        "tags": ["Interview Question", "Testing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 17,
+        "topic": "UI/UX",
+        "question": "What is the purpose of card sorting in UX design?",
+        "answer": "Card sorting is a technique used to organize information into categories based on user input. It helps designers create intuitive information architectures and navigation systems.",
+        "keyPoints": [
+            "Organizes information into categories.",
+            "Based on user input.",
+            "Helps create intuitive navigation systems."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Card Sorting - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/card-sorting"
+            }
+        ],
+        "tags": ["Interview Question", "Testing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 18,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a usability report?",
+        "answer": "A usability report documents the findings from usability testing, including user feedback, issues, and recommendations for improvement. It helps stakeholders understand and address usability problems.",
+        "keyPoints": [
+            "Documents findings from usability testing.",
+            "Includes user feedback, issues, and recommendations.",
+            "Helps stakeholders address usability problems."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Usability Reports - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/how-to-conduct-usability-studies/"
+            }
+        ],
+        "tags": ["Interview Question", "Testing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 19,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design sprint?",
+        "answer": "A design sprint is a time-constrained, collaborative process for solving design challenges and prototyping solutions. It typically lasts 5 days and involves research, ideation, prototyping, and testing.",
+        "keyPoints": [
+            "Time-constrained, collaborative process.",
+            "Solves design challenges and prototypes solutions.",
+            "Involves research, ideation, prototyping, and testing."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Sprints - Google Ventures",
+                "url": "https://www.gv.com/sprint/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a user flow diagram?",
+        "answer": "A user flow diagram visualizes the steps a user takes to complete a task within a product. It helps designers understand and optimize the user journey.",
+        "keyPoints": [
+            "Visualizes steps to complete a task.",
+            "Helps understand and optimize the user journey.",
+            "Useful for identifying pain points and inefficiencies."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "User Flow Diagrams - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/user-flows"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a heuristic evaluation?",
+        "answer": "A heuristic evaluation assesses a product's usability by comparing it against established usability principles (heuristics). It helps identify usability issues without involving users.",
+        "keyPoints": [
+            "Assesses usability against established principles.",
+            "Identifies usability issues without user involvement.",
+            "Based on Nielsen's 10 usability heuristics."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Heuristic Evaluation - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/how-to-conduct-a-heuristic-evaluation/"
+            }
+        ],
+        "tags": ["Interview Question", "Testing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a task analysis in UX design?",
+        "answer": "Task analysis breaks down user tasks into smaller steps to understand how users achieve their goals. It helps designers create intuitive and efficient workflows.",
+        "keyPoints": [
+            "Breaks down user tasks into smaller steps.",
+            "Understands how users achieve their goals.",
+            "Helps create intuitive and efficient workflows."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Task Analysis - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/task-analysis"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a competitive analysis in UX design?",
+        "answer": "A competitive analysis evaluates the strengths and weaknesses of competing products to identify opportunities for differentiation and improvement in your own product.",
+        "keyPoints": [
+            "Evaluates strengths and weaknesses of competitors.",
+            "Identifies opportunities for differentiation.",
+            "Helps improve your product."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Competitive Analysis - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/competitive-usability-evaluations/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a usability heuristic?",
+        "answer": "A usability heuristic is a general principle or guideline for designing user-friendly interfaces. Nielsen's 10 usability heuristics are widely used to evaluate and improve UX.",
+        "keyPoints": [
+            "General principles for user-friendly interfaces.",
+            "Nielsen's 10 usability heuristics are widely used.",
+            "Helps evaluate and improve UX."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Usability Heuristics - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/ten-usability-heuristics/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 25,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design critique?",
+        "answer": "A design critique is a structured feedback session where designers review and discuss design work to identify strengths, weaknesses, and areas for improvement.",
+        "keyPoints": [
+            "Structured feedback session for design work.",
+            "Identifies strengths, weaknesses, and improvements.",
+            "Encourages collaboration and learning."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Critiques - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/design-critiques"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 26,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design thinking process?",
+        "answer": "The design thinking process is a user-centered approach to problem-solving that involves empathy, ideation, prototyping, and testing. It helps create innovative and effective solutions.",
+        "keyPoints": [
+            "User-centered problem-solving approach.",
+            "Involves empathy, ideation, prototyping, and testing.",
+            "Encourages innovation and creativity."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Thinking - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/what-is-design-thinking"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 27,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design workshop?",
+        "answer": "A design workshop is a collaborative session where stakeholders and designers work together to solve design challenges, generate ideas, and create prototypes.",
+        "keyPoints": [
+            "Collaborative session for solving design challenges.",
+            "Involves stakeholders and designers.",
+            "Generates ideas and creates prototypes."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Workshops - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/design-workshops"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 28,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design audit?",
+        "answer": "A design audit evaluates the consistency, usability, and effectiveness of a product's design. It identifies areas for improvement and ensures alignment with design standards.",
+        "keyPoints": [
+            "Evaluates consistency, usability, and effectiveness.",
+            "Identifies areas for improvement.",
+            "Ensures alignment with design standards."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Audits - Nielsen Norman Group",
+                "url": "https://www.nngroup.com/articles/design-audits/"
+            }
+        ],
+        "tags": ["Interview Question", "Testing"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 29,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design token?",
+        "answer": "A design token is a variable that stores design attributes like colors, typography, and spacing. It ensures consistency across a product and simplifies design system management.",
+        "keyPoints": [
+            "Stores design attributes like colors and typography.",
+            "Ensures consistency across a product.",
+            "Simplifies design system management."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Tokens - Salesforce Lightning Design System",
+                "url": "https://www.lightningdesignsystem.com/design-tokens/"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 30,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design language?",
+        "answer": "A design language defines the visual and interaction patterns of a product. It ensures consistency and coherence across all components and interfaces.",
+        "keyPoints": [
+            "Defines visual and interaction patterns.",
+            "Ensures consistency and coherence.",
+            "Used across all components and interfaces."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Language - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/design-language"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 31,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design principle?",
+        "answer": "A design principle is a guideline that helps designers make consistent and effective design decisions. Examples include simplicity, consistency, and user-centered design.",
+        "keyPoints": [
+            "Guideline for consistent and effective design.",
+            "Examples: Simplicity, consistency, user-centered design.",
+            "Helps align design decisions with goals."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Principles - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/design-principles"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 32,
+        "topic": "UI/UX",
+        "question": "What is the purpose of a design pattern?",
+        "answer": "A design pattern is a reusable solution to a common design problem. It ensures consistency and efficiency in solving recurring design challenges.",
+        "keyPoints": [
+            "Reusable solution to common design problems.",
+            "Ensures consistency and efficiency.",
+            "Examples: Navigation menus, forms, and modals."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Design Patterns - Interaction Design Foundation",
+                "url": "https://www.interaction-design.org/literature/article/design-patterns"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    }
+]

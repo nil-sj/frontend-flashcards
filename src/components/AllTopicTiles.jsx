@@ -76,6 +76,12 @@ const AllTopicTiles = () => {
         link: '/flashcards?topic=git',
         color: '#c3e6cb', // Light green background
     },
+    {
+      title: 'Next.js',
+      description: 'Learn the basics of Next.js for ... more content to be added here at a later date.',
+      link: '/flashcards?topic=nextjs',
+      color: '#c3e6cb', // Light green background
+  }
 ];
 
   return (

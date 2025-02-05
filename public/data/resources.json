@@ -1,37 +1,212 @@
 [
-    {
+  {
       "title": "MDN Web Docs",
       "type": "Documentation",
       "description": "Comprehensive web development documentation.",
       "source": "Mozilla",
       "url": "https://developer.mozilla.org/en-US/"
-    },
-    {
+  },
+  {
       "title": "JavaScript.info",
       "type": "Tutorial",
       "description": "In-depth JavaScript tutorials from beginner to advanced.",
       "source": "Ilya Kantor",
       "url": "https://javascript.info/"
-    },
-    {
+  },
+  {
       "title": "CSS-Tricks",
       "type": "Blog",
       "description": "Advanced CSS tips, tricks, and best practices.",
       "source": "Chris Coyier",
       "url": "https://css-tricks.com/"
-    },
-    {
+  },
+  {
       "title": "Traversy Media",
       "type": "YouTube",
       "description": "Web development tutorials for all levels.",
       "source": "Brad Traversy",
       "url": "https://www.youtube.com/c/TraversyMedia"
-    },
-    {
+  },
+  {
       "title": "Frontend Masters",
       "type": "Course",
       "description": "High-quality frontend development courses.",
       "source": "Frontend Masters",
       "url": "https://frontendmasters.com/"
-    }
-  ]  
+  },
+  {
+      "title": "W3Schools",
+      "type": "Documentation",
+      "description": "Beginner-friendly tutorials on HTML, CSS, and JavaScript.",
+      "source": "W3Schools",
+      "url": "https://www.w3schools.com/"
+  },
+  {
+      "title": "Smashing Magazine",
+      "type": "Blog",
+      "description": "Web design and frontend development articles.",
+      "source": "Smashing Magazine",
+      "url": "https://www.smashingmagazine.com/"
+  },
+  {
+      "title": "The Odin Project",
+      "type": "Course",
+      "description": "A free and structured curriculum for web development.",
+      "source": "The Odin Project",
+      "url": "https://www.theodinproject.com/"
+  },
+  {
+      "title": "FreeCodeCamp",
+      "type": "Course",
+      "description": "Free coding challenges and full-stack web development curriculum.",
+      "source": "freeCodeCamp",
+      "url": "https://www.freecodecamp.org/"
+  },
+  {
+      "title": "Dev.to",
+      "type": "Blog",
+      "description": "A community-driven blog platform for developers.",
+      "source": "Dev.to",
+      "url": "https://dev.to/"
+  },
+  {
+      "title": "Net Ninja",
+      "type": "YouTube",
+      "description": "Clear and concise web development tutorials.",
+      "source": "Net Ninja",
+      "url": "https://www.youtube.com/c/TheNetNinja"
+  },
+  {
+      "title": "Google Developers Web Fundamentals",
+      "type": "Documentation",
+      "description": "Best practices and guides on modern web development.",
+      "source": "Google Developers",
+      "url": "https://web.dev/"
+  },
+  {
+      "title": "CS50’s Web Programming with Python and JavaScript",
+      "type": "Course",
+      "description": "Harvard’s free web development course covering HTML, CSS, JavaScript, and Flask.",
+      "source": "Harvard CS50",
+      "url": "https://cs50.harvard.edu/web/"
+  },
+  {
+      "title": "Egghead.io",
+      "type": "Course",
+      "description": "Short and practical lessons on modern web technologies.",
+      "source": "Egghead.io",
+      "url": "https://egghead.io/"
+  },
+  {
+      "title": "Web.dev",
+      "type": "Blog",
+      "description": "Best practices, performance optimization, and progressive web apps.",
+      "source": "Google Developers",
+      "url": "https://web.dev/"
+  },
+  {
+      "title": "Scotch.io",
+      "type": "Blog",
+      "description": "Full-stack development tutorials and articles.",
+      "source": "Scotch.io",
+      "url": "https://scotch.io/"
+  },
+  {
+      "title": "Stack Overflow",
+      "type": "Forum",
+      "description": "Q&A platform for developers to solve coding problems.",
+      "source": "Stack Overflow",
+      "url": "https://stackoverflow.com/"
+  },
+  {
+      "title": "CSS Battle",
+      "type": "Game",
+      "description": "A fun way to practice CSS by recreating designs with the least code.",
+      "source": "CSS Battle",
+      "url": "https://cssbattle.dev/"
+  },
+  {
+      "title": "Frontend Mentor",
+      "type": "Challenge",
+      "description": "Real-world frontend challenges to improve coding skills.",
+      "source": "Frontend Mentor",
+      "url": "https://www.frontendmentor.io/"
+  },
+  {
+      "title": "Kevin Powell",
+      "type": "YouTube",
+      "description": "CSS and frontend tutorials with clear explanations.",
+      "source": "Kevin Powell",
+      "url": "https://www.youtube.com/c/KevinPowell"
+  },
+  {
+      "title": "The Modern JavaScript Tutorial",
+      "type": "Documentation",
+      "description": "Covers JavaScript fundamentals and advanced concepts in detail.",
+      "source": "JavaScript.info",
+      "url": "https://javascript.info/"
+  },
+  {
+      "title": "React Docs",
+      "type": "Documentation",
+      "description": "Official documentation for React.js.",
+      "source": "React",
+      "url": "https://react.dev/"
+  },
+  {
+      "title": "Node.js Docs",
+      "type": "Documentation",
+      "description": "Official documentation for Node.js runtime.",
+      "source": "Node.js",
+      "url": "https://nodejs.org/en/docs/"
+  },
+  {
+      "title": "CSS Grid by Mozilla",
+      "type": "Tutorial",
+      "description": "Detailed guide to mastering CSS Grid.",
+      "source": "Mozilla",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+  },
+  {
+      "title": "CSS Zen Garden",
+      "type": "Inspiration",
+      "description": "A showcase of the power of CSS styling.",
+      "source": "CSS Zen Garden",
+      "url": "http://www.csszengarden.com/"
+  },
+  {
+      "title": "CodePen",
+      "type": "Tool",
+      "description": "An online code editor and community for frontend developers.",
+      "source": "CodePen",
+      "url": "https://codepen.io/"
+  },
+  {
+      "title": "JSFiddle",
+      "type": "Tool",
+      "description": "A lightweight JavaScript playground for testing code snippets.",
+      "source": "JSFiddle",
+      "url": "https://jsfiddle.net/"
+  },
+  {
+      "title": "Can I Use",
+      "type": "Tool",
+      "description": "Check browser support for web features and CSS properties.",
+      "source": "Can I Use",
+      "url": "https://caniuse.com/"
+  },
+  {
+      "title": "WebAIM",
+      "type": "Accessibility",
+      "description": "Resources and tools for web accessibility.",
+      "source": "WebAIM",
+      "url": "https://webaim.org/"
+  },
+  {
+      "title": "A11y Project",
+      "type": "Accessibility",
+      "description": "A community-driven guide to making web accessibility easier.",
+      "source": "A11y Project",
+      "url": "https://www.a11yproject.com/"
+  }
+]

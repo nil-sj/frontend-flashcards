@@ -5,9 +5,9 @@ import sampleIcon from '../assets/Sample-Icon.png';
 function TopicCard({ topic }) {
   return (
     <div className="col-lg-4 col-md-6 mb-4">
-        <Link to={topic.link}>
+        <Link to={`/flashcard?topic=${topic.slug}`}>
         <div 
-            className="card tiles-card h-100 border-0"
+            className={`card tiles-card h-100 border-0 ${topic.ready ? 'ready' : 'not-ready'}`}
             style={{
                 backgroundImage: `url(${sampleIcon})`,
             }}
@@ -18,7 +18,7 @@ function TopicCard({ topic }) {
                 (e.currentTarget.style.transform = 'scale(1)')
             }
         >
-            <h3 className="card-title mb-3">{topic.title}</h3>
+            <h3 className="card-title mb-3">{topic.topic}</h3>
             <p className="card-text text-muted">{topic.description}</p>
         </div>
         </Link>

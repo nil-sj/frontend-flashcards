@@ -1,0 +1,2011 @@
+[
+    {
+      "id": 1,
+      "topic": "Next.js",
+      "question": "What is Next.js, and how does it differ from React?",
+      "answer": "Next.js is a React framework that provides additional features like server-side rendering (SSR), static site generation (SSG), and API routes out of the box. Unlike React, which is a library for building user interfaces, Next.js is a full-fledged framework that simplifies building production-ready applications by handling routing, optimizations, and rendering strategies.",
+      "keyPoints": [
+        "Next.js is a framework built on top of React.",
+        "It provides SSR, SSG, and API routes by default.",
+        "React is a UI library, while Next.js is a framework for building full applications."
+      ],
+      "codeExample": "",
+      "resources": [
+        {
+          "name": "Next.js Documentation",
+          "url": "https://nextjs.org/docs"
+        }
+      ],
+      "tags": ["Interview Question", "Theory"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "topic": "Next.js",
+      "question": "What are the key benefits of using Next.js over a traditional React application?",
+      "answer": "Next.js offers several benefits over a traditional React app, including built-in support for SSR and SSG, automatic code splitting, optimized performance, file-based routing, API routes, and seamless TypeScript integration. These features reduce the need for additional configuration and improve developer productivity.",
+      "keyPoints": [
+        "Built-in SSR and SSG for better SEO and performance.",
+        "File-based routing simplifies navigation.",
+        "Automatic code splitting improves load times."
+      ],
+      "codeExample": "",
+      "resources": [
+        {
+          "name": "Next.js Features",
+          "url": "https://nextjs.org/features"
+        }
+      ],
+      "tags": ["Interview Question", "Theory"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "topic": "Next.js",
+      "question": "How does Next.js handle server-side rendering (SSR) and static site generation (SSG)?",
+      "answer": "Next.js handles SSR by rendering pages on the server at runtime and sending the fully rendered HTML to the client. For SSG, it pre-renders pages at build time, generating static HTML files that can be served directly. Both approaches improve performance and SEO compared to client-side rendering (CSR).",
+      "keyPoints": [
+        "SSR renders pages on the server at runtime.",
+        "SSG pre-renders pages at build time.",
+        "Both improve performance and SEO."
+      ],
+      "codeExample": "",
+      "resources": [
+        {
+          "name": "Next.js Rendering Strategies",
+          "url": "https://nextjs.org/docs/basic-features/pages#server-side-rendering"
+        }
+      ],
+      "tags": ["Interview Question", "Theory"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 4,
+      "topic": "Next.js",
+      "question": "What are the different rendering strategies in Next.js?",
+      "answer": "Next.js supports four rendering strategies: Static Site Generation (SSG), Server-Side Rendering (SSR), Incremental Static Regeneration (ISR), and Client-Side Rendering (CSR). SSG pre-renders pages at build time, SSR renders pages on the server at runtime, ISR allows updating static pages after build, and CSR renders pages in the browser.",
+      "keyPoints": [
+        "SSG: Pre-renders pages at build time.",
+        "SSR: Renders pages on the server at runtime.",
+        "ISR: Updates static pages after build.",
+        "CSR: Renders pages in the browser."
+      ],
+      "codeExample": "",
+      "resources": [
+        {
+          "name": "Next.js Rendering Strategies",
+          "url": "https://nextjs.org/docs/basic-features/pages"
+        }
+      ],
+      "tags": ["Interview Question", "Theory"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 5,
+      "topic": "Next.js",
+      "question": "What is pre-rendering, and why is it useful?",
+      "answer": "Pre-rendering is the process of generating HTML for a page in advance, either at build time (SSG) or on the server at runtime (SSR). It is useful because it improves performance, SEO, and user experience by delivering fully rendered pages to the client, reducing the need for client-side JavaScript execution.",
+      "keyPoints": [
+        "Pre-rendering generates HTML in advance.",
+        "Improves performance and SEO.",
+        "Reduces client-side JavaScript execution."
+      ],
+      "codeExample": "",
+      "resources": [
+        {
+          "name": "Next.js Pre-rendering",
+          "url": "https://nextjs.org/docs/basic-features/pages#pre-rendering"
+        }
+      ],
+      "tags": ["Interview Question", "Theory"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 6,
+      "topic": "Next.js",
+      "question": "What is the difference between SSR, SSG, ISR, and CSR in Next.js?",
+      "answer": "SSR (Server-Side Rendering) renders pages on the server at runtime. SSG (Static Site Generation) pre-renders pages at build time. ISR (Incremental Static Regeneration) allows updating static pages after build without rebuilding the entire site. CSR (Client-Side Rendering) renders pages in the browser using JavaScript.",
+      "keyPoints": [
+        "SSR: Renders on the server at runtime.",
+        "SSG: Pre-renders at build time.",
+        "ISR: Updates static pages after build.",
+        "CSR: Renders in the browser."
+      ],
+      "codeExample": "",
+      "resources": [
+        {
+          "name": "Next.js Rendering Strategies",
+          "url": "https://nextjs.org/docs/basic-features/pages"
+        }
+      ],
+      "tags": ["Interview Question", "Theory"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 7,
+      "topic": "Next.js",
+      "question": "How does Next.js improve performance compared to a traditional React app?",
+      "answer": "Next.js improves performance through features like automatic code splitting, pre-rendering (SSR and SSG), optimized image loading, and built-in caching. These reduce the amount of JavaScript sent to the client, improve load times, and enhance SEO.",
+      "keyPoints": [
+        "Automatic code splitting reduces bundle size.",
+        "Pre-rendering improves load times and SEO.",
+        "Optimized image loading and caching enhance performance."
+      ],
+      "codeExample": "",
+      "resources": [
+        {
+          "name": "Next.js Performance",
+          "url": "https://nextjs.org/docs/advanced-features/optimizing-performance"
+        }
+      ],
+      "tags": ["Interview Question", "Theory"],
+      "difficulty": "medium"
+    },
+    {
+      "id": 8,
+      "topic": "Next.js",
+      "question": "What are pages in Next.js, and how do they differ from React components?",
+      "answer": "Pages in Next.js are React components that are associated with a route based on their file name in the `pages` directory. Unlike regular React components, pages are automatically routed and can leverage Next.js features like SSR, SSG, and API routes.",
+      "keyPoints": [
+        "Pages are associated with routes based on file names.",
+        "They support SSR, SSG, and API routes.",
+        "Regular React components do not have built-in routing or rendering strategies."
+      ],
+      "codeExample": "",
+      "resources": [
+        {
+          "name": "Next.js Pages",
+          "url": "https://nextjs.org/docs/basic-features/pages"
+        }
+      ],
+      "tags": ["Interview Question", "Theory"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 9,
+      "topic": "Next.js",
+      "question": "How do you create a new Next.js project?",
+      "answer": "To create a new Next.js project, run the command `npx create-next-app@latest` followed by the project name. This sets up a new Next.js project with all necessary configurations and dependencies.",
+      "keyPoints": [
+        "Use `npx create-next-app@latest`.",
+        "Follow the prompts to set up the project.",
+        "The command installs all dependencies and configurations."
+      ],
+      "codeExample": "npx create-next-app@latest my-next-app",
+      "resources": [
+        {
+          "name": "Next.js Getting Started",
+          "url": "https://nextjs.org/docs/getting-started"
+        }
+      ],
+      "tags": ["Practical", "Setup"],
+      "difficulty": "easy"
+    },
+    {
+      "id": 10,
+      "topic": "Next.js",
+      "question": "What is the next build command used for?",
+      "answer": "The `next build` command is used to create an optimized production build of a Next.js application. It compiles the application, generates static files for SSG, and prepares the app for deployment.",
+      "keyPoints": [
+        "Creates an optimized production build.",
+        "Generates static files for SSG.",
+        "Prepares the app for deployment."
+      ],
+      "codeExample": "next build",
+      "resources": [
+        {
+          "name": "Next.js Build Command",
+          "url": "https://nextjs.org/docs/api-reference/cli#build"
+        }
+      ],
+      "tags": ["Practical", "Deployment"],
+      "difficulty": "easy"
+    },
+    {
+    "id": 11,
+    "topic": "Next.js",
+    "question": "How does Next.js handle routing?",
+    "answer": "Next.js uses file-based routing, where the file structure in the `pages` directory determines the routes. Each file in the `pages` directory corresponds to a route. For example, `pages/about.js` creates a route at `/about`. Dynamic routes can be created using square brackets, like `pages/posts/[id].js`.",
+    "keyPoints": [
+        "File-based routing based on the `pages` directory.",
+        "Files correspond to routes (e.g., `pages/about.js` → `/about`).",
+        "Dynamic routes use square brackets (e.g., `pages/posts/[id].js`)."
+    ],
+    "codeExample": "",
+    "resources": [
+        {
+        "name": "Next.js Routing",
+        "url": "https://nextjs.org/docs/routing/introduction"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "easy"
+    },
+    {
+    "id": 12,
+    "topic": "Next.js",
+    "question": "What is the difference between file-based routing in Next.js and traditional React routing?",
+    "answer": "In Next.js, routing is file-based and automatically handled by the framework based on the `pages` directory. In traditional React routing, you manually define routes using a library like `react-router-dom`. Next.js simplifies routing by eliminating the need for additional configuration.",
+    "keyPoints": [
+        "Next.js: File-based routing in the `pages` directory.",
+        "Traditional React: Manual routing with `react-router-dom`.",
+        "Next.js simplifies routing with automatic route generation."
+    ],
+    "codeExample": "",
+    "resources": [
+        {
+        "name": "Next.js Routing",
+        "url": "https://nextjs.org/docs/routing/introduction"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 13,
+    "topic": "Next.js",
+    "question": "How do you create a dynamic route in Next.js?",
+    "answer": "Dynamic routes in Next.js are created by adding square brackets to a file or folder name in the `pages` directory. For example, `pages/posts/[id].js` creates a dynamic route where `id` is a parameter. You can access the parameter using `useRouter` or `getStaticProps`/`getServerSideProps`.",
+    "keyPoints": [
+        "Use square brackets for dynamic routes (e.g., `[id].js`).",
+        "Access parameters with `useRouter` or `getStaticProps`/`getServerSideProps`.",
+        "Example: `pages/posts/[id].js` creates `/posts/1`, `/posts/2`, etc."
+    ],
+    "codeExample": "// pages/posts/[id].js\nimport { useRouter } from 'next/router';\n\nconst Post = () => {\n  const router = useRouter();\n  const { id } = router.query;\n  return <div>Post ID: {id}</div>;\n};\n\nexport default Post;",
+    "resources": [
+        {
+        "name": "Next.js Dynamic Routes",
+        "url": "https://nextjs.org/docs/routing/dynamic-routes"
+        }
+    ],
+    "tags": ["Practical", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 14,
+    "topic": "Next.js",
+    "question": "How do you handle catch-all routes in Next.js?",
+    "answer": "Catch-all routes in Next.js are created by using three dots (`...`) inside square brackets in the file name. For example, `pages/posts/[...slug].js` matches any route after `/posts/`, such as `/posts/a`, `/posts/a/b`, or `/posts/a/b/c`. The `slug` parameter will be an array of the matched segments.",
+    "keyPoints": [
+        "Use `[...slug].js` for catch-all routes.",
+        "Matches any route after the specified path.",
+        "`slug` is an array of the matched segments."
+    ],
+    "codeExample": "// pages/posts/[...slug].js\nimport { useRouter } from 'next/router';\n\nconst Post = () => {\n  const router = useRouter();\n  const { slug } = router.query;\n  return <div>Slug: {slug.join('/')}</div>;\n};\n\nexport default Post;",
+    "resources": [
+        {
+        "name": "Next.js Catch-All Routes",
+        "url": "https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes"
+        }
+    ],
+    "tags": ["Practical", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 15,
+    "topic": "Next.js",
+    "question": "What is the purpose of the _app.js file in Next.js?",
+    "answer": "The `_app.js` file is a custom App component in Next.js that wraps all pages. It is used to add global styles, persist layout between page changes, inject additional data into pages, or handle global state. You can override the default App component by creating `pages/_app.js`.",
+    "keyPoints": [
+        "Wraps all pages in the application.",
+        "Used for global styles, layouts, and state.",
+        "Override by creating `pages/_app.js`."
+    ],
+    "codeExample": "// pages/_app.js\nimport '../styles/globals.css';\n\nfunction MyApp({ Component, pageProps }) {\n  return <Component {...pageProps} />;\n}\n\nexport default MyApp;",
+    "resources": [
+        {
+        "name": "Next.js Custom App",
+        "url": "https://nextjs.org/docs/advanced-features/custom-app"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 16,
+    "topic": "Next.js",
+    "question": "What is the _document.js file, and when should you use it?",
+    "answer": "The `_document.js` file is used to customize the HTML document structure in Next.js. It is rendered on the server and is useful for adding elements like `<html>`, `<head>`, and `<body>` tags or including external scripts and styles. Use it when you need to modify the default document structure.",
+    "keyPoints": [
+        "Customizes the HTML document structure.",
+        "Rendered on the server.",
+        "Useful for adding `<html>`, `<head>`, and `<body>` tags."
+    ],
+    "codeExample": "// pages/_document.js\nimport { Html, Head, Main, NextScript } from 'next/document';\n\nexport default function Document() {\n  return (\n    <Html>\n      <Head />\n      <body>\n        <Main />\n        <NextScript />\n      </body>\n    </Html>\n  );\n}",
+    "resources": [
+        {
+        "name": "Next.js Custom Document",
+        "url": "https://nextjs.org/docs/advanced-features/custom-document"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 17,
+    "topic": "Next.js",
+    "question": "How do you use Link in Next.js for client-side navigation?",
+    "answer": "The `Link` component in Next.js is used for client-side navigation between pages. It prefetches the linked page in the background, providing a faster navigation experience. Wrap the `Link` component around an anchor (`<a>`) tag and specify the `href` attribute.",
+    "keyPoints": [
+        "Used for client-side navigation.",
+        "Prefetches the linked page for faster navigation.",
+        "Wrap around an `<a>` tag with the `href` attribute."
+    ],
+    "codeExample": "import Link from 'next/link';\n\nconst Home = () => (\n  <Link href='/about'>\n    <a>About</a>\n  </Link>\n);\n\nexport default Home;",
+    "resources": [
+        {
+        "name": "Next.js Link Component",
+        "url": "https://nextjs.org/docs/api-reference/next/link"
+        }
+    ],
+    "tags": ["Practical", "Theory"],
+    "difficulty": "easy"
+    },
+    {
+    "id": 18,
+    "topic": "Next.js",
+    "question": "What is shallow routing in Next.js?",
+    "answer": "Shallow routing in Next.js allows you to change the URL without running data-fetching methods like `getStaticProps` or `getServerSideProps`. It is useful for updating the URL without reloading the page or fetching new data. Use the `shallow` option in `router.push` or `router.replace`.",
+    "keyPoints": [
+        "Changes the URL without fetching new data.",
+        "Useful for updating the URL without reloading the page.",
+        "Enable with the `shallow` option in `router.push` or `router.replace`."
+    ],
+    "codeExample": "import { useRouter } from 'next/router';\n\nconst MyComponent = () => {\n  const router = useRouter();\n  const handleClick = () => {\n    router.push('/about', undefined, { shallow: true });\n  };\n  return <button onClick={handleClick}>Go to About</button>;\n};\n\nexport default MyComponent;",
+    "resources": [
+        {
+        "name": "Next.js Shallow Routing",
+        "url": "https://nextjs.org/docs/routing/shallow-routing"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 19,
+    "topic": "Next.js",
+    "question": "How do you handle programmatic navigation in Next.js?",
+    "answer": "Programmatic navigation in Next.js is handled using the `useRouter` hook from `next/router`. You can use `router.push`, `router.replace`, or `router.back` to navigate to a new page, replace the current page, or go back to the previous page, respectively.",
+    "keyPoints": [
+        "Use the `useRouter` hook for programmatic navigation.",
+        "`router.push`: Navigate to a new page.",
+        "`router.replace`: Replace the current page.",
+        "`router.back`: Go back to the previous page."
+    ],
+    "codeExample": "import { useRouter } from 'next/router';\n\nconst MyComponent = () => {\n  const router = useRouter();\n  const handleClick = () => {\n    router.push('/about');\n  };\n  return <button onClick={handleClick}>Go to About</button>;\n};\n\nexport default MyComponent;",
+    "resources": [
+        {
+        "name": "Next.js useRouter",
+        "url": "https://nextjs.org/docs/api-reference/next/router"
+        }
+    ],
+    "tags": ["Practical", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 20,
+    "topic": "Next.js",
+    "question": "What is getServerSideProps, and when should you use it?",
+    "answer": "`getServerSideProps` is a Next.js function used for server-side rendering (SSR). It runs on the server for every request and fetches data that is then passed as props to the page. Use it when you need to fetch data that changes frequently or depends on the request context (e.g., user authentication).",
+    "keyPoints": [
+        "Used for server-side rendering (SSR).",
+        "Runs on the server for every request.",
+        "Fetches data that is passed as props to the page.",
+        "Use for frequently changing data or request-dependent data."
+    ],
+    "codeExample": "export async function getServerSideProps(context) {\n  const data = await fetchData(context.req);\n  return { props: { data } };\n}",
+    "resources": [
+        {
+        "name": "Next.js getServerSideProps",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 21,
+    "topic": "Next.js",
+    "question": "What are the different data-fetching methods in Next.js?",
+    "answer": "Next.js provides several data-fetching methods: `getStaticProps` for static generation, `getServerSideProps` for server-side rendering, `getStaticPaths` for dynamic routes in static generation, and client-side fetching using libraries like SWR or the `useEffect` hook. Each method serves a specific purpose depending on the rendering strategy.",
+    "keyPoints": [
+        "`getStaticProps`: Pre-renders pages at build time.",
+        "`getServerSideProps`: Renders pages on the server at runtime.",
+        "`getStaticPaths`: Generates dynamic routes for static pages.",
+        "Client-side fetching: Uses `useEffect` or libraries like SWR."
+    ],
+    "codeExample": "",
+    "resources": [
+        {
+        "name": "Next.js Data Fetching",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 22,
+    "topic": "Next.js",
+    "question": "What is getStaticProps, and how does it work?",
+    "answer": "`getStaticProps` is a Next.js function used for static site generation (SSG). It runs at build time and fetches data to pre-render a page as static HTML. The data is passed as props to the page component, making it available during rendering.",
+    "keyPoints": [
+        "Runs at build time.",
+        "Fetches data for static HTML generation.",
+        "Data is passed as props to the page component."
+    ],
+    "codeExample": "export async function getStaticProps() {\n  const data = await fetchData();\n  return { props: { data } };\n}",
+    "resources": [
+        {
+        "name": "Next.js getStaticProps",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching/get-static-props"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 23,
+    "topic": "Next.js",
+    "question": "What is the difference between getStaticProps and getServerSideProps?",
+    "answer": "`getStaticProps` pre-renders pages at build time, making them static and fast to serve. `getServerSideProps` renders pages on the server at runtime, ensuring the data is always up-to-date but with a performance cost. Use `getStaticProps` for static content and `getServerSideProps` for dynamic content that changes frequently.",
+    "keyPoints": [
+        "`getStaticProps`: Build-time rendering for static content.",
+        "`getServerSideProps`: Runtime rendering for dynamic content.",
+        "`getStaticProps` is faster, while `getServerSideProps` ensures fresh data."
+    ],
+    "codeExample": "",
+    "resources": [
+        {
+        "name": "Next.js Data Fetching Comparison",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 24,
+    "topic": "Next.js",
+    "question": "How do getStaticProps and getStaticPaths work together?",
+    "answer": "`getStaticPaths` is used to define dynamic routes for static generation, while `getStaticProps` fetches data for each route. `getStaticPaths` generates a list of paths, and `getStaticProps` is called for each path to pre-render the page with the required data.",
+    "keyPoints": [
+        "`getStaticPaths`: Defines dynamic routes.",
+        "`getStaticProps`: Fetches data for each route.",
+        "Both work together to pre-render dynamic static pages."
+    ],
+    "codeExample": "export async function getStaticPaths() {\n  return { paths: [{ params: { id: '1' } }], fallback: false };\n}\n\nexport async function getStaticProps({ params }) {\n  const data = await fetchData(params.id);\n  return { props: { data } };\n}",
+    "resources": [
+        {
+        "name": "Next.js getStaticPaths",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching/get-static-paths"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 25,
+    "topic": "Next.js",
+    "question": "What is Incremental Static Regeneration (ISR)?",
+    "answer": "Incremental Static Regeneration (ISR) allows you to update static pages after they are built without rebuilding the entire site. You can specify a `revalidate` interval in `getStaticProps`, and Next.js will regenerate the page in the background when a request comes in after the interval.",
+    "keyPoints": [
+        "Updates static pages after build.",
+        "Uses `revalidate` in `getStaticProps`.",
+        "Regenerates pages in the background."
+    ],
+    "codeExample": "export async function getStaticProps() {\n  const data = await fetchData();\n  return { props: { data }, revalidate: 10 }; // Revalidate every 10 seconds\n}",
+    "resources": [
+        {
+        "name": "Next.js ISR",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 26,
+    "topic": "Next.js",
+    "question": "How do you revalidate static pages in Next.js?",
+    "answer": "Static pages can be revalidated using Incremental Static Regeneration (ISR). By adding the `revalidate` property to the return object of `getStaticProps`, you can specify a time interval (in seconds) after which the page will be regenerated in the background.",
+    "keyPoints": [
+        "Use `revalidate` in `getStaticProps`.",
+        "Specify a time interval in seconds.",
+        "Pages are regenerated in the background."
+    ],
+    "codeExample": "export async function getStaticProps() {\n  const data = await fetchData();\n  return { props: { data }, revalidate: 30 }; // Revalidate every 30 seconds\n}",
+    "resources": [
+        {
+        "name": "Next.js ISR",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 27,
+    "topic": "Next.js",
+    "question": "What is the purpose of fallback: true in getStaticPaths?",
+    "answer": "When `fallback: true` is set in `getStaticPaths`, Next.js generates static pages for paths returned by `getStaticPaths` at build time. For paths not returned, it generates them on-demand when a request is made. This is useful for large sites with many dynamic routes.",
+    "keyPoints": [
+        "Generates static pages for known paths at build time.",
+        "Generates unknown paths on-demand.",
+        "Useful for large sites with many dynamic routes."
+    ],
+    "codeExample": "export async function getStaticPaths() {\n  return { paths: [{ params: { id: '1' } }], fallback: true };\n}",
+    "resources": [
+        {
+        "name": "Next.js Fallback",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching#fallback-true"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 28,
+    "topic": "Next.js",
+    "question": "How do you fetch data on the client side in Next.js?",
+    "answer": "Client-side data fetching in Next.js can be done using the `useEffect` hook or libraries like SWR. This approach is useful for data that changes frequently or does not need to be pre-rendered.",
+    "keyPoints": [
+        "Use `useEffect` or libraries like SWR.",
+        "Ideal for frequently changing data.",
+        "Does not require pre-rendering."
+    ],
+    "codeExample": "import { useEffect, useState } from 'react';\n\nconst MyComponent = () => {\n  const [data, setData] = useState(null);\n  useEffect(() => {\n    fetchData().then(setData);\n  }, []);\n  return <div>{data}</div>;\n};",
+    "resources": [
+        {
+        "name": "Next.js Client-Side Fetching",
+        "url": "https://nextjs.org/docs/basic-features/data-fetching/client-side"
+        }
+    ],
+    "tags": ["Practical", "Theory"],
+    "difficulty": "easy"
+    },
+    {
+    "id": 29,
+    "topic": "Next.js",
+    "question": "How do you use SWR (Stale-While-Revalidate) in Next.js?",
+    "answer": "SWR is a React hook for data fetching that provides features like caching, revalidation, and error handling. To use SWR in Next.js, install the `swr` package and use the `useSWR` hook to fetch data. It automatically revalidates data in the background.",
+    "keyPoints": [
+        "Install the `swr` package.",
+        "Use the `useSWR` hook for data fetching.",
+        "Provides caching and revalidation."
+    ],
+    "codeExample": "import useSWR from 'swr';\n\nconst fetcher = (url) => fetch(url).then((res) => res.json());\n\nconst MyComponent = () => {\n  const { data, error } = useSWR('/api/data', fetcher);\n  if (error) return <div>Error loading data</div>;\n  if (!data) return <div>Loading...</div>;\n  return <div>{data}</div>;\n};",
+    "resources": [
+        {
+        "name": "SWR Documentation",
+        "url": "https://swr.vercel.app/"
+        }
+    ],
+    "tags": ["Practical", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+    "id": 30,
+    "topic": "Next.js",
+    "question": "What is getInitialProps, and why is it deprecated?",
+    "answer": "`getInitialProps` was a data-fetching method in Next.js that allowed fetching data on both the server and client sides. It is deprecated because it complicates the rendering process and does not align with the newer, more efficient methods like `getStaticProps` and `getServerSideProps`.",
+    "keyPoints": [
+        "Fetches data on both server and client sides.",
+        "Deprecated due to complexity.",
+        "Replaced by `getStaticProps` and `getServerSideProps`."
+    ],
+    "codeExample": "",
+    "resources": [
+        {
+        "name": "Next.js getInitialProps",
+        "url": "https://nextjs.org/docs/api-reference/data-fetching/get-initial-props"
+        }
+    ],
+    "tags": ["Interview Question", "Theory"],
+    "difficulty": "medium"
+    },
+    {
+        "id": 31,
+        "topic": "Next.js",
+        "question": "How do you create an API route in Next.js?",
+        "answer": "API routes in Next.js are created by adding files to the `pages/api` directory. Each file in this directory becomes an API endpoint. For example, `pages/api/hello.js` creates an endpoint at `/api/hello`. The file should export a default function that handles the request and response.",
+        "keyPoints": [
+        "Files in `pages/api` become API endpoints.",
+        "Export a default function to handle requests.",
+        "Example: `pages/api/hello.js` creates `/api/hello`."
+        ],
+        "codeExample": "// pages/api/hello.js\nexport default function handler(req, res) {\n  res.status(200).json({ message: 'Hello, world!' });\n}",
+        "resources": [
+        {
+            "name": "Next.js API Routes",
+            "url": "https://nextjs.org/docs/api-routes/introduction"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 32,
+        "topic": "Next.js",
+        "question": "What is the difference between Next.js API routes and a traditional backend API?",
+        "answer": "Next.js API routes are integrated into the Next.js application and run on the same server as the frontend. Traditional backend APIs are typically separate services, often built with frameworks like Express or Django. Next.js API routes simplify development by eliminating the need for a separate backend, but they may not be suitable for large-scale or complex applications.",
+        "keyPoints": [
+        "Next.js API routes are part of the Next.js app.",
+        "Traditional backend APIs are separate services.",
+        "Next.js API routes simplify development but may not scale for complex use cases."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js API Routes",
+            "url": "https://nextjs.org/docs/api-routes/introduction"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 33,
+        "topic": "Next.js",
+        "question": "How do you handle POST requests in Next.js API routes?",
+        "answer": "To handle POST requests in Next.js API routes, check the `req.method` property. If it is `POST`, process the request body and send a response using `res.status()` and `res.json()`. The request body can be accessed using `req.body`.",
+        "keyPoints": [
+        "Check `req.method` to identify POST requests.",
+        "Access the request body using `req.body`.",
+        "Send a response using `res.status()` and `res.json()`."
+        ],
+        "codeExample": "// pages/api/submit.js\nexport default function handler(req, res) {\n  if (req.method === 'POST') {\n    const data = req.body;\n    res.status(200).json({ message: 'Data received', data });\n  } else {\n    res.status(405).json({ message: 'Method not allowed' });\n  }\n}",
+        "resources": [
+        {
+            "name": "Next.js API Routes",
+            "url": "https://nextjs.org/docs/api-routes/introduction"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 34,
+        "topic": "Next.js",
+        "question": "How can you protect API routes in Next.js?",
+        "answer": "API routes in Next.js can be protected by checking authentication tokens or session data in the request. For example, you can use middleware to verify a JWT token or check if the user is logged in before processing the request. If the request is not authorized, return a `401 Unauthorized` or `403 Forbidden` response.",
+        "keyPoints": [
+        "Check authentication tokens or session data.",
+        "Use middleware for verification.",
+        "Return `401` or `403` for unauthorized requests."
+        ],
+        "codeExample": "// pages/api/protected.js\nimport { getSession } from 'next-auth/react';\n\nexport default async function handler(req, res) {\n  const session = await getSession({ req });\n  if (!session) {\n    return res.status(401).json({ message: 'Unauthorized' });\n  }\n  res.status(200).json({ message: 'Authorized', user: session.user });\n}",
+        "resources": [
+        {
+            "name": "Next.js Authentication",
+            "url": "https://nextjs.org/docs/authentication"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 35,
+        "topic": "Next.js",
+        "question": "What is the difference between req and res in Next.js API routes?",
+        "answer": "In Next.js API routes, `req` (request) represents the incoming HTTP request and contains properties like `method`, `headers`, and `body`. `res` (response) represents the outgoing HTTP response and provides methods like `status()`, `json()`, and `send()` to send data back to the client.",
+        "keyPoints": [
+        "`req`: Represents the incoming request.",
+        "`res`: Represents the outgoing response.",
+        "`req` contains `method`, `headers`, and `body`.",
+        "`res` provides methods like `status()` and `json()`."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js API Routes",
+            "url": "https://nextjs.org/docs/api-routes/introduction"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 36,
+        "topic": "Next.js",
+        "question": "How do you integrate a database with Next.js API routes?",
+        "answer": "To integrate a database with Next.js API routes, use a database client or ORM (e.g., Prisma, Mongoose) to connect to the database. Perform database operations within the API route handler and return the results to the client using `res.json()`.",
+        "keyPoints": [
+        "Use a database client or ORM.",
+        "Perform database operations in the API route handler.",
+        "Return results using `res.json()`."
+        ],
+        "codeExample": "// pages/api/data.js\nimport { PrismaClient } from '@prisma/client';\n\nconst prisma = new PrismaClient();\n\nexport default async function handler(req, res) {\n  const data = await prisma.data.findMany();\n  res.status(200).json(data);\n}",
+        "resources": [
+        {
+            "name": "Next.js Database Integration",
+            "url": "https://nextjs.org/docs/database-integration"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 37,
+        "topic": "Next.js",
+        "question": "What is res.json() in Next.js API routes?",
+        "answer": "`res.json()` is a method in Next.js API routes used to send a JSON response to the client. It sets the `Content-Type` header to `application/json` and converts the provided JavaScript object to a JSON string.",
+        "keyPoints": [
+        "Sends a JSON response to the client.",
+        "Sets `Content-Type` to `application/json`.",
+        "Converts JavaScript objects to JSON strings."
+        ],
+        "codeExample": "// pages/api/example.js\nexport default function handler(req, res) {\n  res.status(200).json({ message: 'Hello, world!' });\n}",
+        "resources": [
+        {
+            "name": "Next.js API Routes",
+            "url": "https://nextjs.org/docs/api-routes/introduction"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 38,
+        "topic": "Next.js",
+        "question": "How do you handle middleware in API routes?",
+        "answer": "Middleware in Next.js API routes can be implemented by creating a function that processes the request before passing it to the route handler. For example, you can use middleware to authenticate requests, log data, or modify the request object.",
+        "keyPoints": [
+        "Middleware processes requests before the route handler.",
+        "Can be used for authentication, logging, or modifying requests.",
+        "Example: Authentication middleware."
+        ],
+        "codeExample": "// pages/api/middleware.js\nconst withAuth = (handler) => async (req, res) => {\n  const token = req.headers.authorization;\n  if (!token) {\n    return res.status(401).json({ message: 'Unauthorized' });\n  }\n  return handler(req, res);\n};\n\nexport default withAuth((req, res) => {\n  res.status(200).json({ message: 'Authorized' });\n});",
+        "resources": [
+        {
+            "name": "Next.js Middleware",
+            "url": "https://nextjs.org/docs/middleware"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 39,
+        "topic": "Next.js",
+        "question": "How do you handle file uploads in Next.js API routes?",
+        "answer": "File uploads in Next.js API routes can be handled using libraries like `multer` or `formidable`. These libraries parse the incoming multipart form data and save the uploaded files to a specified directory. The file metadata can then be accessed in the API route handler.",
+        "keyPoints": [
+        "Use libraries like `multer` or `formidable`.",
+        "Parse multipart form data.",
+        "Save files to a specified directory."
+        ],
+        "codeExample": "// pages/api/upload.js\nimport formidable from 'formidable';\nimport fs from 'fs';\n\nexport const config = { api: { bodyParser: false } };\n\nexport default async function handler(req, res) {\n  const form = new formidable.IncomingForm();\n  form.parse(req, (err, fields, files) => {\n    if (err) return res.status(500).json({ error: 'Upload failed' });\n    res.status(200).json({ message: 'File uploaded', files });\n  });\n}",
+        "resources": [
+        {
+            "name": "Next.js File Uploads",
+            "url": "https://nextjs.org/docs/api-routes/request-helpers"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 40,
+        "topic": "Next.js",
+        "question": "How do you use authentication and authorization in Next.js API routes?",
+        "answer": "Authentication and authorization in Next.js API routes can be implemented using libraries like `next-auth` or by manually verifying tokens (e.g., JWT). Check the user's credentials or token in the request and grant or deny access based on their role or permissions.",
+        "keyPoints": [
+        "Use libraries like `next-auth` or JWT.",
+        "Verify credentials or tokens in the request.",
+        "Grant or deny access based on roles or permissions."
+        ],
+        "codeExample": "// pages/api/protected.js\nimport { getSession } from 'next-auth/react';\n\nexport default async function handler(req, res) {\n  const session = await getSession({ req });\n  if (!session) {\n    return res.status(401).json({ message: 'Unauthorized' });\n  }\n  res.status(200).json({ message: 'Authorized', user: session.user });\n}",
+        "resources": [
+        {
+            "name": "Next.js Authentication",
+            "url": "https://nextjs.org/docs/authentication"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 41,
+        "topic": "Next.js",
+        "question": "What is Middleware in Next.js?",
+        "answer": "Middleware in Next.js is a function or code that runs before a request is completed. It allows you to modify the request or response, perform authentication, redirect users, or add custom logic. Middleware is executed on the server and can be used to enhance request handling.",
+        "keyPoints": [
+        "Runs before a request is completed.",
+        "Can modify requests or responses.",
+        "Used for authentication, redirects, or custom logic.",
+        "Executed on the server."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Middleware",
+            "url": "https://nextjs.org/docs/middleware"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 42,
+        "topic": "Next.js",
+        "question": "How do you create Middleware in Next.js?",
+        "answer": "Middleware in Next.js is created by adding a `middleware.js` (or `middleware.ts`) file in the root of your project or inside the `pages` or `src` directory. The middleware function receives the `req` (request) and `res` (response) objects and can modify them or redirect the request.",
+        "keyPoints": [
+        "Create a `middleware.js` or `middleware.ts` file.",
+        "Place it in the root, `pages`, or `src` directory.",
+        "Middleware function receives `req` and `res` objects."
+        ],
+        "codeExample": "// middleware.js\nimport { NextResponse } from 'next/server';\n\nexport function middleware(req) {\n  return NextResponse.next();\n}",
+        "resources": [
+        {
+            "name": "Next.js Middleware",
+            "url": "https://nextjs.org/docs/middleware"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 43,
+        "topic": "Next.js",
+        "question": "What are some common use cases for Middleware in Next.js?",
+        "answer": "Common use cases for Middleware in Next.js include authentication, redirecting users based on roles, modifying request/response headers, A/B testing, logging, and blocking malicious requests. Middleware is versatile and can be used to add custom logic to request handling.",
+        "keyPoints": [
+        "Authentication and role-based redirects.",
+        "Modifying request/response headers.",
+        "A/B testing and logging.",
+        "Blocking malicious requests."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Middleware Use Cases",
+            "url": "https://nextjs.org/docs/middleware#use-cases"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 44,
+        "topic": "Next.js",
+        "question": "How do you redirect users based on roles using Middleware?",
+        "answer": "To redirect users based on roles using Middleware, check the user's role (e.g., from a token or session) in the middleware function. Use `NextResponse.redirect()` to send them to the appropriate page. For example, admins can be redirected to `/admin`, while regular users go to `/dashboard`.",
+        "keyPoints": [
+        "Check the user's role in the middleware.",
+        "Use `NextResponse.redirect()` to redirect users.",
+        "Example: Admins → `/admin`, Users → `/dashboard`."
+        ],
+        "codeExample": "// middleware.js\nimport { NextResponse } from 'next/server';\n\nexport function middleware(req) {\n  const role = req.cookies.get('role');\n  if (role === 'admin') {\n    return NextResponse.redirect('/admin');\n  } else if (role === 'user') {\n    return NextResponse.redirect('/dashboard');\n  }\n  return NextResponse.next();\n}",
+        "resources": [
+        {
+            "name": "Next.js Middleware Redirects",
+            "url": "https://nextjs.org/docs/middleware#redirects"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 45,
+        "topic": "Next.js",
+        "question": "What is the purpose of next() in Middleware?",
+        "answer": "The `next()` function in Middleware is used to pass control to the next middleware function or to the actual request handler. It allows the request to continue processing without being interrupted. If `next()` is not called, the request will hang or be terminated.",
+        "keyPoints": [
+        "Passes control to the next middleware or request handler.",
+        "Allows the request to continue processing.",
+        "Required to avoid hanging or terminating the request."
+        ],
+        "codeExample": "// middleware.js\nimport { NextResponse } from 'next/server';\n\nexport function middleware(req) {\n  console.log('Middleware executed');\n  return NextResponse.next();\n}",
+        "resources": [
+        {
+            "name": "Next.js Middleware",
+            "url": "https://nextjs.org/docs/middleware"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 46,
+        "topic": "Next.js",
+        "question": "How do you modify response headers using Middleware?",
+        "answer": "To modify response headers using Middleware, use the `NextResponse` API. You can add, update, or remove headers by accessing the `response.headers` object. For example, you can set a custom header like `X-Custom-Header`.",
+        "keyPoints": [
+        "Use the `NextResponse` API to modify headers.",
+        "Access `response.headers` to add, update, or remove headers.",
+        "Example: Set `X-Custom-Header`."
+        ],
+        "codeExample": "// middleware.js\nimport { NextResponse } from 'next/server';\n\nexport function middleware(req) {\n  const response = NextResponse.next();\n  response.headers.set('X-Custom-Header', 'Hello, World!');\n  return response;\n}",
+        "resources": [
+        {
+            "name": "Next.js Middleware Headers",
+            "url": "https://nextjs.org/docs/middleware#setting-headers"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 47,
+        "topic": "Next.js",
+        "question": "Can you cache responses in Middleware?",
+        "answer": "Middleware in Next.js does not directly cache responses. However, you can use caching mechanisms like `Cache-Control` headers or integrate with external caching services (e.g., Redis) to cache responses. Middleware can modify headers to enable or disable caching.",
+        "keyPoints": [
+        "Middleware does not directly cache responses.",
+        "Use `Cache-Control` headers or external services like Redis.",
+        "Middleware can modify headers to control caching."
+        ],
+        "codeExample": "// middleware.js\nimport { NextResponse } from 'next/server';\n\nexport function middleware(req) {\n  const response = NextResponse.next();\n  response.headers.set('Cache-Control', 'public, max-age=3600');\n  return response;\n}",
+        "resources": [
+        {
+            "name": "Next.js Middleware Caching",
+            "url": "https://nextjs.org/docs/middleware#caching"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 48,
+        "topic": "Next.js",
+        "question": "How does Middleware improve request handling in Next.js?",
+        "answer": "Middleware improves request handling in Next.js by allowing you to add custom logic before a request is completed. It can handle authentication, redirects, logging, header modifications, and more. This reduces the need for repetitive code in individual pages or API routes.",
+        "keyPoints": [
+        "Adds custom logic before request completion.",
+        "Handles authentication, redirects, logging, and headers.",
+        "Reduces repetitive code in pages or API routes."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Middleware",
+            "url": "https://nextjs.org/docs/middleware"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 49,
+        "topic": "Next.js",
+        "question": "How do you use Middleware for A/B testing in Next.js?",
+        "answer": "To use Middleware for A/B testing, you can randomly assign users to different groups (e.g., A or B) and redirect them to different versions of a page. Use `NextResponse.rewrite()` to serve different content without changing the URL.",
+        "keyPoints": [
+        "Randomly assign users to groups (A or B).",
+        "Use `NextResponse.rewrite()` to serve different content.",
+        "Example: Serve `/version-a` or `/version-b` based on the group."
+        ],
+        "codeExample": "// middleware.js\nimport { NextResponse } from 'next/server';\n\nexport function middleware(req) {\n  const group = Math.random() > 0.5 ? 'a' : 'b';\n  return NextResponse.rewrite(`/version-${group}`);\n}",
+        "resources": [
+        {
+            "name": "Next.js Middleware A/B Testing",
+            "url": "https://nextjs.org/docs/middleware#ab-testing"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 50,
+        "topic": "Next.js",
+        "question": "What is Edge Middleware, and how does it work in Next.js?",
+        "answer": "Edge Middleware in Next.js runs on the edge (closer to the user) rather than on the server. It is optimized for low-latency operations like redirects, header modifications, and A/B testing. Edge Middleware is deployed globally and executes at the edge of the network.",
+        "keyPoints": [
+        "Runs on the edge (closer to the user).",
+        "Optimized for low-latency operations.",
+        "Used for redirects, header modifications, and A/B testing.",
+        "Deployed globally and executes at the edge."
+        ],
+        "codeExample": "// middleware.js\nimport { NextResponse } from 'next/server';\n\nexport function middleware(req) {\n  return NextResponse.rewrite('/new-page');\n}\n\nexport const config = {\n  matcher: '/',\n};",
+        "resources": [
+        {
+            "name": "Next.js Edge Middleware",
+            "url": "https://nextjs.org/docs/middleware#edge-middleware"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 51,
+        "topic": "Next.js",
+        "question": "What are the different ways to style components in Next.js?",
+        "answer": "Next.js supports multiple styling methods, including global CSS, CSS Modules, styled-components, Tailwind CSS, SCSS/SASS, and Emotion.js. Each method has its own use case, such as scoped styles (CSS Modules), utility-first styling (Tailwind CSS), or dynamic styling (styled-components).",
+        "keyPoints": [
+        "Global CSS for site-wide styles.",
+        "CSS Modules for scoped styles.",
+        "styled-components for dynamic styling.",
+        "Tailwind CSS for utility-first styling.",
+        "SCSS/SASS for advanced CSS features.",
+        "Emotion.js for CSS-in-JS."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Styling",
+            "url": "https://nextjs.org/docs/basic-features/built-in-css-support"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 52,
+        "topic": "Next.js",
+        "question": "How do you use CSS Modules in Next.js?",
+        "answer": "CSS Modules in Next.js are used by creating a `.module.css` file and importing it into a component. The styles are scoped to the component, preventing conflicts. Use the `className` attribute to apply styles from the CSS Module.",
+        "keyPoints": [
+        "Create a `.module.css` file.",
+        "Import and use styles in a component.",
+        "Styles are scoped to the component."
+        ],
+        "codeExample": "// styles/Button.module.css\n.button {\n  background: blue;\n}\n\n// components/Button.js\nimport styles from './Button.module.css';\n\nconst Button = () => (\n  <button className={styles.button}>Click Me</button>\n);\n\nexport default Button;",
+        "resources": [
+        {
+            "name": "Next.js CSS Modules",
+            "url": "https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 53,
+        "topic": "Next.js",
+        "question": "How do you apply global styles in Next.js?",
+        "answer": "Global styles in Next.js are applied by importing a CSS file into the `_app.js` file. This ensures the styles are available across all pages and components. Global styles are typically placed in the `styles` directory.",
+        "keyPoints": [
+        "Import a CSS file in `_app.js`.",
+        "Styles are available globally.",
+        "Place global styles in the `styles` directory."
+        ],
+        "codeExample": "// styles/globals.css\nbody {\n  margin: 0;\n}\n\n// pages/_app.js\nimport '../styles/globals.css';\n\nfunction MyApp({ Component, pageProps }) {\n  return <Component {...pageProps} />;\n}\n\nexport default MyApp;",
+        "resources": [
+        {
+            "name": "Next.js Global Styles",
+            "url": "https://nextjs.org/docs/basic-features/built-in-css-support#adding-a-global-stylesheet"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 54,
+        "topic": "Next.js",
+        "question": "What is the difference between styled-components and CSS modules in Next.js?",
+        "answer": "styled-components is a CSS-in-JS library that allows dynamic styling using JavaScript, while CSS Modules are scoped CSS files that prevent style conflicts. styled-components is ideal for dynamic styles, while CSS Modules are better for static, scoped styles.",
+        "keyPoints": [
+        "styled-components: CSS-in-JS for dynamic styling.",
+        "CSS Modules: Scoped CSS for static styles.",
+        "styled-components is more flexible, CSS Modules are simpler."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "styled-components vs CSS Modules",
+            "url": "https://styled-components.com/docs/basics#motivation"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 55,
+        "topic": "Next.js",
+        "question": "How do you use Tailwind CSS with Next.js?",
+        "answer": "To use Tailwind CSS with Next.js, install Tailwind CSS and its dependencies, then configure the `tailwind.config.js` and `postcss.config.js` files. Add the Tailwind directives to a global CSS file (e.g., `globals.css`) and import it in `_app.js`.",
+        "keyPoints": [
+        "Install Tailwind CSS and configure it.",
+        "Add Tailwind directives to a global CSS file.",
+        "Import the global CSS file in `_app.js`."
+        ],
+        "codeExample": "// styles/globals.css\n@tailwind base;\n@tailwind components;\n@tailwind utilities;\n\n// pages/_app.js\nimport '../styles/globals.css';\n\nfunction MyApp({ Component, pageProps }) {\n  return <Component {...pageProps} />;\n}\n\nexport default MyApp;",
+        "resources": [
+        {
+            "name": "Tailwind CSS with Next.js",
+            "url": "https://tailwindcss.com/docs/guides/nextjs"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 56,
+        "topic": "Next.js",
+        "question": "How do you add SCSS/SASS support in Next.js?",
+        "answer": "To add SCSS/SASS support in Next.js, install the `sass` package. Create `.scss` or `.sass` files and import them into your components or `_app.js` for global styles. Next.js automatically compiles SCSS/SASS into CSS.",
+        "keyPoints": [
+        "Install the `sass` package.",
+        "Create `.scss` or `.sass` files.",
+        "Import SCSS/SASS files into components or `_app.js`."
+        ],
+        "codeExample": "// styles/globals.scss\nbody {\n  margin: 0;\n}\n\n// pages/_app.js\nimport '../styles/globals.scss';\n\nfunction MyApp({ Component, pageProps }) {\n  return <Component {...pageProps} />;\n}\n\nexport default MyApp;",
+        "resources": [
+        {
+            "name": "Next.js SCSS/SASS Support",
+            "url": "https://nextjs.org/docs/basic-features/built-in-css-support#sass-support"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 57,
+        "topic": "Next.js",
+        "question": "What is the purpose of _app.js in global styling?",
+        "answer": "The `_app.js` file in Next.js is used to apply global styles across all pages. By importing a global CSS file (e.g., `globals.css`) in `_app.js`, the styles are available to every component and page in the application.",
+        "keyPoints": [
+        "Applies global styles across all pages.",
+        "Import global CSS files in `_app.js`.",
+        "Styles are available to all components and pages."
+        ],
+        "codeExample": "// pages/_app.js\nimport '../styles/globals.css';\n\nfunction MyApp({ Component, pageProps }) {\n  return <Component {...pageProps} />;\n}\n\nexport default MyApp;",
+        "resources": [
+        {
+            "name": "Next.js Custom App",
+            "url": "https://nextjs.org/docs/advanced-features/custom-app"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 58,
+        "topic": "Next.js",
+        "question": "How do you make styles scoped to a component in Next.js?",
+        "answer": "To make styles scoped to a component in Next.js, use CSS Modules. Create a `.module.css` file and import it into the component. The styles will only apply to that component, preventing conflicts with other styles.",
+        "keyPoints": [
+        "Use CSS Modules for scoped styles.",
+        "Create a `.module.css` file.",
+        "Import and use styles in the component."
+        ],
+        "codeExample": "// styles/Button.module.css\n.button {\n  background: blue;\n}\n\n// components/Button.js\nimport styles from './Button.module.css';\n\nconst Button = () => (\n  <button className={styles.button}>Click Me</button>\n);\n\nexport default Button;",
+        "resources": [
+        {
+            "name": "Next.js CSS Modules",
+            "url": "https://nextjs.org/docs/basic-features/built-in-css-support#adding-component-level-css"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 59,
+        "topic": "Next.js",
+        "question": "What is the next/script component used for in styling?",
+        "answer": "The `next/script` component is used to optimize the loading of external scripts, such as analytics or third-party libraries. While it is not directly used for styling, it can load CSS frameworks or libraries that affect styling, like Google Fonts or icon libraries.",
+        "keyPoints": [
+        "Optimizes loading of external scripts.",
+        "Can load CSS frameworks or libraries.",
+        "Example: Google Fonts or icon libraries."
+        ],
+        "codeExample": "// pages/_app.js\nimport Script from 'next/script';\n\nfunction MyApp({ Component, pageProps }) {\n  return (\n    <>\n      <Script src='https://example.com/library.js' />\n      <Component {...pageProps} />\n    </>\n  );\n}\n\nexport default MyApp;",
+        "resources": [
+        {
+            "name": "Next.js Script Component",
+            "url": "https://nextjs.org/docs/basic-features/script"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 60,
+        "topic": "Next.js",
+        "question": "How do you use Emotion.js with Next.js?",
+        "answer": "To use Emotion.js with Next.js, install the `@emotion/react` and `@emotion/styled` packages. Use the `css` prop or `styled` component to apply styles. Emotion.js supports both CSS-in-JS and dynamic styling.",
+        "keyPoints": [
+        "Install `@emotion/react` and `@emotion/styled`.",
+        "Use the `css` prop or `styled` component.",
+        "Supports CSS-in-JS and dynamic styling."
+        ],
+        "codeExample": "// components/Button.js\nimport { css } from '@emotion/react';\n\nconst Button = () => (\n  <button css={css`background: blue;`}>Click Me</button>\n);\n\nexport default Button;",
+        "resources": [
+        {
+            "name": "Emotion.js with Next.js",
+            "url": "https://emotion.sh/docs/introduction"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 61,
+        "topic": "Next.js",
+        "question": "How does Next.js improve page load speed?",
+        "answer": "Next.js improves page load speed through features like automatic code-splitting, server-side rendering (SSR), static site generation (SSG), image optimization with `next/image`, and prefetching. These features reduce the amount of JavaScript sent to the client, optimize assets, and improve rendering performance.",
+        "keyPoints": [
+        "Automatic code-splitting reduces bundle size.",
+        "SSR and SSG improve rendering performance.",
+        "`next/image` optimizes images for faster loading.",
+        "Prefetching loads pages in the background."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Performance",
+            "url": "https://nextjs.org/docs/advanced-features/optimizing-performance"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 62,
+        "topic": "Next.js",
+        "question": "What is next/image, and how does it optimize images?",
+        "answer": "The `next/image` component is a built-in feature in Next.js that optimizes images by automatically resizing, compressing, and serving them in modern formats like WebP. It also supports lazy loading and responsive images, improving performance and reducing page load times.",
+        "keyPoints": [
+        "Resizes and compresses images automatically.",
+        "Serves images in modern formats like WebP.",
+        "Supports lazy loading and responsive images."
+        ],
+        "codeExample": "import Image from 'next/image';\n\nconst MyImage = () => (\n  <Image src='/my-image.jpg' alt='My Image' width={500} height={300} />\n);",
+        "resources": [
+        {
+            "name": "Next.js Image Optimization",
+            "url": "https://nextjs.org/docs/api-reference/next/image"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 63,
+        "topic": "Next.js",
+        "question": "How does automatic code-splitting work in Next.js?",
+        "answer": "Automatic code-splitting in Next.js breaks the application into smaller bundles that are loaded on demand. Each page and component is split into separate bundles, reducing the initial load time. Only the required JavaScript is loaded when a user navigates to a specific page.",
+        "keyPoints": [
+        "Breaks the app into smaller bundles.",
+        "Loads bundles on demand.",
+        "Reduces initial load time."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Code-Splitting",
+            "url": "https://nextjs.org/docs/advanced-features/automatic-code-splitting"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 64,
+        "topic": "Next.js",
+        "question": "What are static assets in Next.js, and how are they served?",
+        "answer": "Static assets in Next.js are files like images, fonts, and CSS that are served directly to the client without processing. They are placed in the `public` directory and can be accessed using the `/` prefix. For example, `/my-image.png` refers to `public/my-image.png`.",
+        "keyPoints": [
+        "Static assets include images, fonts, and CSS.",
+        "Placed in the `public` directory.",
+        "Accessed using the `/` prefix."
+        ],
+        "codeExample": "// public/my-image.png\n<img src='/my-image.png' alt='My Image' />",
+        "resources": [
+        {
+            "name": "Next.js Static Assets",
+            "url": "https://nextjs.org/docs/basic-features/static-file-serving"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 65,
+        "topic": "Next.js",
+        "question": "How do you optimize large-scale applications using Next.js?",
+        "answer": "To optimize large-scale applications in Next.js, use features like incremental static regeneration (ISR), middleware for edge functions, lazy loading, and efficient data fetching. Additionally, optimize images with `next/image`, use CDNs for static assets, and implement caching strategies.",
+        "keyPoints": [
+        "Use ISR for dynamic content.",
+        "Lazy load components and images.",
+        "Optimize data fetching and use CDNs.",
+        "Implement caching strategies."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Optimization",
+            "url": "https://nextjs.org/docs/advanced-features/optimizing-performance"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 66,
+        "topic": "Next.js",
+        "question": "What is Lazy Loading in Next.js?",
+        "answer": "Lazy loading in Next.js is a technique to load components or assets only when they are needed. This reduces the initial load time and improves performance. Use `React.lazy` for components and `next/image` for lazy loading images.",
+        "keyPoints": [
+        "Loads components or assets on demand.",
+        "Reduces initial load time.",
+        "Use `React.lazy` for components and `next/image` for images."
+        ],
+        "codeExample": "import dynamic from 'next/dynamic';\n\nconst LazyComponent = dynamic(() => import('../components/LazyComponent'));\n\nconst MyPage = () => (\n  <div>\n    <LazyComponent />\n  </div>\n);",
+        "resources": [
+        {
+            "name": "Next.js Lazy Loading",
+            "url": "https://nextjs.org/docs/advanced-features/dynamic-import"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 67,
+        "topic": "Next.js",
+        "question": "What is next/font and how does it help with performance?",
+        "answer": "`next/font` is a built-in feature in Next.js that optimizes font loading by automatically self-hosting Google Fonts or custom fonts. It reduces external requests, improves performance, and ensures fonts are loaded efficiently.",
+        "keyPoints": [
+        "Self-hosts Google Fonts or custom fonts.",
+        "Reduces external requests.",
+        "Improves font loading performance."
+        ],
+        "codeExample": "import { Inter } from 'next/font/google';\n\nconst inter = Inter({ subsets: ['latin'] });\n\nconst MyPage = () => (\n  <div className={inter.className}>Hello, world!</div>\n);",
+        "resources": [
+        {
+            "name": "Next.js Font Optimization",
+            "url": "https://nextjs.org/docs/basic-features/font-optimization"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 68,
+        "topic": "Next.js",
+        "question": "How do you optimize rendering performance in Next.js?",
+        "answer": "To optimize rendering performance in Next.js, use static site generation (SSG) or server-side rendering (SSR) for pre-rendering, lazy load components, optimize images with `next/image`, and minimize re-renders with `React.memo` or `useMemo`.",
+        "keyPoints": [
+        "Use SSG or SSR for pre-rendering.",
+        "Lazy load components and images.",
+        "Minimize re-renders with `React.memo` or `useMemo`."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Rendering Optimization",
+            "url": "https://nextjs.org/docs/advanced-features/optimizing-performance"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 69,
+        "topic": "Next.js",
+        "question": "What is prefetching in Next.js?",
+        "answer": "Prefetching in Next.js is a feature that automatically loads linked pages in the background when a user hovers over a `Link` component. This ensures that the page is ready instantly when the user clicks the link, improving navigation performance.",
+        "keyPoints": [
+        "Loads linked pages in the background.",
+        "Triggered by hovering over a `Link` component.",
+        "Improves navigation performance."
+        ],
+        "codeExample": "import Link from 'next/link';\n\nconst MyPage = () => (\n  <Link href='/about'>\n    <a>About</a>\n  </Link>\n);",
+        "resources": [
+        {
+            "name": "Next.js Prefetching",
+            "url": "https://nextjs.org/docs/api-reference/next/link"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 70,
+        "topic": "Next.js",
+        "question": "What is the difference between server-side caching and client-side caching?",
+        "answer": "Server-side caching stores data or rendered pages on the server to reduce load times for subsequent requests. Client-side caching stores data or assets in the browser to avoid repeated requests to the server. Both improve performance but operate at different levels.",
+        "keyPoints": [
+        "Server-side caching: Stores data on the server.",
+        "Client-side caching: Stores data in the browser.",
+        "Both improve performance but operate differently."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Caching in Web Applications",
+            "url": "https://web.dev/stale-while-revalidate/"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 71,
+        "topic": "Next.js",
+        "question": "How do you implement authentication in Next.js?",
+        "answer": "Authentication in Next.js can be implemented using libraries like NextAuth.js, JWT tokens, or OAuth providers. Store tokens securely (e.g., in HTTP-only cookies) and protect routes using middleware or server-side checks.",
+        "keyPoints": [
+        "Use NextAuth.js, JWT, or OAuth providers.",
+        "Store tokens securely (e.g., HTTP-only cookies).",
+        "Protect routes with middleware or server-side checks."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "Next.js Authentication",
+            "url": "https://nextjs.org/docs/authentication"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 72,
+        "topic": "Next.js",
+        "question": "What is NextAuth.js, and how does it work?",
+        "answer": "NextAuth.js is an authentication library for Next.js that supports multiple providers (e.g., Google, GitHub) and authentication methods (e.g., email/password, OAuth). It simplifies authentication by handling sessions, tokens, and user management out of the box.",
+        "keyPoints": [
+        "Supports multiple providers and methods.",
+        "Handles sessions, tokens, and user management.",
+        "Simplifies authentication in Next.js."
+        ],
+        "codeExample": "// pages/api/auth/[...nextauth].js\nimport NextAuth from 'next-auth';\nimport Providers from 'next-auth/providers';\n\nexport default NextAuth({\n  providers: [\n    Providers.Google({\n      clientId: process.env.GOOGLE_CLIENT_ID,\n      clientSecret: process.env.GOOGLE_CLIENT_SECRET,\n    }),\n  ],\n});",
+        "resources": [
+        {
+            "name": "NextAuth.js Documentation",
+            "url": "https://next-auth.js.org/"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 73,
+        "topic": "Next.js",
+        "question": "How do you store JWT tokens in Next.js?",
+        "answer": "JWT tokens in Next.js should be stored securely, such as in HTTP-only cookies or secure local storage. HTTP-only cookies are preferred because they are not accessible to JavaScript, reducing the risk of XSS attacks.",
+        "keyPoints": [
+        "Store tokens in HTTP-only cookies or secure local storage.",
+        "HTTP-only cookies are more secure.",
+        "Prevents XSS attacks."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "JWT Best Practices",
+            "url": "https://auth0.com/docs/secure/tokens/json-web-tokens"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 74,
+        "topic": "Next.js",
+        "question": "How do you protect client-side routes in Next.js?",
+        "answer": "To protect client-side routes in Next.js, use a higher-order component (HOC) or a custom hook to check authentication status. Redirect unauthenticated users to a login page using `useRouter`.",
+        "keyPoints": [
+        "Use an HOC or custom hook to check authentication.",
+        "Redirect unauthenticated users to a login page.",
+        "Example: Use `useRouter` for redirection."
+        ],
+        "codeExample": "import { useRouter } from 'next/router';\nimport { useEffect } from 'react';\n\nconst ProtectedRoute = ({ children }) => {\n  const router = useRouter();\n  const isAuthenticated = /* Check authentication */;\n\n  useEffect(() => {\n    if (!isAuthenticated) {\n      router.push('/login');\n    }\n  }, [isAuthenticated]);\n\n  return isAuthenticated ? children : null;\n};",
+        "resources": [
+        {
+            "name": "Next.js Route Protection",
+            "url": "https://nextjs.org/docs/authentication"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 75,
+        "topic": "Next.js",
+        "question": "How do you protect API routes using authentication?",
+        "answer": "To protect API routes in Next.js, check the authentication status in the API route handler. Use middleware or libraries like NextAuth.js to verify tokens or session data. Return a `401 Unauthorized` response if the request is not authenticated.",
+        "keyPoints": [
+        "Check authentication status in API route handlers.",
+        "Use middleware or libraries like NextAuth.js.",
+        "Return `401 Unauthorized` for unauthenticated requests."
+        ],
+        "codeExample": "// pages/api/protected.js\nimport { getSession } from 'next-auth/react';\n\nexport default async function handler(req, res) {\n  const session = await getSession({ req });\n  if (!session) {\n    return res.status(401).json({ message: 'Unauthorized' });\n  }\n  res.status(200).json({ message: 'Authorized' });\n}",
+        "resources": [
+        {
+            "name": "Next.js API Route Protection",
+            "url": "https://nextjs.org/docs/api-routes/introduction"
+        }
+        ],
+        "tags": ["Practical", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 76,
+        "topic": "Next.js",
+        "question": "What is the best way to manage user sessions in Next.js?",
+        "answer": "The best way to manage user sessions in Next.js is to use libraries like NextAuth.js, which handle session management, token storage, and user authentication. Sessions can be stored in cookies or databases, depending on the use case.",
+        "keyPoints": [
+        "Use NextAuth.js for session management.",
+        "Sessions can be stored in cookies or databases.",
+        "Handles token storage and user authentication."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "NextAuth.js Session Management",
+            "url": "https://next-auth.js.org/configuration/session"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 77,
+        "topic": "Next.js",
+        "question": "How do you prevent XSS attacks in Next.js?",
+        "answer": "To prevent XSS attacks in Next.js, sanitize user input, use secure storage for tokens (e.g., HTTP-only cookies), and avoid rendering raw HTML. Libraries like `DOMPurify` can sanitize HTML content, and frameworks like React automatically escape user input.",
+        "keyPoints": [
+        "Sanitize user input.",
+        "Use HTTP-only cookies for tokens.",
+        "Avoid rendering raw HTML.",
+        "Use `DOMPurify` for HTML sanitization."
+        ],
+        "codeExample": "",
+        "resources": [
+        {
+            "name": "XSS Prevention",
+            "url": "https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html"
+        }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 78,
+        "topic": "Next.js",
+        "question": "How does Next.js handle CORS?",
+        "answer": "Next.js does not handle CORS automatically. Instead, you need to configure it manually by setting headers in API routes or using a proxy. You can set CORS headers in API routes using the `res.setHeader` method or configure a custom server with Express/Koa to handle CORS.",
+        "keyPoints": [
+            "CORS allows cross-origin requests between different domains.",
+            "Use `res.setHeader` in API routes to set CORS headers.",
+            "For advanced use cases, configure a custom Express/Koa server.",
+            "You can also use the `next.config.js` file to configure CORS with a reverse proxy."
+        ],
+        "codeExample": "export default function handler(req, res) {\n  res.setHeader('Access-Control-Allow-Origin', '*');\n  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');\n  res.status(200).json({ message: 'CORS enabled' });\n}",
+        "resources": [
+            {"name": "Next.js API Routes", "url": "https://nextjs.org/docs/api-routes/introduction"}
+        ],
+        "tags": ["Authentication & Security"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 79,
+        "topic": "Next.js",
+        "question": "How do you use OAuth authentication in Next.js?",
+        "answer": "OAuth authentication in Next.js can be implemented using NextAuth.js, which provides built-in support for multiple OAuth providers such as Google, GitHub, and Facebook. You configure providers in `[...nextauth].js` and manage user sessions via NextAuth's session management.",
+        "keyPoints": [
+            "NextAuth.js simplifies OAuth authentication in Next.js.",
+            "Supports Google, GitHub, Facebook, and other OAuth providers.",
+            "Uses cookies to manage sessions.",
+            "Can store authentication tokens in JWT."
+        ],
+        "codeExample": "import NextAuth from 'next-auth';\nimport Providers from 'next-auth/providers';\n\nexport default NextAuth({\n  providers: [\n    Providers.Google({\n      clientId: process.env.GOOGLE_CLIENT_ID,\n      clientSecret: process.env.GOOGLE_CLIENT_SECRET\n    })\n  ]\n});",
+        "resources": [
+            {"name": "NextAuth.js Documentation", "url": "https://next-auth.js.org/getting-started/introduction"}
+        ],
+        "tags": ["Authentication & Security"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 80,
+        "topic": "Next.js",
+        "question": "How do you implement role-based authentication in Next.js?",
+        "answer": "Role-based authentication in Next.js can be implemented by storing user roles in session data or JWT tokens and restricting access to routes based on those roles. Middleware can also be used to check user permissions before rendering pages.",
+        "keyPoints": [
+            "Store user roles in session or JWT tokens.",
+            "Use middleware to protect routes.",
+            "Restrict UI elements based on user roles.",
+            "Check roles before rendering pages."
+        ],
+        "codeExample": "export default function handler(req, res) {\n  if (!req.user || req.user.role !== 'admin') {\n    return res.status(403).json({ message: 'Forbidden' });\n  }\n  res.status(200).json({ message: 'Welcome Admin' });\n}",
+        "resources": [
+            {"name": "Role-Based Access Control in Next.js", "url": "https://next-auth.js.org/tutorials/role-based-access-control"}
+        ],
+        "tags": ["Authentication & Security"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 81,
+        "topic": "Next.js",
+        "question": "What are the different ways to deploy a Next.js app?",
+        "answer": "Next.js apps can be deployed using platforms like Vercel, Netlify, AWS (Lambda, Amplify, S3), Docker, or traditional servers. The approach depends on the app's architecture (SSG, SSR, or hybrid).",
+        "keyPoints": [
+            "Vercel: Optimized for Next.js with zero configuration.",
+            "Netlify/AWS: Supports static exports and serverless functions.",
+            "Docker: For containerized deployments on platforms like Kubernetes."
+        ],
+        "codeExample": "// package.json\n{\n  \"scripts\": {\n    \"build\": \"next build\",\n    \"start\": \"next start\"\n  }\n}",
+        "resources": [
+            {
+                "name": "Next.js Deployment Docs",
+                "url": "https://nextjs.org/docs/deployment"
+            }
+        ],
+        "tags": ["Deployment", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 82,
+        "topic": "Next.js",
+        "question": "How do you deploy a Next.js app on Vercel?",
+        "answer": "Vercel is Next.js's official deployment platform. Link your Git repository, configure build settings (`next build`), and deploy. Vercel automatically handles SSR, ISR, and environment variables.",
+        "keyPoints": [
+            "Zero configuration for Next.js features like ISR/SSR.",
+            "Automatic CI/CD with Git integration.",
+            "Built-in analytics and performance monitoring."
+        ],
+        "codeExample": "// vercel.json\n{\n  \"builds\": [{\n    \"src\": \"package.json\",\n    \"use\": \"@vercel/next\"\n  }]\n}",
+        "resources": [
+            {
+                "name": "Vercel Next.js Guide",
+                "url": "https://vercel.com/guides/deploying-nextjs-with-vercel"
+            }
+        ],
+        "tags": ["Vercel", "Next.js"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 83,
+        "topic": "Next.js",
+        "question": "How do you deploy a Next.js app on Netlify?",
+        "answer": "For static exports, use `next export` and deploy the `out` folder. For SSR, use Netlify Functions. Configure `netlify.toml` for build settings.",
+        "keyPoints": [
+            "Use `next export` for static sites.",
+            "Netlify Functions for server-side logic.",
+            "Set `publish` directory to `out`."
+        ],
+        "codeExample": "// netlify.toml\n[build]\ncommand = \"npm run build\"\npublish = \"out\"",
+        "resources": [
+            {
+                "name": "Netlify Next.js Guide",
+                "url": "https://docs.netlify.com/integrations/frameworks/next-js/"
+            }
+        ],
+        "tags": ["Netlify", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 84,
+        "topic": "Next.js",
+        "question": "How do you deploy a Next.js app on AWS Lambda?",
+        "answer": "Use the Serverless Framework or AWS Amplify. For Lambda, package the app with `serverless-nextjs` to handle SSR/API routes.",
+        "keyPoints": [
+            "Use `serverless-nextjs` for automated Lambda deployment.",
+            "AWS Amplify supports static exports and SSR via Lambda@Edge.",
+            "Configure IAM roles and environment variables."
+        ],
+        "codeExample": "// serverless.yml\nservice: nextjs-app\nprovider:\n  name: aws\nplugins:\n  - serverless-nextjs",
+        "resources": [
+            {
+                "name": "Serverless Next.js Plugin",
+                "url": "https://github.com/serverless-nextjs/serverless-next.js"
+            }
+        ],
+        "tags": ["AWS", "Next.js"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 85,
+        "topic": "Next.js",
+        "question": "How do you set up environment variables in Next.js?",
+        "answer": "Use `.env.local` for environment variables. Prefix client-side variables with `NEXT_PUBLIC_` to expose them to the browser.",
+        "keyPoints": [
+            "Server-side variables: Defined in `.env.local`.",
+            "Client-side variables: Use `NEXT_PUBLIC_` prefix.",
+            "Access via `process.env` in code."
+        ],
+        "codeExample": "// .env.local\nNEXT_PUBLIC_API_URL=https://api.example.com\nSECRET_KEY=12345",
+        "resources": [
+            {
+                "name": "Next.js Environment Variables",
+                "url": "https://nextjs.org/docs/basic-features/environment-variables"
+            }
+        ],
+        "tags": ["Environment Variables", "Next.js"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 86,
+        "topic": "Next.js",
+        "question": "What are the benefits of deploying on Vercel vs AWS?",
+        "answer": "Vercel offers seamless Next.js integration, instant cache invalidation, and automatic HTTPS. AWS provides more customization, scalability, and cost control for large-scale apps.",
+        "keyPoints": [
+            "Vercel: Best for simplicity and Next.js-specific features.",
+            "AWS: Better for complex architectures and enterprise needs.",
+            "Cost: Vercel has a free tier; AWS costs scale with usage."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Vercel vs AWS",
+                "url": "https://vercel.com/compare/vercel-vs-aws"
+            }
+        ],
+        "tags": ["Vercel", "AWS", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 87,
+        "topic": "Next.js",
+        "question": "How do you configure Next.js for production?",
+        "answer": "Run `next build` to create an optimized production build. Use `next start` to launch the server. Configure `next.config.js` for advanced settings like redirects or headers.",
+        "keyPoints": [
+            "Build command: `next build`.",
+            "Start command: `next start`.",
+            "Customize with `next.config.js`."
+        ],
+        "codeExample": "// next.config.js\nmodule.exports = {\n  trailingSlash: true,\n  images: {\n    domains: ['example.com']\n  }\n}",
+        "resources": [
+            {
+                "name": "Next.js Production Deployment",
+                "url": "https://nextjs.org/docs/deployment#production"
+            }
+        ],
+        "tags": ["Production", "Next.js"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 88,
+        "topic": "Next.js",
+        "question": "How do you optimize Next.js for better SEO performance?",
+        "answer": "Use static generation (SSG) for pre-rendered pages, add meta tags with `next/head`, and generate sitemaps. Ensure proper use of semantic HTML and structured data.",
+        "keyPoints": [
+            "Pre-render pages with `getStaticProps`/`getStaticPaths`.",
+            "Use `next/head` for dynamic meta tags.",
+            "Generate sitemaps with `next-sitemap`."
+        ],
+        "codeExample": "// pages/index.js\nimport Head from 'next/head';\n\nexport default function Home() {\n  return (\n    <Head>\n      <title>SEO-Friendly Title</title>\n      <meta name=\"description\" content=\"SEO description\" />\n    </Head>\n  );\n}",
+        "resources": [
+            {
+                "name": "Next.js SEO Guide",
+                "url": "https://nextjs.org/learn/seo/introduction-to-seo"
+            }
+        ],
+        "tags": ["SEO", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 89,
+        "topic": "Next.js",
+        "question": "What is next export, and when should you use it?",
+        "answer": "`next export` generates a static HTML version of your app. Use it for fully static sites without server-side rendering (SSR) or API routes.",
+        "keyPoints": [
+            "Outputs static files to the `out` directory.",
+            "Requires all pages to be pre-rendered (no SSR).",
+            "Ideal for CDN-hosted static sites."
+        ],
+        "codeExample": "// package.json\n{\n  \"scripts\": {\n    \"export\": \"next build && next export\"\n  }\n}",
+        "resources": [
+            {
+                "name": "Next.js Static Exports",
+                "url": "https://nextjs.org/docs/advanced-features/static-html-export"
+            }
+        ],
+        "tags": ["Static Export", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 90,
+        "topic": "Next.js",
+        "question": "What are the common issues when deploying a Next.js app?",
+        "answer": "Common issues include missing environment variables, API route errors in static exports, CORS issues, and misconfigured `next.config.js` settings.",
+        "keyPoints": [
+            "Static exports fail if using SSR/API routes.",
+            "Environment variables not prefixed with `NEXT_PUBLIC_`.",
+            "CORS errors due to misconfigured headers."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Next.js Deployment Troubleshooting",
+                "url": "https://nextjs.org/docs/deployment#troubleshooting"
+            }
+        ],
+        "tags": ["Troubleshooting", "Next.js"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 91,
+        "topic": "Next.js",
+        "question": "What are Edge Functions in Next.js?",
+        "answer": "Edge Functions in Next.js are serverless functions deployed to the edge network (like Vercel’s Edge Network) for low-latency execution. They enable dynamic logic at the edge, such as A/B testing or geolocation-based routing.",
+        "keyPoints": [
+            "Deployed globally on edge networks.",
+            "Faster than traditional serverless functions.",
+            "Use cases: Personalization, authentication, and redirects."
+        ],
+        "codeExample": "// pages/api/edge.js\nexport default function handler(req) {\n  return new Response('Hello from the edge!');\n}\nexport const config = { runtime: 'edge' };",
+        "resources": [
+            {
+                "name": "Next.js Edge Functions Docs",
+                "url": "https://nextjs.org/docs/api-routes/edge-api-routes"
+            }
+        ],
+        "tags": ["Edge Functions", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 92,
+        "topic": "Next.js",
+        "question": "How do you create multi-language support in Next.js?",
+        "answer": "Use Next.js’s built-in i18n routing or libraries like `next-i18next`. Configure locales in `next.config.js` and organize translations in JSON files.",
+        "keyPoints": [
+            "Configure `i18n` in `next.config.js`.",
+            "Use `next-i18next` for advanced translation management.",
+            "Lazy-load translations for performance."
+        ],
+        "codeExample": "// next.config.js\nmodule.exports = {\n  i18n: {\n    locales: ['en', 'fr'],\n    defaultLocale: 'en',\n  },\n};",
+        "resources": [
+            {
+                "name": "Next.js i18n Docs",
+                "url": "https://nextjs.org/docs/advanced-features/i18n-routing"
+            }
+        ],
+        "tags": ["i18n", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 93,
+        "topic": "Next.js",
+        "question": "How do you generate a sitemap in Next.js?",
+        "answer": "Use the `next-sitemap` plugin to auto-generate a sitemap. Configure it in `next-sitemap.config.js` and add a script to your `package.json`.",
+        "keyPoints": [
+            "Automate sitemap generation with `next-sitemap`.",
+            "Supports dynamic and static routes.",
+            "Integrates with CI/CD pipelines."
+        ],
+        "codeExample": "// next-sitemap.config.js\nmodule.exports = {\n  siteUrl: 'https://example.com',\n  generateRobotsTxt: true,\n};",
+        "resources": [
+            {
+                "name": "next-sitemap GitHub",
+                "url": "https://github.com/iamvishnusankar/next-sitemap"
+            }
+        ],
+        "tags": ["SEO", "Next.js"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 94,
+        "topic": "Next.js",
+        "question": "How does Next.js handle progressive web apps (PWAs)?",
+        "answer": "Next.js supports PWAs via service workers and a `manifest.json` file. Use libraries like `next-pwa` to automate service worker setup.",
+        "keyPoints": [
+            "Generate `manifest.json` for installability.",
+            "Cache assets with service workers.",
+            "Offline-first support."
+        ],
+        "codeExample": "// next.config.js\nconst withPWA = require('next-pwa');\nmodule.exports = withPWA({\n  pwa: {\n    dest: 'public',\n    disable: process.env.NODE_ENV === 'development',\n  },\n});",
+        "resources": [
+            {
+                "name": "next-pwa GitHub",
+                "url": "https://github.com/shadowwalker/next-pwa"
+            }
+        ],
+        "tags": ["PWA", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 95,
+        "topic": "Next.js",
+        "question": "How do you create and use custom Head components?",
+        "answer": "Use the `next/head` component to inject elements into the `<head>` of the page. Create a reusable `CustomHead` component for meta tags, titles, and scripts.",
+        "keyPoints": [
+            "Manage SEO tags and page titles.",
+            "Avoid duplication with reusable components.",
+            "Supports dynamic data via props."
+        ],
+        "codeExample": "// components/CustomHead.js\nimport Head from 'next/head';\nexport default function CustomHead({ title }) {\n  return (\n    <Head>\n      <title>{title}</title>\n      <meta name=\"description\" content=\"My page\" />\n    </Head>\n  );\n}",
+        "resources": [
+            {
+                "name": "Next.js Head Docs",
+                "url": "https://nextjs.org/docs/api-reference/next/head"
+            }
+        ],
+        "tags": ["SEO", "Next.js"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 96,
+        "topic": "Next.js",
+        "question": "How do you dynamically load third-party scripts in Next.js?",
+        "answer": "Use the `next/script` component with the `strategy` prop (e.g., `lazyOnload`) to defer loading third-party scripts like analytics.",
+        "keyPoints": [
+            "Improve performance with lazy loading.",
+            "Avoid blocking page rendering.",
+            "Supports `afterInteractive`, `lazyOnload`, and `worker` strategies."
+        ],
+        "codeExample": "// pages/index.js\nimport Script from 'next/script';\nexport default function Home() {\n  return (\n    <Script\n      src=\"https://analytics.example.com/script.js\"\n      strategy=\"lazyOnload\"\n    />\n  );\n}",
+        "resources": [
+            {
+                "name": "Next.js Script Docs",
+                "url": "https://nextjs.org/docs/basic-features/script"
+            }
+        ],
+        "tags": ["Optimization", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 97,
+        "topic": "Next.js",
+        "question": "What is revalidation, and how does it help with caching?",
+        "answer": "Revalidation (ISR) allows you to update static content without rebuilding the entire site. Set a `revalidate` time in `getStaticProps` to refresh cached pages.",
+        "keyPoints": [
+            "Incremental Static Regeneration (ISR).",
+            "Balance static performance with dynamic updates.",
+            "Example: `revalidate: 60` updates every 60 seconds."
+        ],
+        "codeExample": "// pages/blog/[slug].js\nexport async function getStaticProps() {\n  return {\n    props: { data },\n    revalidate: 60, // Regenerate every 60 seconds\n  };\n}",
+        "resources": [
+            {
+                "name": "Next.js ISR Docs",
+                "url": "https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration"
+            }
+        ],
+        "tags": ["Caching", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 98,
+        "topic": "Next.js",
+        "question": "How do you handle internationalization (i18n) in Next.js?",
+        "answer": "Next.js provides built-in i18n routing. Configure locales in `next.config.js` and use `next/router` or `next-translate` for translations.",
+        "keyPoints": [
+            "Automatic locale detection.",
+            "Subpath routing (e.g., `/fr/about`).",
+            "Load translations from JSON files."
+        ],
+        "codeExample": "// next.config.js\nmodule.exports = {\n  i18n: {\n    locales: ['en', 'es'],\n    defaultLocale: 'en',\n  },\n};",
+        "resources": [
+            {
+                "name": "Next.js i18n Docs",
+                "url": "https://nextjs.org/docs/advanced-features/i18n-routing"
+            }
+        ],
+        "tags": ["i18n", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 99,
+        "topic": "Next.js",
+        "question": "What is the role of Headless CMS in Next.js applications?",
+        "answer": "A Headless CMS (e.g., Contentful, Sanity) provides content via APIs, decoupling content management from the frontend. Next.js fetches and renders this content statically or dynamically.",
+        "keyPoints": [
+            "Content delivered via REST/GraphQL APIs.",
+            "Supports SSG/SSR for fast performance.",
+            "Flexible content modeling."
+        ],
+        "codeExample": "// pages/blog/[slug].js\nexport async function getStaticProps({ params }) {\n  const data = await fetchContentFromCMS(params.slug);\n  return { props: { data } };\n}",
+        "resources": [
+            {
+                "name": "Next.js CMS Examples",
+                "url": "https://nextjs.org/examples"
+            }
+        ],
+        "tags": ["CMS", "Next.js"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 100,
+        "topic": "Next.js",
+        "question": "How do you implement A/B testing in Next.js?",
+        "answer": "Use middleware to route users to different page variants based on cookies or headers. Tools like Vercel’s Edge Middleware simplify A/B testing.",
+        "keyPoints": [
+            "Serve variants via middleware.",
+            "Track performance with analytics tools.",
+            "Edge Middleware reduces latency."
+        ],
+        "codeExample": "// middleware.js\nimport { NextResponse } from 'next/server';\nexport function middleware(req) {\n  const variant = Math.random() > 0.5 ? 'A' : 'B';\n  return NextResponse.rewrite(`/variant-${variant}`);\n}",
+        "resources": [
+            {
+                "name": "Vercel A/B Testing Docs",
+                "url": "https://vercel.com/guides/ab-testing-with-vercel"
+            }
+        ],
+        "tags": ["A/B Testing", "Next.js"],
+        "difficulty": "hard"
+    }
+]

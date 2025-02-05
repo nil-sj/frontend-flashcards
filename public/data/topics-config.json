@@ -3,60 +3,126 @@
         "topic": "HTML", 
         "file": "html.json", 
         "slug": "html", 
-        "description": "HTML (HyperText Markup Language) is the standard language for creating and structuring web pages."
+        "description": "Learn the building blocks of the web with HyperText Markup Language.",
+        "ready": true
     },
     { 
         "topic": "CSS", 
         "file": "css.json", 
         "slug": "css", 
-        "description": "CSS (Cascading Style Sheets) is used for styling and designing the layout of web pages."
+        "description": "Style your web pages with Cascading Style Sheets for better presentation.",
+        "ready": false
     },
     { 
         "topic": "JavaScript", 
         "file": "javascript.json", 
         "slug": "javascript", 
-        "description": "JavaScript is a programming language that adds interactivity, dynamic content, and logic to web pages."
+        "description": "Make your web pages interactive and dynamic with JavaScript.",
+        "ready": true
     },
     { 
         "topic": "Accessibility", 
         "file": "accessibility.json", 
         "slug": "accessibility", 
-        "description": "Accessibility ensures web content is usable by people with diverse abilities, including those with disabilities."
+        "description": "Learn how to make your web content accessible to everyone.",
+        "ready": true
     },
     { 
         "topic": "Responsive Web Design", 
         "file": "responsive-web-design.json", 
         "slug": "responsive-web-design", 
-        "description": "Responsive Web Design makes websites look good on all devices by adapting layouts to different screen sizes."
+        "description": "Create layouts that adapt seamlessly to different screen sizes.",
+        "ready": true
     },
     { 
         "topic": "UI/UX", 
         "file": "ui-ux.json", 
         "slug": "uiux", 
-        "description": "UI/UX focuses on creating visually appealing designs (UI) and enhancing user satisfaction through usability (UX)."
+        "description": "Learn design principles for creating intuitive and user-friendly interfaces.",
+        "ready": true
     },
     { 
         "topic": "React", 
         "file": "react.json", 
         "slug": "react", 
-        "description": "React is a JavaScript library for building user interfaces, especially for single-page applications."
+        "description": "Master the popular JavaScript library for building user interfaces.",
+        "ready": false
+    },
+    { 
+        "topic": "Redux", 
+        "file": "redux.json", 
+        "slug": "redux", 
+        "description": "Simplify state management for complex React applications with Redux.",
+        "ready": false
     },
     { 
         "topic": "React Native", 
         "file": "react-native.json", 
         "slug": "react-native", 
-        "description": "React Native is a framework for building native mobile apps using React and JavaScript."
+        "description": "Create native mobile applications using React Native.",
+        "ready": false
+    },
+    { 
+        "topic": "Next.js", 
+        "file": "nextjs.json", 
+        "slug": "nextjs", 
+        "description": "Build fast and scalable React applications with the Next.js framework.",
+        "ready": true
+    },
+    { 
+        "topic": "TypeScript", 
+        "file": "typescript.json", 
+        "slug": "typescript", 
+        "description": "Add type safety to your JavaScript applications with TypeScript.",
+        "ready": false
+    },
+    { 
+        "topic": "Git", 
+        "file": "git.json", 
+        "slug": "git", 
+        "description": "Learn the basics of version control and Git workflows for better project management.",
+        "ready": true
     },
     { 
         "topic": "Bootstrap", 
         "file": "bootstrap.json", 
         "slug": "bootstrap", 
-        "description": "Bootstrap is a popular front-end framework for building responsive and mobile-first websites quickly."
+        "description": "Build responsive websites quickly using the Bootstrap framework.",
+        "ready": true
+    },
+    { 
+        "topic": "Tailwind CSS", 
+        "file": "tailwind.json", 
+        "slug": "tailwind", 
+        "description": "Style your web pages efficiently with utility-first CSS using Tailwind CSS.",
+        "ready": false
+    },
+    { 
+        "topic": "SCSS", 
+        "file": "scss.json", 
+        "slug": "scss", 
+        "description": "Extend CSS with variables, mixins, and nesting using SCSS, the most popular preprocessor.",
+        "ready": false
+    },
+    { 
+        "topic": "SEO", 
+        "file": "seo.json", 
+        "slug": "seo", 
+        "description": "Improve web page visibility and rankings with frontend SEO best practices.",
+        "ready": true
+    },
+    { 
+        "topic": "Progressive Web Apps", 
+        "file": "pwa.json", 
+        "slug": "pwa", 
+        "description": "Create fast, reliable, and installable web apps with Progressive Web Apps.",
+        "ready": false
     },
     { 
         "topic": "Other", 
         "file": "other.json", 
         "slug": "other", 
-        "description": "Other miscellaneous topics related to frontend development and tools."
+        "description": "Explore miscellaneous topics related to frontend development and tools.",
+        "ready": false
     }
 ]

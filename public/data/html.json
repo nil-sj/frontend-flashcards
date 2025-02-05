@@ -2,119 +2,336 @@
     {
         "id": 1,
         "topic": "HTML",
-        "question": "What does HTML stand for?",
-        "answer": "HTML stands for <strong>HyperText Markup Language</strong>, which is the standard language for creating web pages.",
+        "question": "What is HTML, and why is it important?",
+        "answer": "HTML (HyperText Markup Language) is the standard markup language used to create and structure web pages. It defines the elements and layout of a webpage.",
         "keyPoints": [
-            "HyperText allows linking to other pages.",
-            "Markup Language uses tags to define elements."
+            "HTML provides structure to web pages using elements.",
+            "It consists of tags enclosed in angle brackets.",
+            "Works with CSS for styling and JavaScript for interactivity."
         ],
-        "codeExample": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Sample HTML</title>\n  </head>\n  <body>\n    <h1>Welcome to HTML!</h1>\n    <p>This is an example of an HTML document.</p>\n  </body>\n</html>",
+        "codeExample": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>My First Page</title>\n  </head>\n  <body>\n    <h1>Hello, HTML!</h1>\n  </body>\n</html>",
         "resources": [
             {
-                "name": "MDN Web Docs on HTML",
+                "name": "MDN HTML Guide",
                 "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
-            },
-            {
-                "name": "W3Schools HTML Tutorial",
-                "url": "https://www.w3schools.com/html/"
             }
         ],
-        "tags": ["structure", "head"],
-        "difficulty": "medium"
+        "tags": [
+            "fundamentals",
+            "interview-question",
+            "markup-language"
+        ],
+        "difficulty": "easy"
     },
     {
         "id": 2,
         "topic": "HTML",
-        "question": "What is the purpose of the <head> tag in HTML?",
-        "answer": "The <head> tag contains meta information, links to stylesheets, and scripts.",
+        "question": "What are semantic elements in HTML?",
+        "answer": "Semantic elements in HTML clearly define the meaning of their content, making webpages more accessible and SEO-friendly.",
         "keyPoints": [
-            "Meta tags inside <head> help with SEO.",
-            "Links to CSS or JS files are placed here."
+            "Examples: <article>, <section>, <header>, <footer>, <nav>.",
+            "They improve readability for search engines and assistive technologies.",
+            "Semantic elements enhance website structure and accessibility."
         ],
-        "codeExample": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Document Title</title>\n  </head>\n  <body>\n    <h1>Example</h1>\n  </body>\n</html>",
+        "codeExample": "<header>\n  <h1>Welcome to My Website</h1>\n</header>\n<article>\n  <p>This is a blog post.</p>\n</article>",
         "resources": [
             {
-                "name": "HTML Head Element Guide - MDN",
-                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/head"
+                "name": "HTML Semantic Elements - MDN",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
             }
         ],
-        "tags": ["structure", "meta"],
-        "difficulty": "easy"
+        "tags": [
+            "SEO",
+            "accessibility",
+            "best-practices"
+        ],
+        "difficulty": "medium"
     },
     {
         "id": 3,
         "topic": "HTML",
         "question": "What is the difference between <div> and <span>?",
-        "answer": "<div> is a block-level element, while <span> is an inline-level element.",
+        "answer": "<div> is a block-level element used for layout and structure, whereas <span> is an inline element used for styling portions of text.",
         "keyPoints": [
-            "<div> is used for larger sections of content.",
-            "<span> is used for smaller inline elements within text."
+            "<div> is block-level; <span> is inline.",
+            "Use <div> for grouping, <span> for styling."
         ],
-        "codeExample": "<div>\n  <p>This is a block element.</p>\n</div>\n<span>This is an inline element.</span>",
+        "codeExample": null,
         "resources": [
             {
-                "name": "HTML Elements Reference - W3Schools",
-                "url": "https://www.w3schools.com/html/html_elements.asp"
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
             }
         ],
-        "tags": ["structure", "elements"],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
         "difficulty": "medium"
     },
     {
         "id": 4,
         "topic": "HTML",
-        "question": "What is semantic HTML?",
-        "answer": "Semantic HTML uses elements with clear meaning for their content, such as <article>, <section>, and <header>.",
+        "question": "What is the purpose of the <meta> tag in HTML?",
+        "answer": "The <meta> tag provides metadata such as character encoding, author, and viewport settings for responsiveness.",
         "keyPoints": [
-            "Improves accessibility and SEO.",
-            "Helps developers understand the structure of the page."
+            "Defines metadata like viewport, description, and author.",
+            "Used for SEO and browser settings."
         ],
-        "codeExample": "<article>\n  <header>\n    <h1>Semantic HTML</h1>\n  </header>\n  <p>This is an example of semantic HTML.</p>\n</article>",
+        "codeExample": "<code>Sample Code Example</code>",
         "resources": [
             {
-                "name": "Semantic HTML - MDN",
-                "url": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics"
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
             }
         ],
-        "tags": ["semantic", "accessibility"],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
         "difficulty": "medium"
     },
     {
         "id": 5,
         "topic": "HTML",
-        "question": "What is the <doctype> declaration?",
-        "answer": "The <doctype> declaration defines the HTML version and type of document.",
+        "question": "What is the difference between absolute, relative, and fixed positioning in HTML?",
+        "answer": "Positioning determines how elements are placed on a webpage: absolute positions an element relative to its nearest positioned ancestor, relative positions it relative to its normal position, and fixed keeps it in the same place regardless of scrolling.",
         "keyPoints": [
-            "Placed at the very top of the HTML document.",
-            "Helps the browser render the page correctly."
+            "Absolute: Positioned relative to nearest positioned ancestor.",
+            "Relative: Positioned relative to its normal position.",
+            "Fixed: Stays in place during scrolling."
         ],
-        "codeExample": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Sample Doctype</title>\n  </head>\n  <body>\n    <p>Using doctype declaration.</p>\n  </body>\n</html>",
+        "codeExample": null,
         "resources": [
             {
-                "name": "Doctype Declaration - MDN",
-                "url": "https://developer.mozilla.org/en-US/docs/Glossary/Doctype"
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
             }
         ],
-        "tags": ["document", "doctype"],
-        "difficulty": "easy"
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
     },
     {
         "id": 6,
         "topic": "HTML",
-        "question": "What is the purpose of the <alt> attribute in images?",
-        "answer": "The <alt> attribute provides alternative text for an image if it cannot be displayed.",
+        "question": "How does the <iframe> element work in HTML?",
+        "answer": "The <iframe> element allows embedding another webpage within a page. It is commonly used for videos, maps, and third-party content.",
         "keyPoints": [
-            "Improves accessibility for visually impaired users.",
-            "Provides context for search engines."
+            "Used for embedding external content.",
+            "Can be styled with CSS and restricted with sandbox attributes."
         ],
-        "codeExample": "<img src=\"image.jpg\" alt=\"A beautiful sunset\" />",
+        "codeExample": null,
         "resources": [
             {
-                "name": "HTML Image Element - MDN",
-                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img"
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
             }
         ],
-        "tags": ["images", "accessibility"],
-        "difficulty": "easy"
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "HTML",
+        "question": "What is the difference between <b>, <strong>, <i>, and <em> tags?",
+        "answer": "<b> and <i> apply bold and italic styles, while <strong> and <em> provide emphasis with accessibility benefits.",
+        "keyPoints": [
+            "<b> and <i> are purely visual.",
+            "<strong> and <em> have semantic meaning for accessibility."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "HTML",
+        "question": "What is the difference between block and inline elements in HTML?",
+        "answer": "Block elements take up the full width available and start on a new line, whereas inline elements only take up as much width as necessary and do not start on a new line.",
+        "keyPoints": [
+            "Examples of block elements: <div>, <p>, <section>.",
+            "Examples of inline elements: <span>, <a>, <strong>."
+        ],
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "HTML",
+        "question": "What is the purpose of the alt attribute in <img> tags?",
+        "answer": "The alt attribute provides alternative text for an image, improving accessibility and helping screen readers describe images.",
+        "keyPoints": [
+            "Improves SEO and accessibility.",
+            "Used when an image fails to load."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "HTML",
+        "question": "What is the difference between ordered and unordered lists in HTML?",
+        "answer": "Ordered lists (<ol>) display items in a numbered format, while unordered lists (<ul>) display them as bullet points.",
+        "keyPoints": [
+            "<ol> is used when order matters.",
+            "<ul> is used when order does not matter."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "hard"
+    },
+    {
+        "id": 11,
+        "topic": "HTML",
+        "question": "What is the role of the <form> element in HTML?",
+        "answer": "The <form> element is used to collect user input and send it to a server.",
+        "keyPoints": [
+            "Contains form elements like <input>, <textarea>, <button>, and <select>.",
+            "Can use GET or POST methods for data submission."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "HTML",
+        "question": "How do you create a hyperlink in HTML?",
+        "answer": "A hyperlink is created using the <a> tag with the href attribute.",
+        "keyPoints": [
+            "Example: <a href='https://example.com'>Visit Example</a>",
+            "The target attribute can be used to open links in a new tab."
+        ],
+        "codeExample": "<code>Sample Code Example</code>",
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "HTML",
+        "question": "What is the difference between the <thead>, <tbody>, and <tfoot> elements in an HTML table?",
+        "answer": "<thead> groups the header row, <tbody> contains the main content rows, and <tfoot> groups the footer row.",
+        "keyPoints": [
+            "Helps structure tables for readability and styling.",
+            "Useful for large datasets where headers remain fixed."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "HTML",
+        "question": "What are data attributes in HTML?",
+        "answer": "Data attributes allow embedding custom data into HTML elements using attributes starting with 'data-' which can be accessed via JavaScript.",
+        "keyPoints": [
+            "Used for storing extra information not visible to users.",
+            "Can be accessed using JavaScript via dataset property."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "HTML",
+        "question": "What is the difference between <button> and <input type='button'>?",
+        "answer": "<button> is more flexible and can contain other HTML elements, whereas <input type='button'> is self-closing and limited to plain text labels.",
+        "keyPoints": [
+            "<button> allows nesting of elements.",
+            "<input type='button'> is limited in flexibility."
+        ],
+        "codeExample": null,
+        "resources": [
+            {
+                "name": "MDN HTML Guide",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            }
+        ],
+        "tags": [
+            "interview-question",
+            "best-practices"
+        ],
+        "difficulty": "medium"
     }
 ]

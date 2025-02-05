@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import illustrationImage from '../assets/Homepage-Hero-Illustration.png'; // Replace with your actual image path
+import illustrationImage from '../assets/Homepage-Hero-Illustration.png'; 
 
 const Hero = () => {
   return (

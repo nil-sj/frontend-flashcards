@@ -1,0 +1,599 @@
+[
+    {
+        "id": 1,
+        "topic": "Git",
+        "question": "What is Git, and why is it used?",
+        "answer": "Git is a distributed version control system used to track changes in source code during software development. It allows multiple developers to collaborate, maintain a history of changes, and manage code versions efficiently.",
+        "keyPoints": [
+            "Distributed version control system.",
+            "Tracks changes in source code.",
+            "Enables collaboration and version management."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Git Documentation",
+                "url": "https://git-scm.com/doc"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "Git",
+        "question": "What is the difference between Git and GitHub?",
+        "answer": "Git is a version control system, while GitHub is a cloud-based platform that hosts Git repositories. GitHub provides additional features like issue tracking, pull requests, and collaboration tools.",
+        "keyPoints": [
+            "Git: Version control system.",
+            "GitHub: Hosting service for Git repositories.",
+            "GitHub adds collaboration and project management features."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Git vs GitHub - GitHub Docs",
+                "url": "https://docs.github.com/en/get-started/quickstart/git-and-github-learning-resources"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "Git",
+        "question": "What is a repository in Git?",
+        "answer": "A repository (or repo) is a storage location for a project's files and their revision history. It contains all the commits, branches, and metadata for the project.",
+        "keyPoints": [
+            "Stores project files and revision history.",
+            "Contains commits, branches, and metadata.",
+            "Can be local or remote."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Git Repositories - Git Documentation",
+                "url": "https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "topic": "Git",
+        "question": "How do you initialize a new Git repository?",
+        "answer": "Use the `git init` command to initialize a new Git repository in the current directory. This creates a `.git` folder to store the repository's metadata.",
+        "keyPoints": [
+            "Command: `git init`.",
+            "Creates a `.git` folder.",
+            "Initializes an empty repository."
+        ],
+        "codeExample": "$ git init",
+        "resources": [
+            {
+                "name": "git init - Git Documentation",
+                "url": "https://git-scm.com/docs/git-init"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 5,
+        "topic": "Git",
+        "question": "What is a commit in Git?",
+        "answer": "A commit is a snapshot of the repository at a specific point in time. It records changes to the files in the repository and includes a commit message describing the changes.",
+        "keyPoints": [
+            "Snapshot of the repository.",
+            "Records changes to files.",
+            "Includes a commit message."
+        ],
+        "codeExample": "$ git commit -m 'Initial commit'",
+        "resources": [
+            {
+                "name": "Git Commit - Git Documentation",
+                "url": "https://git-scm.com/docs/git-commit"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "topic": "Git",
+        "question": "How do you stage changes for a commit in Git?",
+        "answer": "Use the `git add` command to stage changes for a commit. This adds the changes to the staging area, which is a snapshot of the changes to be included in the next commit.",
+        "keyPoints": [
+            "Command: `git add <file>`.",
+            "Stages changes for the next commit.",
+            "Staging area holds the snapshot of changes."
+        ],
+        "codeExample": "$ git add file.txt",
+        "resources": [
+            {
+                "name": "git add - Git Documentation",
+                "url": "https://git-scm.com/docs/git-add"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 7,
+        "topic": "Git",
+        "question": "What is the difference between `git add .` and `git add -A`?",
+        "answer": "`git add .` stages new and modified files in the current directory and its subdirectories, but not deletions. `git add -A` stages all changes, including new, modified, and deleted files, across the entire repository.",
+        "keyPoints": [
+            "`git add .`: Stages new and modified files in the current directory.",
+            "`git add -A`: Stages all changes (new, modified, deleted) in the entire repository."
+        ],
+        "codeExample": "$ git add .\n$ git add -A",
+        "resources": [
+            {
+                "name": "git add - Git Documentation",
+                "url": "https://git-scm.com/docs/git-add"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "Git",
+        "question": "How do you check the status of your working directory in Git?",
+        "answer": "Use the `git status` command to check the status of your working directory. It shows which files are staged, unstaged, and untracked.",
+        "keyPoints": [
+            "Command: `git status`.",
+            "Shows staged, unstaged, and untracked files.",
+            "Helps track changes in the working directory."
+        ],
+        "codeExample": "$ git status",
+        "resources": [
+            {
+                "name": "git status - Git Documentation",
+                "url": "https://git-scm.com/docs/git-status"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 9,
+        "topic": "Git",
+        "question": "What is a branch in Git?",
+        "answer": "A branch is a parallel version of the repository. It allows developers to work on different features or fixes independently without affecting the main codebase.",
+        "keyPoints": [
+            "Parallel version of the repository.",
+            "Used for independent development.",
+            "Default branch is usually `main` or `master`."
+        ],
+        "codeExample": "$ git branch feature-branch",
+        "resources": [
+            {
+                "name": "Git Branching - Git Documentation",
+                "url": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 10,
+        "topic": "Git",
+        "question": "How do you create a new branch in Git?",
+        "answer": "Use the `git branch <branch-name>` command to create a new branch. To switch to the new branch, use `git checkout <branch-name>` or `git switch <branch-name>`.",
+        "keyPoints": [
+            "Command: `git branch <branch-name>`.",
+            "Switch to the branch using `git checkout` or `git switch`."
+        ],
+        "codeExample": "$ git branch feature-branch\n$ git checkout feature-branch",
+        "resources": [
+            {
+                "name": "git branch - Git Documentation",
+                "url": "https://git-scm.com/docs/git-branch"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 11,
+        "topic": "Git",
+        "question": "What is a merge in Git, and how does it work?",
+        "answer": "A merge combines changes from one branch into another. It integrates the history of two branches, creating a new commit that includes the changes from both branches.",
+        "keyPoints": [
+            "Combines changes from one branch into another.",
+            "Creates a new merge commit.",
+            "Can result in merge conflicts if changes overlap."
+        ],
+        "codeExample": "$ git checkout main\n$ git merge feature-branch",
+        "resources": [
+            {
+                "name": "Git Merge - Git Documentation",
+                "url": "https://git-scm.com/docs/git-merge"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "Git",
+        "question": "What is a pull request in GitHub?",
+        "answer": "A pull request (PR) is a feature in GitHub that allows developers to propose changes to a repository. It enables code review, discussion, and integration of changes into the main branch.",
+        "keyPoints": [
+            "Proposes changes to a repository.",
+            "Facilitates code review and discussion.",
+            "Merges changes into the main branch."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "About Pull Requests - GitHub Docs",
+                "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests"
+            }
+        ],
+        "tags": ["Interview Question", "GitHub"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 13,
+        "topic": "Git",
+        "question": "What is a fork in GitHub?",
+        "answer": "A fork is a copy of a repository that allows you to freely experiment with changes without affecting the original project. It is commonly used for contributing to open-source projects.",
+        "keyPoints": [
+            "Copy of a repository.",
+            "Allows independent experimentation.",
+            "Used for contributing to open-source projects."
+        ],
+        "codeExample": "",
+        "resources": [
+            {
+                "name": "Fork a Repo - GitHub Docs",
+                "url": "https://docs.github.com/en/get-started/quickstart/fork-a-repo"
+            }
+        ],
+        "tags": ["Interview Question", "GitHub"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 14,
+        "topic": "Git",
+        "question": "What is the difference between `git pull` and `git fetch`?",
+        "answer": "`git fetch` downloads changes from a remote repository but does not merge them. `git pull` downloads changes and automatically merges them into the current branch.",
+        "keyPoints": [
+            "`git fetch`: Downloads changes without merging.",
+            "`git pull`: Downloads and merges changes."
+        ],
+        "codeExample": "$ git fetch origin\n$ git pull origin main",
+        "resources": [
+            {
+                "name": "git fetch vs git pull - Git Documentation",
+                "url": "https://git-scm.com/docs/git-fetch"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "Git",
+        "question": "What is a remote in Git?",
+        "answer": "A remote is a reference to a remote repository, typically hosted on a platform like GitHub. It allows you to push and pull changes to and from the remote repository.",
+        "keyPoints": [
+            "Reference to a remote repository.",
+            "Common remotes: `origin`, `upstream`.",
+            "Used for collaboration and synchronization."
+        ],
+        "codeExample": "$ git remote add origin <repository-url>",
+        "resources": [
+            {
+                "name": "Git Remotes - Git Documentation",
+                "url": "https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes"
+            }
+        ],
+        "tags": ["Interview Question", "Theory"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 16,
+        "topic": "Git",
+        "question": "How do you clone a repository in Git?",
+        "answer": "Use the `git clone <repository-url>` command to create a local copy of a remote repository. This downloads the entire repository, including its history and branches.",
+        "keyPoints": [
+            "Command: `git clone <repository-url>`.",
+            "Creates a local copy of the repository.",
+            "Downloads the entire history and branches."
+        ],
+        "codeExample": "$ git clone https://github.com/user/repo.git",
+        "resources": [
+            {
+                "name": "git clone - Git Documentation",
+                "url": "https://git-scm.com/docs/git-clone"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 17,
+        "topic": "Git",
+        "question": "What is a `.gitignore` file, and why is it used?",
+        "answer": "A `.gitignore` file specifies files and directories that Git should ignore. It is used to exclude unnecessary files (e.g., logs, dependencies) from being tracked by Git.",
+        "keyPoints": [
+            "Specifies files and directories to ignore.",
+            "Prevents unnecessary files from being tracked.",
+            "Commonly used for logs, dependencies, and build artifacts."
+        ],
+        "codeExample": "# .gitignore\nnode_modules/\n*.log",
+        "resources": [
+            {
+                "name": "gitignore - Git Documentation",
+                "url": "https://git-scm.com/docs/gitignore"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 18,
+        "topic": "Git",
+        "question": "What is a rebase in Git?",
+        "answer": "Rebasing is the process of moving or combining a sequence of commits to a new base commit. It is used to maintain a linear project history and avoid unnecessary merge commits.",
+        "keyPoints": [
+            "Moves or combines commits to a new base.",
+            "Maintains a linear project history.",
+            "Avoids unnecessary merge commits."
+        ],
+        "codeExample": "$ git checkout feature-branch\n$ git rebase main",
+        "resources": [
+            {
+                "name": "Git Rebase - Git Documentation",
+                "url": "https://git-scm.com/docs/git-rebase"
+            }
+        ],
+        "tags": ["Interview Question", "Advanced Commands"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 19,
+        "topic": "Git",
+        "question": "What is the difference between `git merge` and `git rebase`?",
+        "answer": "`git merge` combines changes from two branches and creates a merge commit. `git rebase` moves or combines commits to a new base, maintaining a linear history without merge commits.",
+        "keyPoints": [
+            "`git merge`: Creates a merge commit.",
+            "`git rebase`: Maintains a linear history.",
+            "Use `merge` for collaboration and `rebase` for clean history."
+        ],
+        "codeExample": "$ git merge feature-branch\n$ git rebase main",
+        "resources": [
+            {
+                "name": "Merge vs Rebase - Git Documentation",
+                "url": "https://git-scm.com/book/en/v2/Git-Branching-Rebasing"
+            }
+        ],
+        "tags": ["Interview Questions", "Advanced Commands"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 20,
+        "topic": "Git",
+        "question": "What is a stash in Git?",
+        "answer": "A stash temporarily saves changes in the working directory without committing them. It is useful for switching branches or saving work-in-progress changes.",
+        "keyPoints": [
+            "Temporarily saves changes without committing.",
+            "Useful for switching branches or saving work-in-progress.",
+            "Command: `git stash`."
+        ],
+        "codeExample": "$ git stash\n$ git stash apply",
+        "resources": [
+            {
+                "name": "Git Stash - Git Documentation",
+                "url": "https://git-scm.com/docs/git-stash"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "Git",
+        "question": "How do you apply a stashed change in Git?",
+        "answer": "Use the `git stash apply` command to apply the most recent stashed change. To apply a specific stash, use `git stash apply stash@{<index>}`.",
+        "keyPoints": [
+            "Command: `git stash apply`.",
+            "Applies the most recent stashed change.",
+            "Use `stash@{<index>}` to apply a specific stash."
+        ],
+        "codeExample": "$ git stash apply\n$ git stash apply stash@{1}",
+        "resources": [
+            {
+                "name": "Git Stash Apply - Git Documentation",
+                "url": "https://git-scm.com/docs/git-stash"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "Git",
+        "question": "What is a tag in Git?",
+        "answer": "A tag is a reference to a specific commit, often used to mark release points (e.g., v1.0.0). Tags can be lightweight (just a name) or annotated (with metadata).",
+        "keyPoints": [
+            "Marks specific commits, often for releases.",
+            "Lightweight tags: Just a name.",
+            "Annotated tags: Include metadata."
+        ],
+        "codeExample": "$ git tag v1.0.0\n$ git tag -a v1.0.0 -m 'Release version 1.0.0'",
+        "resources": [
+            {
+                "name": "Git Tag - Git Documentation",
+                "url": "https://git-scm.com/docs/git-tag"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 23,
+        "topic": "Git",
+        "question": "How do you push tags to a remote repository?",
+        "answer": "Use the `git push <remote> <tag-name>` command to push a specific tag, or `git push <remote> --tags` to push all tags to the remote repository.",
+        "keyPoints": [
+            "Command: `git push <remote> <tag-name>`.",
+            "Push all tags: `git push <remote> --tags`.",
+            "Tags are not pushed automatically with commits."
+        ],
+        "codeExample": "$ git push origin v1.0.0\n$ git push origin --tags",
+        "resources": [
+            {
+                "name": "Git Push Tags - Git Documentation",
+                "url": "https://git-scm.com/docs/git-push"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 24,
+        "topic": "Git",
+        "question": "What is a cherry-pick in Git?",
+        "answer": "Cherry-picking is the process of applying a specific commit from one branch to another. It is useful for selectively applying changes without merging entire branches.",
+        "keyPoints": [
+            "Applies a specific commit to another branch.",
+            "Useful for selective changes.",
+            "Command: `git cherry-pick <commit-hash>`."
+        ],
+        "codeExample": "$ git cherry-pick abc1234",
+        "resources": [
+            {
+                "name": "Git Cherry-Pick - Git Documentation",
+                "url": "https://git-scm.com/docs/git-cherry-pick"
+            }
+        ],
+        "tags": ["Interview Question", "Advanced Commands"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 25,
+        "topic": "Git",
+        "question": "What is a conflict in Git, and how do you resolve it?",
+        "answer": "A conflict occurs when Git cannot automatically merge changes from different branches. To resolve it, manually edit the conflicting files, mark them as resolved with `git add`, and complete the merge.",
+        "keyPoints": [
+            "Occurs when Git cannot auto-merge changes.",
+            "Manually edit conflicting files.",
+            "Mark resolved files with `git add`."
+        ],
+        "codeExample": "$ git merge feature-branch\n# Resolve conflicts\n$ git add file.txt\n$ git commit",
+        "resources": [
+            {
+                "name": "Git Conflict Resolution - Git Documentation",
+                "url": "https://git-scm.com/docs/git-merge#_how_to_resolve_conflicts"
+            }
+        ],
+        "tags": ["Interview Question", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 26,
+        "topic": "Git",
+        "question": "What is the difference between `git reset` and `git revert`?",
+        "answer": "`git reset` moves the branch pointer to a specific commit, discarding subsequent commits. `git revert` creates a new commit that undoes the changes of a previous commit, preserving history.",
+        "keyPoints": [
+            "`git reset`: Discards commits and moves the branch pointer.",
+            "`git revert`: Creates a new commit to undo changes.",
+            "Use `reset` for local changes and `revert` for shared history."
+        ],
+        "codeExample": "$ git reset --hard HEAD~1\n$ git revert abc1234",
+        "resources": [
+            {
+                "name": "Git Reset vs Revert - Git Documentation",
+                "url": "https://git-scm.com/docs/git-reset"
+            }
+        ],
+        "tags": ["Interview Question", "Advanced Commands"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 27,
+        "topic": "Git",
+        "question": "What is the purpose of `git log`?",
+        "answer": "`git log` displays the commit history of the repository. It shows details like commit hashes, authors, dates, and messages.",
+        "keyPoints": [
+            "Displays commit history.",
+            "Shows commit hashes, authors, dates, and messages.",
+            "Useful for tracking changes and debugging."
+        ],
+        "codeExample": "$ git log",
+        "resources": [
+            {
+                "name": "Git Log - Git Documentation",
+                "url": "https://git-scm.com/docs/git-log"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 28,
+        "topic": "Git",
+        "question": "How do you view the changes made in a specific commit?",
+        "answer": "Use the `git show <commit-hash>` command to view the changes made in a specific commit. It displays the commit details and the diff of changes.",
+        "keyPoints": [
+            "Command: `git show <commit-hash>`.",
+            "Displays commit details and changes.",
+            "Useful for reviewing specific changes."
+        ],
+        "codeExample": "$ git show abc1234",
+        "resources": [
+            {
+                "name": "Git Show - Git Documentation",
+                "url": "https://git-scm.com/docs/git-show"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 29,
+        "topic": "Git",
+        "question": "What is the purpose of `git diff`?",
+        "answer": "`git diff` shows the differences between the working directory, staging area, and repository. It is useful for reviewing changes before committing.",
+        "keyPoints": [
+            "Shows differences between working directory, staging area, and repository.",
+            "Useful for reviewing changes.",
+            "Command: `git diff`."
+        ],
+        "codeExample": "$ git diff\n$ git diff --cached",
+        "resources": [
+            {
+                "name": "Git Diff - Git Documentation",
+                "url": "https://git-scm.com/docs/git-diff"
+            }
+        ],
+        "tags": ["Interview Question", "Basic Commands"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 30,
+        "topic": "Git",
+        "question": "What is the purpose of `git blame`?",
+        "answer": "`git blame` shows who last modified each line of a file and the commit that introduced the change. It is useful for tracking down the origin of specific changes.",
+        "keyPoints": [
+            "Shows who last modified each line of a file.",
+            "Useful for tracking changes and debugging.",
+            "Command: `git blame <file>`."
+        ],
+        "codeExample": "$ git blame file.txt",
+        "resources": [
+            {
+                "name": "Git Blame - Git Documentation",
+                "url": "https://git-scm.com/docs/git-blame"
+            }
+        ],
+        "tags": ["Interview Question", "Advanced Commands"],
+        "difficulty": "medium"
+    }
+]
