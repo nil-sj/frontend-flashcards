@@ -1,0 +1,562 @@
+[
+    {
+        "id": 1,
+        "topic": "React Native",
+        "question": "What is React Native, and how does it differ from React?",
+        "answer": "React Native is a framework for building mobile applications using React and native platform components. Unlike React, which is used for web applications, React Native compiles to native code for iOS and Android.",
+        "keyPoints": [
+            "React Native builds mobile apps using JavaScript and React.",
+            "Uses native components instead of HTML elements.",
+            "Code is compiled into native Android and iOS code."
+        ],
+        "codeExample": "import { View, Text } from 'react-native';\nconst App = () => <View><Text>Hello, React Native!</Text></View>;",
+        "resources": [
+            {
+                "name": "React Native - Official Docs",
+                "url": "https://reactnative.dev/"
+            }
+        ],
+        "tags": ["Introduction", "Mobile Development"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "React Native",
+        "question": "What are the core components of React Native?",
+        "answer": "React Native provides built-in components like `View`, `Text`, `Image`, `TextInput`, `ScrollView`, and `FlatList` for building UI.",
+        "keyPoints": [
+            "`View`: Similar to `div` in web, used for layout.",
+            "`Text`: Displays text.",
+            "`FlatList`: Optimized list for rendering large datasets."
+        ],
+        "codeExample": "import { View, Text } from 'react-native';\nconst App = () => <View><Text>Hello, World!</Text></View>;",
+        "resources": [
+            {
+                "name": "Core Components - React Native Docs",
+                "url": "https://reactnative.dev/docs/components-and-apis"
+            }
+        ],
+        "tags": ["Core Components", "UI"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 3,
+        "topic": "React Native",
+        "question": "What is the difference between React Native and Expo?",
+        "answer": "Expo is a framework and platform that simplifies development with React Native, while React Native without Expo provides more flexibility and native module access.",
+        "keyPoints": [
+            "Expo offers an easy setup and built-in APIs.",
+            "Pure React Native allows full access to native modules.",
+            "Expo removes the need for Xcode/Android Studio for development."
+        ],
+        "codeExample": "npx create-expo-app myApp",
+        "resources": [
+            {
+                "name": "Expo vs React Native - Expo Docs",
+                "url": "https://expo.dev/"
+            }
+        ],
+        "tags": ["Expo", "Comparison"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 4,
+        "topic": "React Native",
+        "question": "How do you handle navigation in React Native?",
+        "answer": "React Native does not have built-in navigation. Libraries like `react-navigation` and `react-native-navigation` are used to manage navigation in mobile apps.",
+        "keyPoints": [
+            "`react-navigation` is the most commonly used library.",
+            "Supports stack, tab, and drawer navigation.",
+            "Navigation can be customized with headers and animations."
+        ],
+        "codeExample": "import { createStackNavigator } from '@react-navigation/stack';\nconst Stack = createStackNavigator();",
+        "resources": [
+            {
+                "name": "React Navigation - Official Docs",
+                "url": "https://reactnavigation.org/"
+            }
+        ],
+        "tags": ["Navigation", "Libraries"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "React Native",
+        "question": "What is the role of AsyncStorage in React Native?",
+        "answer": "AsyncStorage is a simple key-value storage system for persisting data in React Native applications, similar to localStorage in web apps.",
+        "keyPoints": [
+            "Stores data persistently across app restarts.",
+            "Works asynchronously to prevent blocking UI.",
+            "Used for saving small amounts of user preferences or session data."
+        ],
+        "codeExample": "await AsyncStorage.setItem('key', 'value');",
+        "resources": [
+            {
+                "name": "AsyncStorage - React Native Docs",
+                "url": "https://react-native-async-storage.github.io/async-storage/"
+            }
+        ],
+        "tags": ["Storage", "Local Data"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 6,
+        "topic": "React Native",
+        "question": "How do you make network requests in React Native?",
+        "answer": "Network requests in React Native are made using the Fetch API or third-party libraries like Axios.",
+        "keyPoints": [
+            "Fetch API is built into React Native.",
+            "Axios offers more features like request/response interception.",
+            "Requests should be made inside `useEffect` or lifecycle methods."
+        ],
+        "codeExample": "fetch('https://api.example.com/data').then(res => res.json()).then(data => console.log(data));",
+        "resources": [
+            {
+                "name": "Networking - React Native Docs",
+                "url": "https://reactnative.dev/docs/network"
+            }
+        ],
+        "tags": ["Networking", "APIs"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 7,
+        "topic": "React Native",
+        "question": "How do you handle user input in React Native?",
+        "answer": "User input is handled using the `TextInput` component along with the `onChangeText` event to update state.",
+        "keyPoints": [
+            "`TextInput` captures user input.",
+            "The `value` prop is controlled via state.",
+            "Keyboard behaviors can be managed using `KeyboardAvoidingView`."
+        ],
+        "codeExample": "const [text, setText] = useState('');\n<TextInput value={text} onChangeText={setText} />;",
+        "resources": [
+            {
+                "name": "Handling Text Input - React Native Docs",
+                "url": "https://reactnative.dev/docs/textinput"
+            }
+        ],
+        "tags": ["Forms", "User Input"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 8,
+        "topic": "React Native",
+        "question": "What is the difference between FlatList and ScrollView?",
+        "answer": "`FlatList` is optimized for rendering long lists efficiently, while `ScrollView` renders all items at once, which can impact performance.",
+        "keyPoints": [
+            "FlatList loads items lazily for better performance.",
+            "ScrollView renders all children immediately.",
+            "FlatList is preferred for dynamic lists with many items."
+        ],
+        "codeExample": "<FlatList data={data} renderItem={({ item }) => <Text>{item.name}</Text>} />",
+        "resources": [
+            {
+                "name": "FlatList vs ScrollView - React Native Docs",
+                "url": "https://reactnative.dev/docs/flatlist"
+            }
+        ],
+        "tags": ["Lists", "Performance"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "React Native",
+        "question": "How do you debug a React Native application?",
+        "answer": "React Native apps can be debugged using React Developer Tools, Flipper, console logging, or the built-in React Native Debugger.",
+        "keyPoints": [
+            "React Developer Tools allows inspecting React component trees.",
+            "Flipper is a debugging platform with React Native support.",
+            "Use `console.log` and `Reactotron` for debugging."
+        ],
+        "codeExample": "console.log('Debug message');",
+        "resources": [
+            {
+                "name": "Debugging - React Native Docs",
+                "url": "https://reactnative.dev/docs/debugging"
+            }
+        ],
+        "tags": ["Debugging", "Development"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "React Native",
+        "question": "How does React Native handle styling?",
+        "answer": "React Native uses a style system similar to CSS, but styles are written in JavaScript using the `StyleSheet` API.",
+        "keyPoints": [
+            "Styles are defined in JavaScript objects.",
+            "Does not support all CSS properties.",
+            "Can use inline styles or `StyleSheet.create()` for performance."
+        ],
+        "codeExample": "const styles = StyleSheet.create({ container: { flex: 1, backgroundColor: 'white' } });",
+        "resources": [
+            {
+                "name": "Styling - React Native Docs",
+                "url": "https://reactnative.dev/docs/style"
+            }
+        ],
+        "tags": ["Styling", "CSS in JS"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 11,
+        "topic": "React Native",
+        "question": "What is the difference between Flexbox in React Native and CSS Flexbox?",
+        "answer": "React Native uses a Flexbox-based layout system similar to CSS but with key differences such as the default column direction.",
+        "keyPoints": [
+            "React Native's default flex direction is `column`, while in CSS it's `row`.",
+            "Supports properties like `justifyContent`, `alignItems`, `flexDirection`.",
+            "No support for percentages in width/height."
+        ],
+        "codeExample": "const styles = StyleSheet.create({ container: { flex: 1, justifyContent: 'center', alignItems: 'center' } });",
+        "resources": [
+            {
+                "name": "Flexbox in React Native - Docs",
+                "url": "https://reactnative.dev/docs/flexbox"
+            }
+        ],
+        "tags": ["Flexbox", "Layout"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "React Native",
+        "question": "How does state management work in React Native?",
+        "answer": "State management in React Native works similarly to React using `useState`, `useContext`, or external libraries like Redux or MobX.",
+        "keyPoints": [
+            "State can be managed locally using `useState`.",
+            "For global state, `Context API`, Redux, or MobX can be used.",
+            "Redux Toolkit simplifies Redux usage."
+        ],
+        "codeExample": "const [count, setCount] = useState(0);\n<Button title='Increment' onPress={() => setCount(count + 1)} />;",
+        "resources": [
+            {
+                "name": "State Management - React Native Docs",
+                "url": "https://reactnative.dev/docs/state-management"
+            }
+        ],
+        "tags": ["State Management", "useState", "Redux"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "React Native",
+        "question": "How do you handle touch gestures in React Native?",
+        "answer": "React Native provides gesture handling through components like `TouchableOpacity`, `TouchableWithoutFeedback`, and third-party libraries like `react-native-gesture-handler`.",
+        "keyPoints": [
+            "Touchable components provide built-in press handling.",
+            "For complex gestures, `react-native-gesture-handler` is recommended.",
+            "Can combine gestures with animations for smooth UX."
+        ],
+        "codeExample": "<TouchableOpacity onPress={() => alert('Pressed!')}><Text>Click Me</Text></TouchableOpacity>",
+        "resources": [
+            {
+                "name": "Handling Touches - React Native Docs",
+                "url": "https://reactnative.dev/docs/handling-touches"
+            }
+        ],
+        "tags": ["Gestures", "User Interaction"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "React Native",
+        "question": "How does React Native handle animations?",
+        "answer": "React Native uses the `Animated` API for smooth and efficient animations, supporting both declarative and imperative approaches.",
+        "keyPoints": [
+            "The `Animated` API provides animations for UI components.",
+            "Supports spring, timing, and decay animations.",
+            "Reanimated and Lottie can be used for advanced animations."
+        ],
+        "codeExample": "const fadeAnim = useRef(new Animated.Value(0)).current;\nAnimated.timing(fadeAnim, { toValue: 1, duration: 1000, useNativeDriver: true }).start();",
+        "resources": [
+            {
+                "name": "Animations - React Native Docs",
+                "url": "https://reactnative.dev/docs/animations"
+            }
+        ],
+        "tags": ["Animations", "UI Enhancements"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 15,
+        "topic": "React Native",
+        "question": "What is the purpose of the `useEffect` hook in React Native?",
+        "answer": "The `useEffect` hook is used to handle side effects such as fetching data, event listeners, or performing cleanup in functional components.",
+        "keyPoints": [
+            "Executes side effects after render.",
+            "Can return a cleanup function to remove listeners or free resources.",
+            "Runs once, on updates, or on unmount based on the dependency array."
+        ],
+        "codeExample": "useEffect(() => { console.log('Component Mounted'); return () => console.log('Cleanup on Unmount'); }, []);",
+        "resources": [
+            {
+                "name": "useEffect - React Docs",
+                "url": "https://react.dev/reference/react/useEffect"
+            }
+        ],
+        "tags": ["useEffect", "Hooks"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 16,
+        "topic": "React Native",
+        "question": "How do you optimize the performance of a React Native app?",
+        "answer": "Performance optimization in React Native can be achieved using techniques like avoiding unnecessary re-renders, optimizing lists, and using native drivers for animations.",
+        "keyPoints": [
+            "Use `memo` and `useCallback` to prevent unnecessary re-renders.",
+            "Optimize lists with `FlatList` and `useMemo`.",
+            "Use `useNativeDriver` for animations to offload to the native thread."
+        ],
+        "codeExample": "const MemoizedComponent = React.memo(MyComponent);",
+        "resources": [
+            {
+                "name": "Performance Optimization - React Native Docs",
+                "url": "https://reactnative.dev/docs/performance"
+            }
+        ],
+        "tags": ["Performance", "Optimization"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 17,
+        "topic": "React Native",
+        "question": "How does React Native interact with native code?",
+        "answer": "React Native allows communication with native code using Native Modules and Native Components written in Objective-C, Swift, or Java.",
+        "keyPoints": [
+            "Native Modules expose platform-specific APIs to JavaScript.",
+            "Bridging allows JavaScript and native code to interact.",
+            "Can write native UI components for better performance."
+        ],
+        "codeExample": "NativeModules.MyNativeModule.doSomething();",
+        "resources": [
+            {
+                "name": "Native Modules - React Native Docs",
+                "url": "https://reactnative.dev/docs/native-modules-intro"
+            }
+        ],
+        "tags": ["Native Modules", "Bridging"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 18,
+        "topic": "React Native",
+        "question": "How does hot reloading work in React Native?",
+        "answer": "Hot reloading allows React Native to refresh only the changed components without losing the app’s state.",
+        "keyPoints": [
+            "Hot reloading updates only the modified files.",
+            "Faster than a full reload since state is retained.",
+            "Can be enabled from the developer menu."
+        ],
+        "codeExample": "// Enable Fast Refresh in Metro config",
+        "resources": [
+            {
+                "name": "Fast Refresh - React Native Docs",
+                "url": "https://reactnative.dev/docs/fast-refresh"
+            }
+        ],
+        "tags": ["Hot Reloading", "Development"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 19,
+        "topic": "React Native",
+        "question": "What is Code Push in React Native?",
+        "answer": "Code Push is a service that enables React Native developers to push updates directly to users without requiring an app store update.",
+        "keyPoints": [
+            "Enables over-the-air (OTA) updates.",
+            "Works with Microsoft App Center.",
+            "Useful for minor updates like UI changes."
+        ],
+        "codeExample": "import codePush from 'react-native-code-push';\nexport default codePush(App);",
+        "resources": [
+            {
+                "name": "Code Push - Microsoft Docs",
+                "url": "https://learn.microsoft.com/en-us/appcenter/distribution/codepush/"
+            }
+        ],
+        "tags": ["Code Push", "OTA Updates"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 20,
+        "topic": "React Native",
+        "question": "How do you handle device permissions in React Native?",
+        "answer": "Device permissions in React Native are managed using third-party libraries like `react-native-permissions` or directly via native platform settings.",
+        "keyPoints": [
+            "Permissions must be declared in AndroidManifest.xml (Android) and Info.plist (iOS).",
+            "Use `react-native-permissions` to request and check permissions.",
+            "Permissions include camera, location, contacts, and storage."
+        ],
+        "codeExample": "import { request, PERMISSIONS } from 'react-native-permissions';\nrequest(PERMISSIONS.ANDROID.CAMERA).then(response => console.log(response));",
+        "resources": [
+            {
+                "name": "Handling Permissions - React Native Docs",
+                "url": "https://reactnative.dev/docs/permissionsandroid"
+            }
+        ],
+        "tags": ["Permissions", "Device Access"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 21,
+        "topic": "React Native",
+        "question": "How do you handle deep linking in React Native?",
+        "answer": "Deep linking allows external links to open specific screens within a React Native app, using `Linking` API or React Navigation's deep linking support.",
+        "keyPoints": [
+            "Use `Linking` to listen for deep link events.",
+            "React Navigation provides built-in deep linking support.",
+            "Requires native configuration in AndroidManifest.xml and Info.plist."
+        ],
+        "codeExample": "import { Linking } from 'react-native';\nLinking.openURL('myapp://screen');",
+        "resources": [
+            {
+                "name": "Deep Linking - React Native Docs",
+                "url": "https://reactnative.dev/docs/linking"
+            }
+        ],
+        "tags": ["Deep Linking", "Navigation"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 22,
+        "topic": "React Native",
+        "question": "How do you test React Native applications?",
+        "answer": "React Native apps can be tested using Jest for unit tests, React Native Testing Library for component testing, and Detox for end-to-end testing.",
+        "keyPoints": [
+            "Jest is used for testing logic and Redux reducers.",
+            "React Native Testing Library tests UI behavior.",
+            "Detox provides automation for end-to-end testing."
+        ],
+        "codeExample": "import { render } from '@testing-library/react-native';\ntest('renders component', () => { render(<MyComponent />); });",
+        "resources": [
+            {
+                "name": "Testing - React Native Docs",
+                "url": "https://reactnative.dev/docs/testing-overview"
+            }
+        ],
+        "tags": ["Testing", "Unit Testing", "E2E"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 23,
+        "topic": "React Native",
+        "question": "How does React Native handle push notifications?",
+        "answer": "React Native handles push notifications using third-party services like Firebase Cloud Messaging (FCM) or OneSignal.",
+        "keyPoints": [
+            "FCM is used for handling notifications on both iOS and Android.",
+            "Requires native configuration in Android and iOS.",
+            "Libraries like `react-native-push-notification` simplify implementation."
+        ],
+        "codeExample": "import messaging from '@react-native-firebase/messaging';\nmessaging().onMessage(async remoteMessage => { console.log('New Notification:', remoteMessage); });",
+        "resources": [
+            {
+                "name": "Push Notifications - React Native Firebase",
+                "url": "https://rnfirebase.io/messaging/usage"
+            }
+        ],
+        "tags": ["Push Notifications", "Firebase"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 24,
+        "topic": "React Native",
+        "question": "How do you handle offline storage in React Native?",
+        "answer": "Offline storage in React Native can be handled using AsyncStorage, SQLite, or Realm for persisting data locally.",
+        "keyPoints": [
+            "AsyncStorage is a simple key-value storage for lightweight data.",
+            "SQLite provides structured database support.",
+            "Realm offers a high-performance, mobile-first database."
+        ],
+        "codeExample": "await AsyncStorage.setItem('user', JSON.stringify(userData));",
+        "resources": [
+            {
+                "name": "AsyncStorage - React Native Docs",
+                "url": "https://react-native-async-storage.github.io/async-storage/"
+            }
+        ],
+        "tags": ["Offline Storage", "Databases"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 25,
+        "topic": "React Native",
+        "question": "What are fast refresh and live reload in React Native?",
+        "answer": "Fast Refresh allows React Native to instantly reflect code changes without losing state, while Live Reload refreshes the entire app.",
+        "keyPoints": [
+            "Fast Refresh updates only changed components without full reload.",
+            "Live Reload refreshes the entire app when code changes.",
+            "Fast Refresh is the default in React Native."
+        ],
+        "codeExample": "// Fast Refresh is built-in; no code required.",
+        "resources": [
+            {
+                "name": "Fast Refresh - React Native Docs",
+                "url": "https://reactnative.dev/docs/fast-refresh"
+            }
+        ],
+        "tags": ["Development", "Hot Reloading"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 26,
+        "topic": "React Native",
+        "question": "What are the differences between Android and iOS development in React Native?",
+        "answer": "React Native abstracts platform differences, but some features require platform-specific handling, such as styling, navigation, and permissions.",
+        "keyPoints": [
+            "Android uses XML-based layouts; iOS uses storyboards.",
+            "Permissions and push notifications require different configurations.",
+            "Different UI guidelines (Material Design vs. Human Interface Guidelines)."
+        ],
+        "codeExample": "Platform.OS === 'ios' ? <Text>iOS</Text> : <Text>Android</Text>;",
+        "resources": [
+            {
+                "name": "React Native Platform Differences - Docs",
+                "url": "https://reactnative.dev/docs/platform-specific-code"
+            }
+        ],
+        "tags": ["Platform Differences", "Android vs iOS"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 27,
+        "topic": "React Native",
+        "question": "What are React Native Hermes and JSC?",
+        "answer": "Hermes is an optimized JavaScript engine for React Native that improves performance, while JSC (JavaScriptCore) is the default engine on iOS.",
+        "keyPoints": [
+            "Hermes reduces startup time and memory usage.",
+            "JSC is the standard JavaScript engine on iOS.",
+            "Hermes must be enabled in Android by modifying `android/app/build.gradle`."
+        ],
+        "codeExample": "// Enable Hermes in android/app/build.gradle",
+        "resources": [
+            {
+                "name": "Hermes Engine - React Native Docs",
+                "url": "https://reactnative.dev/docs/hermes"
+            }
+        ],
+        "tags": ["Performance", "JavaScript Engine"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 28,
+        "topic": "React Native",
+        "question": "What is the difference between Expo Managed and Bare Workflow?",
+        "answer": "Expo Managed Workflow provides an easy setup without requiring native code, while Bare Workflow allows direct native code modifications.",
+        "keyPoints": [
+            "Managed Workflow is easier to use but has limitations.",
+            "Bare Workflow allows full customization with native code.",
+            "Managed apps can be ejected to Bare Workflow if needed."
+        ],
+        "codeExample": "npx expo eject",
+        "resources": [
+            {
+                "name": "Expo Workflows - Expo Docs",
+                "url": "https://docs.expo.dev/introduction/managed-vs-bare/"
+            }
+        ],
+        "tags": ["Expo", "Workflows"],
+        "difficulty": "medium"
+    }
+]

@@ -53,14 +53,14 @@
         "file": "redux.json", 
         "slug": "redux", 
         "description": "Simplify state management for complex React applications with Redux.",
-        "ready": false
+        "ready": true
     },
     { 
         "topic": "React Native", 
         "file": "react-native.json", 
         "slug": "react-native", 
         "description": "Create native mobile applications using React Native.",
-        "ready": false
+        "ready": true
     },
     { 
         "topic": "Next.js", 

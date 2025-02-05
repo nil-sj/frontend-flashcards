@@ -1,0 +1,363 @@
+[
+    {
+        "id": 1,
+        "topic": "Redux",
+        "question": "What is Redux, and why is it used?",
+        "answer": "Redux is a predictable state management library for JavaScript applications. It helps manage and centralize application state, making it easier to debug and test.",
+        "keyPoints": [
+            "Centralized state management.",
+            "Predictable state updates using reducers.",
+            "Works well with React, but can be used with any JS framework."
+        ],
+        "codeExample": "const store = createStore(reducer);",
+        "resources": [
+            {
+                "name": "Redux - Official Docs",
+                "url": "https://redux.js.org/"
+            }
+        ],
+        "tags": ["State Management", "Redux Basics"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 2,
+        "topic": "Redux",
+        "question": "What are the core principles of Redux?",
+        "answer": "Redux follows three core principles: Single source of truth, State is read-only, and Changes are made with pure functions.",
+        "keyPoints": [
+            "Single source of truth: The state is stored in one centralized place.",
+            "State is read-only: Cannot modify state directly, use actions.",
+            "Changes are made with pure functions: Reducers determine state updates."
+        ],
+        "codeExample": "const initialState = { count: 0 };\nfunction counterReducer(state = initialState, action) {\n  switch (action.type) {\n    case 'INCREMENT': return { count: state.count + 1 };\n    default: return state;\n  }\n}",
+        "resources": [
+            {
+                "name": "Redux Principles - Redux Docs",
+                "url": "https://redux.js.org/understanding/thinking-in-redux/three-principles"
+            }
+        ],
+        "tags": ["Redux Principles", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 3,
+        "topic": "Redux",
+        "question": "What are actions in Redux?",
+        "answer": "Actions are plain JavaScript objects that describe an event that occurred in an application. They must have a `type` property and optionally carry data.",
+        "keyPoints": [
+            "Actions must have a `type` field.",
+            "Optionally contain additional payload data.",
+            "Dispatched to update the state."
+        ],
+        "codeExample": "const incrementAction = { type: 'INCREMENT' };",
+        "resources": [
+            {
+                "name": "Redux Actions - Redux Docs",
+                "url": "https://redux.js.org/tutorials/essentials/part-2-app-structure"
+            }
+        ],
+        "tags": ["Redux Actions", "State Management"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 4,
+        "topic": "Redux",
+        "question": "What are reducers in Redux?",
+        "answer": "Reducers are pure functions that take the current state and an action as input and return a new state.",
+        "keyPoints": [
+            "Pure functions with no side effects.",
+            "Determine how state changes based on actions.",
+            "Return a new state instead of modifying the old state."
+        ],
+        "codeExample": "function counterReducer(state = { count: 0 }, action) {\n  switch (action.type) {\n    case 'INCREMENT': return { count: state.count + 1 };\n    default: return state;\n  }\n}",
+        "resources": [
+            {
+                "name": "Redux Reducers - Redux Docs",
+                "url": "https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers"
+            }
+        ],
+        "tags": ["Reducers", "State Management"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 5,
+        "topic": "Redux",
+        "question": "What is the Redux store?",
+        "answer": "The Redux store is an object that holds the application's state tree and provides methods to update state using actions and reducers.",
+        "keyPoints": [
+            "Holds the application state.",
+            "Provides `dispatch` method to send actions.",
+            "Allows components to subscribe to state changes."
+        ],
+        "codeExample": "import { createStore } from 'redux';\nconst store = createStore(reducer);",
+        "resources": [
+            {
+                "name": "Redux Store - Redux Docs",
+                "url": "https://redux.js.org/api/store"
+            }
+        ],
+        "tags": ["Redux Store", "State Management"],
+        "difficulty": "easy"
+    },
+    {
+        "id": 6,
+        "topic": "Redux",
+        "question": "What is the difference between Redux and Context API?",
+        "answer": "Redux is a state management library with a strict architecture, while Context API is built into React and provides a simpler way to pass state without prop drilling.",
+        "keyPoints": [
+            "Redux: Centralized state, middleware support.",
+            "Context API: Built into React, simpler but less powerful.",
+            "Redux is better for large-scale applications."
+        ],
+        "codeExample": "const ThemeContext = React.createContext('light');",
+        "resources": [
+            {
+                "name": "Redux vs Context API - React Docs",
+                "url": "https://react.dev/learn/passing-data-deeply-with-context"
+            }
+        ],
+        "tags": ["Redux vs Context API", "State Management"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 7,
+        "topic": "Redux",
+        "question": "What is middleware in Redux?",
+        "answer": "Middleware in Redux is a function that extends the behavior of the Redux store, often used for handling asynchronous actions and logging.",
+        "keyPoints": [
+            "Intercepts dispatched actions before reaching reducers.",
+            "Used for async logic (e.g., Redux Thunk).",
+            "Enhances Redux functionality with logging, caching, and analytics."
+        ],
+        "codeExample": "const logger = store => next => action => { console.log(action); return next(action); };",
+        "resources": [
+            {
+                "name": "Redux Middleware - Redux Docs",
+                "url": "https://redux.js.org/understanding/history-and-design/middleware"
+            }
+        ],
+        "tags": ["Middleware", "Redux Enhancements"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 8,
+        "topic": "Redux",
+        "question": "What is Redux Thunk?",
+        "answer": "Redux Thunk is a middleware that allows action creators to return functions instead of plain objects, enabling asynchronous logic like API calls.",
+        "keyPoints": [
+            "Allows dispatching functions instead of plain objects.",
+            "Used for handling async operations.",
+            "Provides access to `dispatch` and `getState` inside action creators."
+        ],
+        "codeExample": "const fetchData = () => dispatch => { fetch(url).then(res => res.json()).then(data => dispatch({ type: 'DATA_LOADED', payload: data })); };",
+        "resources": [
+            {
+                "name": "Redux Thunk - Redux Docs",
+                "url": "https://redux.js.org/usage/writing-logic-thunks"
+            }
+        ],
+        "tags": ["Redux Thunk", "Async Actions"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 9,
+        "topic": "Redux",
+        "question": "What is Redux Toolkit?",
+        "answer": "Redux Toolkit (RTK) is the official, recommended way to write Redux logic, reducing boilerplate and improving state management efficiency.",
+        "keyPoints": [
+            "Includes built-in support for reducers, actions, and middleware.",
+            "Simplifies async logic with `createAsyncThunk`.",
+            "Provides `createSlice` for managing state efficiently."
+        ],
+        "codeExample": "const counterSlice = createSlice({ name: 'counter', initialState: 0, reducers: { increment: state => state + 1 } });",
+        "resources": [
+            {
+                "name": "Redux Toolkit - Redux Docs",
+                "url": "https://redux-toolkit.js.org/"
+            }
+        ],
+        "tags": ["Redux Toolkit", "RTK"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 10,
+        "topic": "Redux",
+        "question": "What is the purpose of combineReducers in Redux?",
+        "answer": "`combineReducers` is a helper function that merges multiple reducer functions into a single root reducer.",
+        "keyPoints": [
+            "Helps manage different slices of state with separate reducers.",
+            "Each reducer handles its own part of the state.",
+            "Redux calls each reducer with the respective state slice."
+        ],
+        "codeExample": "const rootReducer = combineReducers({ user: userReducer, posts: postsReducer });",
+        "resources": [
+            {
+                "name": "combineReducers - Redux Docs",
+                "url": "https://redux.js.org/api/combineReducers"
+            }
+        ],
+        "tags": ["Reducers", "Redux Architecture"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 11,
+        "topic": "Redux",
+        "question": "What is the difference between Redux and MobX?",
+        "answer": "Redux enforces a strict unidirectional data flow and immutability, while MobX uses observables to manage state reactively.",
+        "keyPoints": [
+            "Redux follows functional programming principles.",
+            "MobX is more flexible and uses proxies to track state changes.",
+            "Redux has a strict structure, MobX allows direct state mutation."
+        ],
+        "codeExample": "const store = configureStore({ reducer: rootReducer });",
+        "resources": [
+            {
+                "name": "Redux vs MobX - Redux Docs",
+                "url": "https://redux.js.org/faq/general#when-should-i-use-redux"
+            }
+        ],
+        "tags": ["State Management", "Comparison"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 12,
+        "topic": "Redux",
+        "question": "What are selectors in Redux?",
+        "answer": "Selectors are functions that extract and compute derived data from the Redux store state.",
+        "keyPoints": [
+            "Encapsulate logic for selecting data from state.",
+            "Improve reusability and maintainability.",
+            "Can use memoization with libraries like Reselect."
+        ],
+        "codeExample": "const getUser = (state) => state.user;",
+        "resources": [
+            {
+                "name": "Selectors - Redux Docs",
+                "url": "https://redux.js.org/usage/structuring-reducers/basic-reducer-structure#selectors"
+            }
+        ],
+        "tags": ["Selectors", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 13,
+        "topic": "Redux",
+        "question": "What is Reselect in Redux?",
+        "answer": "Reselect is a library that helps create memoized selectors, optimizing state selection and avoiding unnecessary recomputations.",
+        "keyPoints": [
+            "Improves performance by memoizing derived state calculations.",
+            "Prevents redundant computations when state has not changed.",
+            "Used alongside Redux selectors."
+        ],
+        "codeExample": "const selectUser = createSelector([state => state.user], user => user.name);",
+        "resources": [
+            {
+                "name": "Reselect - Redux Docs",
+                "url": "https://github.com/reduxjs/reselect"
+            }
+        ],
+        "tags": ["Selectors", "Performance"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 14,
+        "topic": "Redux",
+        "question": "What is the Ducks pattern in Redux?",
+        "answer": "The Ducks pattern organizes Redux-related logic into modular files, each containing actions, action creators, and reducers for a specific feature.",
+        "keyPoints": [
+            "Combines actions, reducers, and types in one file.",
+            "Improves modularity and maintainability.",
+            "Reduces boilerplate by keeping related logic together."
+        ],
+        "codeExample": "const INCREMENT = 'counter/INCREMENT';\nexport const increment = () => ({ type: INCREMENT });\nconst counterReducer = (state = 0, action) => { return action.type === INCREMENT ? state + 1 : state; };",
+        "resources": [
+            {
+                "name": "Ducks Pattern - GitHub",
+                "url": "https://github.com/erikras/ducks-modular-redux"
+            }
+        ],
+        "tags": ["Redux Architecture", "Best Practices"],
+        "difficulty": "medium"
+    },
+    {
+        "id": 15,
+        "topic": "Redux",
+        "question": "How does Redux handle asynchronous operations?",
+        "answer": "Redux uses middleware like Redux Thunk or Redux Saga to handle asynchronous operations such as API calls.",
+        "keyPoints": [
+            "Redux Thunk: Dispatches functions instead of plain actions.",
+            "Redux Saga: Uses generators for complex async workflows.",
+            "Asynchronous operations must go through middleware."
+        ],
+        "codeExample": "const fetchData = () => async (dispatch) => { const data = await fetch(url); dispatch({ type: 'DATA_LOADED', payload: data }); };",
+        "resources": [
+            {
+                "name": "Async Logic - Redux Docs",
+                "url": "https://redux.js.org/usage/writing-logic-thunks"
+            }
+        ],
+        "tags": ["Async Actions", "Middleware"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 16,
+        "topic": "Redux",
+        "question": "What is Redux Saga?",
+        "answer": "Redux Saga is a middleware library that uses generator functions to handle complex asynchronous logic in Redux applications.",
+        "keyPoints": [
+            "Uses ES6 generator functions (`function*`).",
+            "Manages side effects like API calls in a structured way.",
+            "Works with actions to control application flow."
+        ],
+        "codeExample": "function* fetchDataSaga() { const data = yield call(api.fetchData); yield put({ type: 'DATA_SUCCESS', payload: data }); }",
+        "resources": [
+            {
+                "name": "Redux Saga - Official Docs",
+                "url": "https://redux-saga.js.org/"
+            }
+        ],
+        "tags": ["Redux Saga", "Middleware"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 17,
+        "topic": "Redux",
+        "question": "What is the difference between Redux Thunk and Redux Saga?",
+        "answer": "Redux Thunk allows dispatching functions for async logic, while Redux Saga uses generator functions to manage complex side effects.",
+        "keyPoints": [
+            "Redux Thunk: Simpler, based on functions.",
+            "Redux Saga: More powerful, based on generator functions.",
+            "Saga is useful for handling complex asynchronous workflows."
+        ],
+        "codeExample": "function* fetchDataSaga() { yield takeEvery('FETCH_DATA', fetchDataWorker); }",
+        "resources": [
+            {
+                "name": "Redux Thunk vs Redux Saga - Medium",
+                "url": "https://medium.com/@atila/choosing-redux-thunk-vs-redux-saga-53ba1c7d2b2e"
+            }
+        ],
+        "tags": ["Async Actions", "Comparison"],
+        "difficulty": "hard"
+    },
+    {
+        "id": 18,
+        "topic": "Redux",
+        "question": "What is store.subscribe() in Redux?",
+        "answer": "The `store.subscribe()` method listens for state updates and executes a callback whenever the Redux store changes.",
+        "keyPoints": [
+            "Registers a listener to state changes.",
+            "Used for logging, analytics, or manual UI updates.",
+            "Unsubscribe function can be called to remove the listener."
+        ],
+        "codeExample": "const unsubscribe = store.subscribe(() => console.log(store.getState()));",
+        "resources": [
+            {
+                "name": "Store Subscribe - Redux Docs",
+                "url": "https://redux.js.org/api/store#subscribelistener"
+            }
+        ],
+        "tags": ["Redux Store", "State Updates"],
+        "difficulty": "medium"
+    }
+]
+
