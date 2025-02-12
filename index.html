@@ -12,6 +12,18 @@
     <title>Frontend Flashcards: For Developers by Developers</title>
   </head>
   <body>
+    <!-- A little help for the Netlify bots if you're not using a SSG -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="subject">
+          <option value="">Select Subject</option>
+          <option value="support">Support Request</option>
+          <option value="error">Error Reporting</option>
+          <option value="testimonial">Testimonial</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

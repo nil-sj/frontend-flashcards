@@ -76,6 +76,7 @@ const SiteFooter = () => {
             <Link to="/contribute" className="btn btn-outline-primary btn-sm w-100">
               Contribute For Us
             </Link>
+        
           </div>
         </div>
         {/* Bottom Strip */}
