@@ -27,9 +27,6 @@ const AboutSection = () => (
                 style={{ maxHeight: '350px' }}
                 />
             </div>
-            <div>
-                <p>Test Code</p>
-            </div>  
         </div>
         </div>
       </section>
