@@ -7,7 +7,7 @@ const usePageTracking = () => {
   useEffect(() => {
     if (window.gtag) {
       window.gtag('config', 'G-QBN2R9CVY3', {
-        page_path: location.pathname + location.search, // ✅ include query string
+        page_path: location.pathname + location.search, // include query string
       });
     }
   }, [location]);

@@ -9,14 +9,24 @@ const TopicFlashcards = () => {
   const topicSlug = searchParams.get('topic');
   const [flashcards, setFlashcards] = useState([]);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
-  const [resetFlip, setResetFlip] = useState(0); // Added a state to reset the flip state
+  const [resetFlip, setResetFlip] = useState(0);
 
-  const topicName = topicsConfig.find((topic) => topic.slug === topicSlug).topic;
+  const topicEntry = topicsConfig.find((topic) => topic.slug === topicSlug);
+  const topicName = topicEntry?.topic || 'Unknown';
 
   useEffect(() => {
     const topic = topicsConfig.find((t) => t.slug === topicSlug);
-  
+
     if (topic) {
+      // Google Analytics topic view event
+      if (window.gtag) {
+        window.gtag('event', 'view_flashcard_topic', {
+          topic: topic.topic,
+          slug: topic.slug,
+        });
+      }
+
+      // Fetch flashcards
       fetch(`/data/${topic.file}`)
         .then((response) => {
           if (!response.ok) {
@@ -36,7 +46,14 @@ const TopicFlashcards = () => {
   const handlePrevious = () => {
     setCurrentCardIndex((prev) => {
       const newIndex = prev > 0 ? prev - 1 : flashcards.length - 1;
-      setResetFlip(newIndex); // Trigger reset for FlipCard
+      setResetFlip(newIndex);
+
+      if (window.gtag) {
+        window.gtag('event', 'click_previous_flashcard', {
+          topic: topicName,
+        });
+      }
+
       return newIndex;
     });
   };
@@ -44,7 +61,14 @@ const TopicFlashcards = () => {
   const handleNext = () => {
     setCurrentCardIndex((prev) => {
       const newIndex = (prev + 1) % flashcards.length;
-      setResetFlip(newIndex); // Trigger reset for FlipCard
+      setResetFlip(newIndex);
+
+      if (window.gtag) {
+        window.gtag('event', 'click_next_flashcard', {
+          topic: topicName,
+        });
+      }
+
       return newIndex;
     });
   };
@@ -92,22 +116,23 @@ const TopicFlashcards = () => {
 
           <div className="row justify-content-center">
             <div className="col-md-10 col-lg-9">
-            <FlipCard
-              id={flashcards[currentCardIndex].id} // Ensure the ID is passed
-              topic={flashcards[currentCardIndex].topic} // Pass topic name
-              question={flashcards[currentCardIndex].question}
-              answer={flashcards[currentCardIndex].answer}
-              keyPoints={flashcards[currentCardIndex].keyPoints || []} // Ensure it's always an array
-              resources={flashcards[currentCardIndex].resources || []} // Ensure it's always an array
-              codeExample={flashcards[currentCardIndex].codeExample || ''} // Ensure empty string if no example
-              tags={flashcards[currentCardIndex].tags || []} // Pass tags (or empty array)
-              difficulty={flashcards[currentCardIndex].difficulty || 'medium'} // Default to "medium" if not set
-              resetFlip={resetFlip} // Pass resetFlip to FlipCard
-            />
+              <FlipCard
+                id={flashcards[currentCardIndex].id}
+                topic={flashcards[currentCardIndex].topic}
+                question={flashcards[currentCardIndex].question}
+                answer={flashcards[currentCardIndex].answer}
+                keyPoints={flashcards[currentCardIndex].keyPoints || []}
+                resources={flashcards[currentCardIndex].resources || []}
+                codeExample={flashcards[currentCardIndex].codeExample || ''}
+                tags={flashcards[currentCardIndex].tags || []}
+                difficulty={flashcards[currentCardIndex].difficulty || 'medium'}
+                resetFlip={resetFlip}
+              />
             </div>
           </div>
         </div>
       </section>
+
       <section className="sec-py">
       <div className="container">
         <div className="text-center">
