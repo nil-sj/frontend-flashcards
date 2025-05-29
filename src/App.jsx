@@ -8,12 +8,8 @@ import Resources from './pages/Resources';
 import About from './pages/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import usePageTracking from './usePageTracking';
 
 const App = () => {
-  
-  usePageTracking();
-
   return (
     <Router>
       <Layout>
